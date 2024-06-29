@@ -1,0 +1,38 @@
+.banner {
+    position: relative;
+    width: 100%;
+    /* Adjusted width */
+    height: 70%;
+    /* Changed from 10% to a fixed height for better control */
+    overflow: hidden;
+    margin: auto;
+    /* 10px margin all around */
+}
+
+.slide {
+    position: relative;
+    margin: 30px;
+
+
+}
+
+.banner .slide img {
+    width: 88%;
+    height: 60%;
+    margin: auto;
+    /* Ensures the image scales correctly */
+}
+
+.banner .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centers the text box both vertically and horizontally */
+    color: #fff;
+    /* Example text color */
+    padding: 10px;
+    /* Example padding */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Example background for readability */
+}

@@ -1,24 +1,38 @@
+/* navigation.css */
 .custom-navbar {
-  height: 80px;
-  background-color: #004687;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s ease; /* Add transition for background color */
+  display: flex;
+  /* Assuming Flexbox layout for navbar items */
+  justify-content: flex-start;
+  height: 90px;
+  /* Align items to the start */
+  gap: 20px;
+  /* Increase gap between elements */
+  background: linear-gradient(to right, #0071c5, #004687);
+  background-size: 200% 100%;
+  animation: gradient-move 3s linear infinite;
+  margin-left: auto;
+  /* Move navbar to the right */
+  
+  padding-right: 0px;
+  /* Increase right-side padding */
 }
 
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100% + 50px);
-  background: linear-gradient(90deg, #ff6347, #4169e1, #ff6347);
-  background-size: 300% 100%;
-  animation: wave 10s linear infinite;
-  z-index: 0;
-  opacity: 0.7;
+@keyframes gradient-move {
+  from {
+    background-position: 0% 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
 }
 
+.custom-navbar {
+  background: linear-gradient(to right, #0071c5, #004687);
+  /* Example gradient */
+  background-size: 200% 100%;
+  animation: gradient-move 3s linear infinite;
+}
 .navbar-brand img {
   margin-right: 20px;
   width: 80px;
@@ -29,14 +43,81 @@
 .navbar-nav {
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* Ensure nav items are centered */
 }
 
 .navbar-nav .nav-link {
   color: #ffffff;
-  font-size: 1.0em;
-  margin-right: 20px;
+  font-size: 1.3em;
+  margin-right: 80px;
+  /* Increase space between elements */
+  font-weight: bold;
+  /* Make font bold */
+  position: relative;
+  transition: font-size 0.3s ease;
+  /* Transition for font size */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  /* Adjust this value if needed */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+  /* Transition for width */
 }
 
 .navbar-nav .nav-link:hover {
-  color: #dddddd;
+  font-size: 1.2em;
+  /* Increase font size on hover */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.default-underline::after {
+  width: 100%;
+}
+
+.division {
+  margin-left: 26%;
+  
+}
+
+.custom-dropdown {
+  background-color: #444;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.custom-dropdown .dropdown-item {
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #555;
+}
+
+.programs-link {
+  display: flex;
+  align-items: center;
+}
+
+.programs-link .arrow-icon {
+  margin-left: 5px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+  /* Hide the default arrow icon */
 }
