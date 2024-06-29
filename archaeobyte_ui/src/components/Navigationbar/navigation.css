@@ -1,0 +1,42 @@
+.custom-navbar {
+  height: 80px;
+  background-color: #004687;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease; /* Add transition for background color */
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 50px);
+  background: linear-gradient(90deg, #ff6347, #4169e1, #ff6347);
+  background-size: 300% 100%;
+  animation: wave 10s linear infinite;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.navbar-brand img {
+  margin-right: 20px;
+  width: 80px;
+  height: auto;
+  z-index: 1;
+}
+
+.navbar-nav {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 1.0em;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dddddd;
+}

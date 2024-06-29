@@ -1,0 +1,47 @@
+/* Import the Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.custom-headbar {
+  height: 40px !important; /* Decrease the height of the navbar */
+  background-color: black; /* Change the background color */
+  margin-bottom: 0; /* Remove the bottom margin */
+}
+
+.custom-headbar .navbar-brand {
+  color: rgba(255, 255, 255, 0.714) !important; /* Set font color to white */
+  font-size: 0.9em; /* Adjust font size */
+  font-family: 'Inter', sans-serif; /* Apply Inter font */
+  font-weight: 500; /* Apply medium weight (500) */
+}
+
+.custom-headbar .navbar-brand:hover {
+  color: #dddddd !important; /* Change hover color to grey */
+}
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after,
+.default-underline::after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+.default-underline::after {
+  width: 100%;
+}
