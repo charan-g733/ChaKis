@@ -6,6 +6,7 @@
     /* Changed from 10% to a fixed height for better control */
     overflow: hidden;
     margin: auto;
+    background-color: #fff;
     /* 10px margin all around */
 }
 
