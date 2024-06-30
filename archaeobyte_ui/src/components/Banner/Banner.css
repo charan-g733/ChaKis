@@ -52,7 +52,7 @@
 .box1, .box2 {
     position: absolute;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: white;
     color: #333; /* Darker text color for better contrast */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

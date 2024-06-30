@@ -1,38 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .custom-navbar {
   display: flex;
   justify-content: flex-start;
-  height: 90px;
-  background: radial-gradient(circle at 50% 50%, #081daa, #0b518a, #4c6fe1, #1c4faf, #00008B);
-  background-size: 200% 200%;
-  animation: smoke-effect 30s ease infinite;
+  height: 70px;
+  /* background: linear-gradient(135deg, #081daa, #0b518a, #4c6fe1, #02225f, #6f0adc); */
+  /* background: linear-gradient(135deg, #cf352e, #018749, #e4d00a, #0066b2); */
+  /* background: linear-gradient(135deg, #cf352e, #004c99, #018749, #6699cc, #e4d00a, #336699, #0066b2, #003366); */
+   background: linear-gradient(135deg, #3a80ec, #4c6fe1, #0229bf, #080b6c,#61039b,#6f0adc); 
+
+
+
+
+
+  background-size: 400% 400%;
+  animation: color-shift 30s ease infinite;
   font-family: 'Roboto', sans-serif;
+  box-shadow: 0 3px 5px 5px #424c8e;
 }
 
-@keyframes smoke-effect {
+@keyframes color-shift {
   0% {
     background-position: 0% 50%;
-    background: radial-gradient(circle at 50% 50%, #081daa, #0b518a, #4c6fe1, #1c4faf, #00008B);
   }
-
-  25% {
-    background-position: 50% 50%;
-    background: radial-gradient(circle at 60% 40%, #081daa, #0b518a, #4c6fe1, #1c4faf, #00008B);
-  }
-
   50% {
     background-position: 100% 50%;
-    background: radial-gradient(circle at 70% 30%, #081daa, #0b518a, #4c6fe1, #1c4faf, #00008B);
   }
-
-  75% {
-    background-position: 50% 50%;
-    background: radial-gradient(circle at 40% 60%, #081daa, #0b518a, #4c6fe1, #1c4faf, #00008B);
-  }
-
   100% {
     background-position: 0% 50%;
-    background: radial-gradient(circle at 50% 50%, #081daa, #0b518a, #4c6fe1, #1c4faf, #00008B);
   }
 }
 
@@ -44,18 +39,20 @@
 }
 
 .navbar-brand img {
-  height: 80px;
+  height: 70px;
+  width: 70px;
   z-index: 1;
+  margin-left: 20px;
 }
 
 .navbar-nav .nav-link {
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: bold;
   position: relative;
-  margin-right: 25px;
-  margin-left: 25px;
-  transition: transform 0.3s ease;
+  margin-right: 30px;
+  margin-left: 32px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .navbar-nav .nav-link::after {
@@ -71,6 +68,7 @@
 
 .navbar-nav .nav-link:hover {
   transform: scale(1.1);
+  color: #ffffff;
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -91,6 +89,7 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
+  transition: background-color 0.3s ease;
 }
 
 .custom-dropdown .dropdown-item:hover {
@@ -102,7 +101,6 @@
     opacity: 0;
     transform: translateY(-20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -112,6 +110,7 @@
 .programs-link {
   display: flex;
   align-items: center;
+  transition: color 0.3s ease;
 }
 
 .programs-link:hover {
