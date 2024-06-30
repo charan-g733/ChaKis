@@ -1,20 +1,11 @@
-/* navigation.css */
 .custom-navbar {
   display: flex;
-  /* Assuming Flexbox layout for navbar items */
   justify-content: flex-start;
   height: 90px;
-  /* Align items to the start */
-  gap: 20px;
-  /* Increase gap between elements */
   background: linear-gradient(to right, #0071c5, #004687);
   background-size: 200% 100%;
   animation: gradient-move 3s linear infinite;
   margin-left: auto;
-  /* Move navbar to the right */
-  
-  padding-right: 0px;
-  /* Increase right-side padding */
 }
 
 @keyframes gradient-move {
@@ -29,13 +20,10 @@
 
 .custom-navbar {
   background: linear-gradient(to right, #0071c5, #004687);
-  /* Example gradient */
   background-size: 200% 100%;
   animation: gradient-move 3s linear infinite;
 }
 .navbar-brand img {
-  margin-right: 20px;
-  width: 80px;
   height: 80px;
   z-index: 1;
 }
@@ -46,37 +34,30 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  /* Ensure nav items are centered */
 }
 
 .navbar-nav .nav-link {
   color: #ffffff;
   font-size: 1.3em;
   margin-right: 80px;
-  /* Increase space between elements */
   font-weight: bold;
-  /* Make font bold */
   position: relative;
   transition: font-size 0.3s ease;
-  /* Transition for font size */
 }
 
 .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
   bottom: -5px;
-  /* Adjust this value if needed */
   left: 0;
   width: 0;
   height: 2px;
   background: #fff;
   transition: width 0.3s ease;
-  /* Transition for width */
 }
 
 .navbar-nav .nav-link:hover {
   font-size: 1.2em;
-  /* Increase font size on hover */
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -87,10 +68,7 @@
   width: 100%;
 }
 
-.division {
-  margin-left: 26%;
-  
-}
+
 
 .custom-dropdown {
   background-color: #444;
@@ -119,5 +97,4 @@
 
 .dropdown-toggle::after {
   display: none;
-  /* Hide the default arrow icon */
 }
