@@ -1,58 +1,43 @@
 import React from "react";
-import Slider from "react-slick"; // Assuming you're using react-slick
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import banner1 from "../images/banner1.jpg";
 import banner2 from "../images/banner2.jpg";
 import "./Banner.css";
 
-// Custom Arrow components
-function NextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", right: "25px" }}
-      onClick={onClick}
-    >
-   
-    </div>
-  );
-}
-
-function PrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", left: "25px", zIndex: 1 }}
-      onClick={onClick}
-    >
-
-    </div>
-  );
-}
-
 // Banner component
 const Banner = () => {
   const settings = {
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
-    <div className="banner">
+    <div className="banner-container">
       <Slider {...settings}>
         <div className="slide">
           <img src={banner1} alt="Slide 1" />
-          <div className="text-box">Text Box Content</div>
+          <div className="box1">
+            <h1 className="box-title">Invest in learning that grows with you</h1>
+            <p className="box-text"> Preparing you for Today and Tomorrow's challenges.</p>
+          </div>
         </div>
         <div className="slide">
           <img src={banner2} alt="Slide 2" />
-          <div className="text-box">Text Box Content</div>
+          <div className="box2">
+            <h1 className="box-title">Empower Your Future</h1>
+            <p className="box-text">Stay ahead and maintain a competitive edge with Skills that are needed to thrive in an ever-changing technological landscape</p>
+            <div className="button-container">
+              <div className="button individual">Plan for individuals</div>
+              <div className="button organization">Plan for your organization</div>
+            </div>
+          </div>
         </div>
       </Slider>
     </div>
