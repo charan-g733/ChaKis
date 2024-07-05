@@ -1,20 +1,36 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import './header.css';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
 
-function Headerbar() {
+import "./header.css";
+
+function Header() {
   return (
     <>
       <Navbar className="custom-headbar">
         <Container>
-          <Navbar.Brand href="#home" className="hover-underline default-underline text-white custom-brand">Individual Learning</Navbar.Brand>
-          <Navbar.Brand href="#home" className="hover-underline text-white custom-brand">Train your Team</Navbar.Brand>
-          <Navbar.Brand href="#home" className="hover-underline text-white custom-brand">ArchaeoByte IT Services</Navbar.Brand>
+          <Navbar.Brand
+            href="#home"
+            className="hover-underline default-underline text-white custom-brand"
+          >
+            Individual Learning
+          </Navbar.Brand>
+          <Navbar.Brand
+            href="/team"
+            className="hover-underline text-white custom-brand"
+          >
+            Train your Team
+          </Navbar.Brand>
+          <Navbar.Brand
+            href="/bussiness"
+            className="hover-underline text-white custom-brand"
+          >
+            ArchaeoByte IT Services
+          </Navbar.Brand>
         </Container>
       </Navbar>
     </>
   );
 }
 
-export default Headerbar;
+export default Header;

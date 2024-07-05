@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #6a1b9a;
+    /* Matching the purple color */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.video {
+    margin-right: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dotnet,
+.csharp {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #6a1b9a;
+    /* Matching the purple color */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #6a1b9a;
+    /* Matching the purple color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.application-models {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.models-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.model {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 22%;
+    box-sizing: border-box;
+}
+
+.model h3 {
+    font-size: 1.2rem;
+    color: #6a1b9a;
+    /* Matching the purple color */
+    margin-bottom: 10px;
+}
+
+.model p {
+    font-size: 1rem;
+    color: #333;
+}
