@@ -1,19 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
-import { FaChevronDown } from "react-icons/fa"; // Import arrow icon
-
+import { FaChevronDown } from "react-icons/fa";
 
 import "./navigation.css";
 
 function Navigationbar() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isDropdownVisible) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isDropdownVisible]);
 
   return (
     <>
@@ -33,7 +51,11 @@ function Navigationbar() {
           <div>
             <Nav>
               <Nav.Link href="#home">Home</Nav.Link>
-              <Dropdown show={isDropdownVisible} onClick={toggleDropdown}>
+              <Dropdown
+                show={isDropdownVisible}
+                onToggle={toggleDropdown}
+                ref={dropdownRef}
+              >
                 <Dropdown.Toggle
                   as={Nav.Link}
                   href="#programs"
@@ -43,8 +65,8 @@ function Navigationbar() {
                   <FaChevronDown className="arrow-icon" />
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="custom-dropdown">
-                  <Dropdown.Item href="#option1">Option 1</Dropdown.Item>
-                  <Dropdown.Item href="#option2">Option 2</Dropdown.Item>
+                  <Dropdown.Item href="#option1">AEA</Dropdown.Item>
+                  <Dropdown.Item href="#option2">Internship</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
               <Nav.Link href="#reviews">Reviews</Nav.Link>

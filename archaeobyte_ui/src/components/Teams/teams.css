@@ -1,5 +1,8 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -7,18 +10,25 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.backlink {
+    margin-top: 20px;
+    text-align: left;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: #6a1b9a;
+    color: #68217a;
     /* Matching the purple color */
     margin-bottom: 10px;
 }
 
 p {
     font-size: 1.2rem;
-    color: #555;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .content {
@@ -44,7 +54,7 @@ p {
 }
 
 h2 {
-    color: #6a1b9a;
+    color: #68217a;
     /* Matching the purple color */
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -57,7 +67,7 @@ p {
 }
 
 a {
-    color: #6a1b9a;
+    color: #68217a;
     /* Matching the purple color */
     text-decoration: none;
 }
@@ -71,10 +81,16 @@ a:hover {
     text-align: center;
 }
 
+.application-models h2 {
+    font-size: 2rem;
+    color: #68217a;
+    /* Matching the purple color */
+}
+
 .models-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -86,11 +102,17 @@ a:hover {
     margin: 10px;
     width: 22%;
     box-sizing: border-box;
+    transition: background 0.3s, border 0.3s;
+}
+
+.model:hover {
+    background: #f0f0f0;
+    border-color: #ccc;
 }
 
 .model h3 {
     font-size: 1.2rem;
-    color: #6a1b9a;
+    color: #68217a;
     /* Matching the purple color */
     margin-bottom: 10px;
 }
@@ -98,4 +120,52 @@ a:hover {
 .model p {
     font-size: 1rem;
     color: #333;
+}
+
+.tech-features-container {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.tech-feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    height: 90%;
+}
+
+.tech-feature-text {
+    max-width: 45%;
+}
+
+.tech-feature-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.tech-feature-text p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tech-feature-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .tech-feature-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tech-feature-text,
+    .tech-feature-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 }
