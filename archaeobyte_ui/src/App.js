@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Homes from './components/Homes/home';
 import Bussiness from './components/Bussiness/bussiness';
 import Teams from './components/Teams/teams';
+
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -21,6 +23,7 @@ function App() {
         <Route path="/team" element={<Teams />} />
         </Routes>
       </div>
+      
   );
 }
 

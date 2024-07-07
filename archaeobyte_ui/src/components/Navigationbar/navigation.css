@@ -3,14 +3,12 @@
 .custom-navbar {
   display: flex;
   justify-content: flex-start;
-  height: 70px;
+  height: 85px;
   /* background: linear-gradient(135deg, #081daa, #0b518a, #4c6fe1, #02225f, #6f0adc); */
   /* background: linear-gradient(135deg, #cf352e, #018749, #e4d00a, #0066b2); */
   /* background: linear-gradient(135deg, #cf352e, #004c99, #018749, #6699cc, #e4d00a, #336699, #0066b2, #003366); */
-   background: linear-gradient(135deg, #3a80ec, #4c6fe1, #0229bf, #080b6c,#61039b,#6f0adc); 
-
-
-
+   /* background: linear-gradient(135deg, #3a80ec, #4c6fe1, #0229bf, #080b6c,#61039b,#6f0adc);  */
+     background: linear-gradient(135deg, #e0eff3, #b4b7c1, #9b9ea5, #bcbcc2,#dedce0,#e7e4e9);  
 
 
   background-size: 400% 400%;
@@ -31,7 +29,7 @@
   }
 }
 
-.custom-container {
+.custom-container-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,20 +37,20 @@
 }
 
 .navbar-brand img {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   z-index: 1;
   margin-left: 20px;
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff;
+  color: black;
   font-size: 0.9em;
   font-weight: bold;
   position: relative;
   margin-right: 30px;
-  margin-left: 32px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  margin-left: 10px;
+  transition: transform 0.1s ease, color 0.1s ease;
 }
 
 .navbar-nav .nav-link::after {
@@ -63,7 +61,7 @@
   width: 0;
   height: 2px;
   background: #fff;
-  transition: width 0.3s ease;
+  transition: width 0.1s ease;
 }
 
 .navbar-nav .nav-link:hover {

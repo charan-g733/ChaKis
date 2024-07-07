@@ -18,7 +18,7 @@ function Navigationbar() {
   return (
     <>
       <Navbar className="custom-navbar">
-        <Container className="custom-container">
+        <Container className="custom-container-nav">
           <div>
             <Navbar.Brand href="#home">
               <img

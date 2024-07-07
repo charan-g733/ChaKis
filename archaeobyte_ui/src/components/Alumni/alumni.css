@@ -1,0 +1,29 @@
+.alumni-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .alumni-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .alumni-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .alumni-logo {
+    max-width: 100px;
+    margin: 0 10px;
+  }
+  
+  .alumni-more {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
