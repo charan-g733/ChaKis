@@ -1,23 +1,26 @@
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+.bussiness-back {
+    
+    padding-top: 5%;
 }
 
-.back
-{
-    padding-left: 7%;
-
-}
-.container {
+.bussiness-container {
     width: 90%;
     margin: 20px auto;
     padding: 20px;
-    text-align: center;
-    display: flex;
+    text-align: left;
+    
     align-items: center;
     gap: 60px;
 }
 
-h1 {
+.bussiness-inner-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.bussiness-title {
     font-size: 3rem;
     font-weight: bold;
     color: #000000;
@@ -25,34 +28,32 @@ h1 {
     margin-bottom: 10px;
 }
 
-p {
+.bussiness-description {
     font-size: 1.2rem;
     text-align: left;
     margin-top: 1px;
     color: #555;
 }
 
-.benefits {
+.bussiness-benefits {
     text-align: left;
     margin-top: 40px;
-    
 }
 
-.benefits p {
+.bussiness-benefits p {
     font-size: 1rem;
     font-weight: bold;
     color: #000000;
     margin-bottom: 10px;
-
 }
 
-.benefits ul {
+.bussiness-benefits ul {
     list-style: none;
     padding: 0;
     margin-top: 10px;
 }
 
-.benefits li {
+.bussiness-benefits li {
     margin: 35px 0;
     font-size: 1rem;
     font-weight: 400;
@@ -60,31 +61,27 @@ p {
     align-items: center;
 }
 
-.benefits li::before {
+.bussiness-benefits li::before {
     content: '✔';
     color: green;
     margin-right: 10px;
 }
 
-.benefits li span {
-    font-weight: bold;
-    color: #000000;
-}
-.demo-form {
+.bussiness-demo-form {
     margin-top: 20px;
     text-align: center;
     width: 50%;
     height: full;
 }
 
-.form-row {
+.bussiness-form-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.form-row input,
-.form-row select {
+.bussiness-form-row input,
+.bussiness-form-row select {
     width: 58%;
     height: 100%;
     padding: 10px;
@@ -92,7 +89,6 @@ p {
     border-radius: 6px;
     margin: 5px 5px;
     font-size: 1.2rem;
-
 }
 
 textarea {

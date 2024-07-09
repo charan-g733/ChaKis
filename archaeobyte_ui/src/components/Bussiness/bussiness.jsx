@@ -1,23 +1,21 @@
-import React from 'react'
-import './bussiness.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./bussiness.css";
+import { Link } from "react-router-dom";
 
-
-const bussiness = () => {
+const Bussiness = () => {
   return (
-    <div>
-      <Link to="/" className="back">
+    <div className="bussiness-container">
+      <Link to="/" className="bussiness-back">
         <i className="fas fa-arrow-left"></i> Back to Home
       </Link>
-      <div className="container">
+      <div className="bussiness-inner-container">
         <div>
-          <h1>Get your demo</h1>
-          <p>
+          <h1 className="bussiness-title">Get your demo</h1>
+          <p className="bussiness-description">
             Tell us your needs and we’ll start on a custom plan to drive
             results.
           </p>
-
-          <div className="benefits">
+          <div className="bussiness-benefits">
             <p>With Udemy as your learning partner, you can:</p>
             <ul>
               <li>
@@ -42,17 +40,16 @@ const bussiness = () => {
             </ul>
           </div>
         </div>
-
-        <form className="demo-form">
-          <div className="form-row">
+        <form className="bussiness-demo-form">
+          <div className="bussiness-form-row">
             <input type="text" placeholder="First Name *" required />
             <input type="text" placeholder="Last Name *" required />
           </div>
-          <div className="form-row">
+          <div className="bussiness-form-row">
             <input type="email" placeholder="Work Email *" required />
             <input type="text" placeholder="Phone Number *" required />
           </div>
-          <div className="form-row">
+          <div className="bussiness-form-row">
             <select required>
               <option>Where are you located? *</option>
               <option>Location 1</option>
@@ -60,7 +57,7 @@ const bussiness = () => {
             </select>
             <input type="text" placeholder="Company Name *" required />
           </div>
-          <div className="form-row">
+          <div className="bussiness-form-row">
             <select required>
               <option>Company Size *</option>
               <option>1-50</option>
@@ -72,7 +69,7 @@ const bussiness = () => {
               <option>51-200</option>
             </select>
           </div>
-          <div className="form-row">
+          <div className="bussiness-form-row">
             <input type="text" placeholder="Job Title *" required />
             <select required>
               <option>Job Level *</option>
@@ -88,5 +85,4 @@ const bussiness = () => {
   );
 };
 
-
-export default bussiness
+export default Bussiness;

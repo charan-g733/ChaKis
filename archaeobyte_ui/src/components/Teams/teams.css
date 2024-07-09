@@ -1,11 +1,4 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
+.archeobyte-container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
@@ -13,88 +6,91 @@ body {
     display: flex;
     flex-direction: column;
 }
-.backlink {
+
+.archeobyte-tech-feature-image img
+{
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+}
+.archeobyte-back-link {
     margin-top: 20px;
     text-align: left;
 }
 
-h1 {
+.archeobyte-title {
     font-size: 2.5rem;
     color: #68217a;
-    /* Matching the purple color */
     margin-bottom: 10px;
 }
 
-p {
+.archeobyte-description {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 20px;
 }
 
-.content {
+.archeobyte-content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
 }
 
-.video {
+.archeobyte-video {
     margin-right: 20px;
 }
 
-.text {
+.archeobyte-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.dotnet,
-.csharp {
+.archeobyte-dotnet,
+.archeobyte-csharp {
     margin-bottom: 20px;
 }
 
-h2 {
+.archeobyte-subtitle {
     color: #68217a;
-    /* Matching the purple color */
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-p {
+.archeobyte-paragraph {
     font-size: 1rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-a {
+.archeobyte-link {
     color: #68217a;
-    /* Matching the purple color */
     text-decoration: none;
 }
 
-a:hover {
+.archeobyte-link:hover {
     text-decoration: underline;
 }
 
-.application-models {
+.archeobyte-application-models {
     margin-top: 40px;
     text-align: center;
 }
 
-.application-models h2 {
+.archeobyte-application-models h2 {
     font-size: 2rem;
     color: #68217a;
-    /* Matching the purple color */
 }
 
-.models-grid {
+.archeobyte-models-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
 
-.model {
+.archeobyte-model {
     background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -105,31 +101,30 @@ a:hover {
     transition: background 0.3s, border 0.3s;
 }
 
-.model:hover {
+.archeobyte-model:hover {
     background: #f0f0f0;
     border-color: #ccc;
 }
 
-.model h3 {
+.archeobyte-model h3 {
     font-size: 1.2rem;
     color: #68217a;
-    /* Matching the purple color */
     margin-bottom: 10px;
 }
 
-.model p {
+.archeobyte-model p {
     font-size: 1rem;
     color: #333;
 }
 
-.tech-features-container {
+.archeobyte-tech-features-container {
     background-color: #ffffff;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
     font-family: Arial, sans-serif;
 }
 
-.tech-feature-section {
+.archeobyte-tech-feature-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -137,35 +132,16 @@ a:hover {
     height: 90%;
 }
 
-.tech-feature-text {
+.archeobyte-tech-feature-text {
     max-width: 45%;
 }
 
-.tech-feature-text h1 {
+.archeobyte-tech-feature-text h1 {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.tech-feature-text p {
+.archeobyte-tech-feature-text p {
     font-size: 1rem;
     margin-bottom: 10px;
-}
-
-.tech-feature-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .tech-feature-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .tech-feature-text,
-    .tech-feature-image {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
 }
