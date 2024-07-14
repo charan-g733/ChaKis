@@ -1,28 +1,29 @@
+import {
+  Route,
+  Routes,
+} from 'react-router-dom';
 
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Headerbar from './components/Header/header';
-import Navigationbar from './components/Navigationbar/navigation';
-import Banner from './components/Banner/Banner';
-import Alumni from './components/Alumni/alumni';
-import Slots from './components/Slots/slots';
-import Benefits from './components/Benefits/benefits';
+import Homes from './components/Homes/home';
+import Bussiness from './components/Bussiness/bussiness';
+import Teams from './components/Teams/teams';
+
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
-
 
 function App() {
   return (
     <div>
-      <Navigationbar></Navigationbar>
-      <Headerbar></Headerbar>
-      <Banner></Banner>
-      <Alumni></Alumni>
-      <Slots></Slots>
-      <Benefits></Benefits>
-
-    </div>
+        <Routes>
+          <Route path="/" element={<Homes />} />
+        <Route path="/bussiness" element={<Bussiness />} />
+        <Route path="/team" element={<Teams />} />
+        </Routes>
+      </div>
+      
   );
 }
 

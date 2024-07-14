@@ -27,7 +27,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="slide">
-          <img src="images/banner4.webp" alt="Slide 2" />
+          <img src="images/banner4.jpg" alt="Slide 2" />
           <div className="box2">
             <h1 className="box-title">Empower Your Future</h1>
             <p className="box-text">Stay ahead and maintain a competitive edge with Skills that are needed to thrive in an ever-changing technological landscape</p>

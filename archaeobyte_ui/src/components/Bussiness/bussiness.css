@@ -1,0 +1,110 @@
+.bussiness-back {
+    
+    padding-top: 5%;
+}
+
+.bussiness-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    
+    align-items: center;
+    gap: 60px;
+}
+
+.bussiness-inner-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.bussiness-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.bussiness-description {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1px;
+    color: #555;
+}
+
+.bussiness-benefits {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.bussiness-benefits p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.bussiness-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.bussiness-benefits li {
+    margin: 35px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.bussiness-benefits li::before {
+    content: '✔';
+    color: green;
+    margin-right: 10px;
+}
+
+.bussiness-demo-form {
+    margin-top: 20px;
+    text-align: center;
+    width: 50%;
+    height: full;
+}
+
+.bussiness-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bussiness-form-row input,
+.bussiness-form-row select {
+    width: 58%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin: 5px 5px;
+    font-size: 1.2rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}

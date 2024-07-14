@@ -11,7 +11,13 @@
   width: 100%;
   background-color: hwb(180 0% 95% / 0);
 }
-
+ .le{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+ }
 .custom-heading {
   font-size: 40px;
   font-weight: bold;
@@ -24,7 +30,7 @@
   font-size: 20px;
 
   color: #123456; /* Custom color */
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
