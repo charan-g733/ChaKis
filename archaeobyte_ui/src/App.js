@@ -6,7 +6,7 @@ import {
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Homes from './components/Homes/home';
+import Home from '../src/Homes/home';
 import Bussiness from './components/Bussiness/bussiness';
 import Teams from './components/Teams/teams';
 
@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
         <Routes>
-          <Route path="/" element={<Homes />} />
+          <Route path="/" element={<Home />} />
         <Route path="/bussiness" element={<Bussiness />} />
         <Route path="/team" element={<Teams />} />
         </Routes>

@@ -1,13 +1,16 @@
 import React from "react";
 import "./bussiness.css";
 import { Link } from "react-router-dom";
+import Navigationbar from "../Navigationbar/navigation";
+import Header from "../Header/header";
 
 const Bussiness = () => {
   return (
+    <>
+    <Navigationbar></Navigationbar>
+    <Header></Header>
     <div className="bussiness-container">
-      <Link to="/" className="bussiness-back">
-        <i className="fas fa-arrow-left"></i> Back to Home
-      </Link>
+      
       <div className="bussiness-inner-container">
         <div>
           <h1 className="bussiness-title">Get your demo</h1>
@@ -82,6 +85,7 @@ const Bussiness = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

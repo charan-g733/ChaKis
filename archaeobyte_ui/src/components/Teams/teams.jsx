@@ -1,13 +1,17 @@
 import React from "react";
 import "./teams.css";
 import { Link } from "react-router-dom";
+import Navigationbar from "../Navigationbar/navigation";
+import Header from "../Header/header";
 
 const App = () => {
   return (
+    <>
+    <Navigationbar></Navigationbar>
+    <Header></Header>
+
     <div className="archeobyte-container">
-      <Link to="/" className="archeobyte-back-link">
-        Back to Home
-      </Link>
+      
       <h1 className="archeobyte-title">Why Archaeobyte?</h1>
       <p className="archeobyte-description">
         .NET is a free and open-source application platform supported by
@@ -143,6 +147,7 @@ const App = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
