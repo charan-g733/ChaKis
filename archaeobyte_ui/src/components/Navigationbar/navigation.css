@@ -49,7 +49,7 @@
   font-weight: bold;
   position: relative;
   margin-right: 30px;
-  margin-left: 10px;
+  margin-left: 8px;
   transition: transform 0.1s ease, color 0.1s ease;
 }
 
@@ -61,6 +61,7 @@
   width: 0;
   height: 2px;
   background: #fff;
+  font-weight: bold;
   transition: width 0.1s ease;
 }
 

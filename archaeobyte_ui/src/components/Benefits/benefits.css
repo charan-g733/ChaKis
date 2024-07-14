@@ -1,0 +1,194 @@
+.unique-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.unique-data-analyst-card {
+    flex: 1; /* Adjusted to take less space */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.unique-data-analyst-header h2 {
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.unique-data-analyst-header p {
+    color: #666;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.unique-data-analyst-salary {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.unique-salary-bars {
+    margin-top: 10px;
+}
+
+.unique-all-occupations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(242, 237, 237);
+    font-size: 10px;
+    width: 350px; /* Adjusted to take full width */
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.unique-data-analyst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #272ac3;
+    width: 450px; /* Adjusted to take full width */
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.unique-job-openings p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #333;
+    margin-left: 40px;
+}
+
+.unique-testimonial {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.unique-testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+.unique-testimonial blockquote {
+    margin: 0;
+    font-style: italic;
+    color: #666;
+}
+
+.unique-recommended-certificates {
+    flex: 1; /* Adjusted to take more space */
+}
+
+.unique-recommended-certificates h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.unique-certificates {
+    display: flex;
+    gap: 20px; /* Adjust the gap between certificates */
+    margin-top: 10px;
+}
+
+.unique-certificate {
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1; /* Adjusted to take more space */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.unique-certificate:hover {
+    transform: translateY(-15px); /* Move the card up slightly on hover */
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+.unique-certificate img {
+    width: 100%; /* Image takes full width of parent container */
+    max-width: 100%; /* Limit maximum width to maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.unique-certificate .unique-certificate-details {
+    flex: 1;
+}
+
+.unique-certificate h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.unique-certificate p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.unique-rating {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 5px; /* Adjust the gap between elements */
+    margin-bottom: 10px;
+}
+
+.unique-rating-value {
+    color: #000; /* Black color for the rating value */
+    font-weight: bold;
+}
+
+.unique-rating-star {
+    color: blue; /* Set the color of the rating star to blue */
+}
+
+.unique-rating-text {
+    color: grey; /* Set the color of the rating text (137K) to grey */
+}
+
+.unique-rating-description {
+    color: grey; /* Set the color of the description text ("6 months beginner") to grey */
+    font-size: 12px; /* Optional: Adjust the font size to match the design */
+    margin-left: 40px; /* Optional: Adjust the left margin for alignment */
+    
+}
+
+.unique-explore-certificates {
+    margin-top: 20px;
+    text-align: right; /* Align text to the right */
+}
+
+.unique-explore-certificates a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use inherited color */
+    font-weight: bold; /* Normal font weight */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.unique-explore-certificates a::after {
+    content: '→'; /* Add right arrow */
+    margin-left: 5px; /* Add some space between text and arrow */
+    
+}
+
+.unique-footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}

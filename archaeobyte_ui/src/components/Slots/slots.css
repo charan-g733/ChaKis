@@ -9,6 +9,7 @@
   align-items: center;
    justify-content: space-between;
   width: 100%;
+  background-color: hwb(180 0% 95% / 0);
 }
 
 .custom-heading {
@@ -73,8 +74,9 @@
 .custom-card-header span {
   font-size: 20px;
   font-weight: bold;
-  color: #123456; /* Custom color */
+  color: #0a2b4b; /* Custom color */
   margin-left: 110px; /* Adjust this value if needed */
+  font-style :italic
 }
 
 .custom-card-body {
@@ -89,18 +91,19 @@
 }
 
 .custom-card-tag span {
-  background: #e0e0e0;
+  background-color: #272ac3;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
-  color: #123456; /* Custom color */
+  color: white; /* Custom color */
+  font-weight: bold;
 }
 
 .custom-card-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #123456; /* Custom color */
+  color: #3d5c7b; /* Custom color */
 }
 
 .custom-card-info {
@@ -114,7 +117,7 @@
 }
 
 .custom-card-button {
-  background: #007bff;
+  background: #272b2f;
   color: white;
   border: none;
   padding: 10px 20px;

@@ -20,11 +20,11 @@ const Slots = () => {
         <div className="custom-card">
           <div className="custom-card-header">
             <img src="images/slots1.png" alt="CCBP 4.0 Academy" className="custom-image" />
-            <span>Clutch Internships</span>
+            <span>INNOVATE Program</span>
           </div>
           <div className="custom-card-body">
             <div className="custom-card-tag">
-              <span>Get real time skills through Internship</span>
+              <span>Get Real Time Skills through Internship</span>
             </div>
             <div className="custom-card-title">
               Learn through Hands-on Experience on Real Time Projects & become Industry Ready
