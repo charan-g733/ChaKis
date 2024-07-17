@@ -5,7 +5,7 @@ import Banner from '../components/Banner/Banner';
 import Alumni from '../components/Alumni/alumni';
 import Slots from '../components/Slots/slots';
 import Benefits from '../components/Benefits/benefits'
-
+import CustomersReviews from '../components/Customersreviews/customersreviews';
 
 const home = () => {
   return (
@@ -17,6 +17,7 @@ const home = () => {
       <Alumni></Alumni>
       <Slots></Slots>
       <Benefits></Benefits>
+      <CustomersReviews></CustomersReviews>
     </div>
   );
 }

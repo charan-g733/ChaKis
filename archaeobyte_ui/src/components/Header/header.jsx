@@ -10,20 +10,23 @@ function Header() {
       <Navbar className="custom-headbar">
         <Container>
           <Navbar.Brand
-            href="#home"
-            className="hover-underline default-underline text-white custom-brand"
+            href="/"
+            className="hover-underline  text-white custom-brand"
+            activeClassName="default-underline"
           >
             Individual Learning
           </Navbar.Brand>
           <Navbar.Brand
             href="/team"
             className="hover-underline text-white custom-brand"
+            activeClassName="default-underline"
           >
             Train your Team
           </Navbar.Brand>
           <Navbar.Brand
-            href="/bussiness"
+            href="/business"
             className="hover-underline text-white custom-brand"
+            activeClassName="default-underline"
           >
             ArchaeoByte IT Services
           </Navbar.Brand>

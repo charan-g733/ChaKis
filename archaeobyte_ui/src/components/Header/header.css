@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
 .custom-headbar {
-  height: 40px !important; 
-  background-color: black; 
-  margin-bottom: 0; 
+  height: 40px !important;
+  background-color: black;
+  margin-bottom: 0;
 }
 
-.custom-headbar .navbar-brand {
-  color:white !important; 
-  font-size: 0.8em; /* Adjust font size */
-  font-family: 'Inter', sans-serif; /* Apply Inter font */
-  font-weight: 500; /* Apply medium weight (500) */
-  
-}
-
-.custom-headbar .navbar-brand:hover {
-  color: #dddddd !important; /* Change hover color to grey */
-}
-
-.hover-underline {
+.custom-headbar .custom-brand {
+  color: white !important;
+  font-size: 0.8em;
+  /* Adjust font size */
+  font-family: 'Inter', sans-serif;
+  /* Apply Inter font */
+  font-weight: 500;
+  /* Apply medium weight (500) */
+  text-decoration: none;
+  /* Remove default underline */
+  margin-right: 20px;
+  /* Adjust space between links */
   position: relative;
+  /* Ensure relative positioning for pseudo-element */
+}
+
+.custom-headbar .custom-brand:hover {
+  color: #dddddd !important;
+  /* Change hover color to grey */
 }
 
 .hover-underline::after {
@@ -29,19 +34,17 @@
   height: 2px;
   display: block;
   margin-top: 5px;
-  right: 0;
+  left: 0;
   background: #fff;
   transition: width 0.3s ease;
-  -webkit-transition: width 0.3s ease;
 }
 
-.hover-underline:hover::after,
-.default-underline::after {
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.default-underline {
   width: 100%;
   left: 0;
   background: #fff;
-}
-
-.default-underline::after {
-  width: 100%;
 }

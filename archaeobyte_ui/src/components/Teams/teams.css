@@ -1,147 +1,110 @@
-.archeobyte-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+.bussiness-back {
+
+    padding-top: 5%;
 }
 
-.archeobyte-tech-feature-image img
-{
-    width: 40%;
-    height: 10%;
-    border-radius: 20px;
-}
-.archeobyte-back-link {
-    margin-top: 20px;
+.bussiness-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
     text-align: left;
+
+    align-items: center;
+    gap: 60px;
 }
 
-.archeobyte-title {
-    font-size: 2.5rem;
-    color: #68217a;
-    margin-bottom: 10px;
-}
-
-.archeobyte-description {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.archeobyte-content {
+.bussiness-inner-container {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    gap: 60px;
     margin-top: 20px;
 }
 
-.archeobyte-video {
-    margin-right: 20px;
-}
-
-.archeobyte-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.archeobyte-dotnet,
-.archeobyte-csharp {
-    margin-bottom: 20px;
-}
-
-.archeobyte-subtitle {
-    color: #68217a;
-    font-size: 1.5rem;
+.bussiness-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
     margin-bottom: 10px;
 }
 
-.archeobyte-paragraph {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 10px;
+.bussiness-description {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1px;
+    color: #555;
 }
 
-.archeobyte-link {
-    color: #68217a;
-    text-decoration: none;
-}
-
-.archeobyte-link:hover {
-    text-decoration: underline;
-}
-
-.archeobyte-application-models {
+.bussiness-benefits {
+    text-align: left;
     margin-top: 40px;
-    text-align: center;
 }
 
-.archeobyte-application-models h2 {
-    font-size: 2rem;
-    color: #68217a;
-}
-
-.archeobyte-models-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.archeobyte-model {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: 22%;
-    box-sizing: border-box;
-    transition: background 0.3s, border 0.3s;
-}
-
-.archeobyte-model:hover {
-    background: #f0f0f0;
-    border-color: #ccc;
-}
-
-.archeobyte-model h3 {
-    font-size: 1.2rem;
-    color: #68217a;
+.bussiness-benefits p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
     margin-bottom: 10px;
 }
 
-.archeobyte-model p {
+.bussiness-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.bussiness-benefits li {
+    margin: 35px 0;
     font-size: 1rem;
-    color: #333;
-}
-
-.archeobyte-tech-features-container {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.archeobyte-tech-feature-section {
+    font-weight: 400;
     display: flex;
     align-items: center;
+}
+
+.bussiness-benefits li::before {
+    content: '✔';
+    color: green;
+    margin-right: 10px;
+}
+
+.bussiness-demo-form {
+    margin-top: 20px;
+    text-align: center;
+    width: 50%;
+    height: full;
+}
+
+.bussiness-form-row {
+    display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
-    height: 90%;
-}
-
-.archeobyte-tech-feature-text {
-    max-width: 45%;
-}
-
-.archeobyte-tech-feature-text h1 {
-    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.archeobyte-tech-feature-text p {
-    font-size: 1rem;
+.bussiness-form-row input,
+.bussiness-form-row select {
+    width: 58%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin: 5px 5px;
+    font-size: 1.2rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin-bottom: 10px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
 }
