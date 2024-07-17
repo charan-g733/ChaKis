@@ -1,0 +1,61 @@
+.credentials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .credentials-header {
+    margin-bottom: 20px;
+  }
+  
+  .credentials-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .credentials-header p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  .credentials-button {
+    padding: 10px 20px;
+    background-color:#cca516;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .credentials-button:hover {
+    background-color: #90750a;
+  }
+  
+  .credentials-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .credentials-stat {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .credentials-stat h3 {
+    font-size: 36px;
+    color: #212529;
+    margin-bottom: 10px;
+  }
+  
+  .credentials-stat p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 20px auto;
 }
 
@@ -51,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #272ac3;
+    background-color: #076523;
     width: 450px; /* Adjusted to take full width */
     color: white;
     font-size: 10px;
