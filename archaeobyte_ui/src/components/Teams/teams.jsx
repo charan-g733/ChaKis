@@ -12,10 +12,9 @@ const App = () => {
 
     <div className="archeobyte-container">
       
-      <h1 className="archeobyte-title">Why Archaeobyte?</h1>
+      <h1 className="archeobyte-title">Why ArchaeoByte?</h1>
       <p className="archeobyte-description">
-        .NET is a free and open-source application platform supported by
-        Microsoft.
+        We provide IT Solutions like you never Experienced before.
       </p>
 
       <div className="archeobyte-tech-features-container">
@@ -86,8 +85,7 @@ const App = () => {
       <div className="archeobyte-application-models">
         <h2>Application models</h2>
         <p>
-          You can build many types of apps with .NET. To help you build apps
-          faster, app models are built on top of the base libraries.
+         Explore our wide range of services and device services that we offer. We excel in whatever we are into. 
         </p>
         <div className="archeobyte-models-grid">
           <div className="archeobyte-model">

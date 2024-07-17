@@ -44,7 +44,7 @@ const Slots = () => {
               alt="Intensive 3.0"
               className="custom-image"
             />
-            <span>AEA Program</span>
+            <span>AEA <br></br> Program</span>
           </div>
           <div className="custom-card-body">
             <div className="custom-card-tag">

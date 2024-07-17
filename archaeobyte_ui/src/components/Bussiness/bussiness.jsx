@@ -19,14 +19,13 @@ const Bussiness = () => {
             results.
           </p>
           <div className="bussiness-benefits">
-            <p>With Udemy as your learning partner, you can:</p>
+            <p>With ArchaeoByte as your learning partner, you can:</p>
             <ul>
               <li>
-                Train your entire workforce with over 25,000+ courses in 15
-                languages
+                Train your entire workforce with all Leading Edge Technologies.
               </li>
               <li>
-                Prep employees for over 200 industry-recognized certification
+                Prep employees for industry-recognized certification
                 exams
               </li>
               <li>

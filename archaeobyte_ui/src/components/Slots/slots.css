@@ -1,6 +1,6 @@
 .custom-container {
 
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -9,7 +9,7 @@
   align-items: center;
    justify-content: space-between;
   width: 100%;
-  background-color: hwb(180 0% 95% / 0);
+  background-color: #f4f8fb;
 }
  .le{
   display: flex;

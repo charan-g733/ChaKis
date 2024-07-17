@@ -1,0 +1,75 @@
+.learning-component-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f0f4ff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  overflow: visible; /* Allow overflow for images to pop out */
+  margin-top: 100px;
+}
+
+.learning-component-images {
+  position: relative;
+  width: 220px;
+  margin-right: 20px;
+  height: 300px; /* Adjust height to ensure the images fit well */
+}
+
+.learning-component-image {
+  position: absolute;
+}
+
+.learning-component-image-top {
+  top: -80px;
+  left: 20px;
+  z-index: 3; /* Bring to front */
+}
+
+.learning-component-image-middle {
+  top: 80px;
+  left: 230px;
+  z-index: 2;
+}
+
+.learning-component-image-bottom {
+  bottom: -90px;
+  left: 20px;
+  z-index: 1;
+}
+
+.learning-component-image img {
+  width: 200px; /* Increased width */
+  height: auto;
+  border-radius: 8px;
+}
+
+.learning-component-content {
+  flex: 1;
+  text-align: right; /* Align text to the right */
+}
+
+.learning-component-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.learning-component-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.learning-component-content button {
+  background-color: #c62b2b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Make button block level */
+  margin: 20px 0 0 auto; /* Margin to position the button */
+}
+
+.learning-component-content button:hover {
+  background-color: #0056b3;
+}
