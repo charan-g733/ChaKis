@@ -6,13 +6,13 @@ const Survey = () => {
     <div className="learning-component-container">
       <div className="learning-component-images">
         <div className="learning-component-image learning-component-image-top">
-          <img src="./images/survey1.jpg" alt="Learning Image 1" />
+          <img src="./images/survey1.jpg" alt="Learning  1" />
         </div>
         <div className="learning-component-image learning-component-image-middle">
-          <img src="./images/survey2.webp" alt="Learning Image 2" />
+          <img src="./images/survey2.webp" alt="Learning 2" />
         </div>
         <div className="learning-component-image learning-component-image-bottom">
-          <img src="./images/survey3.webp" alt="Learning Image 3" />
+          <img src="./images/survey3.webp" alt="Learning  3" />
         </div>
       </div>
       <div className="learning-component-content">

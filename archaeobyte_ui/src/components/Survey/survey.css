@@ -5,15 +5,16 @@
   background-color: #f0f4ff;
   padding: 40px 20px;
   border-radius: 8px;
-  overflow: visible; /* Allow overflow for images to pop out */
+  overflow: visible; 
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .learning-component-images {
   position: relative;
   width: 220px;
   margin-right: 20px;
-  height: 300px; /* Adjust height to ensure the images fit well */
+  height: 300px; 
 }
 
 .learning-component-image {
@@ -23,7 +24,7 @@
 .learning-component-image-top {
   top: -80px;
   left: 20px;
-  z-index: 3; /* Bring to front */
+  z-index: 3;
 }
 
 .learning-component-image-middle {
@@ -39,18 +40,18 @@
 }
 
 .learning-component-image img {
-  width: 200px; /* Increased width */
+  width: 200px; 
   height: auto;
   border-radius: 8px;
 }
 
 .learning-component-content {
-  flex: 1;
-  text-align: right; /* Align text to the right */
+  text-align:left; 
+  margin-left: 20%;
 }
 
 .learning-component-content h2 {
-  font-size: 24px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
@@ -60,14 +61,12 @@
 }
 
 .learning-component-content button {
-  background-color: #c62b2b;
+  background-color: #e75a3d;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  display: block; /* Make button block level */
-  margin: 20px 0 0 auto; /* Margin to position the button */
+  margin: 20px 0 0 auto; 
 }
 
 .learning-component-content button:hover {

@@ -38,7 +38,7 @@ function Navigationbar() {
       <Navbar className="custom-navbar">
         <Container className="custom-container-nav">
           <div>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
               <img
                 src="/images/logo final may be.webp"
                 width="80"
@@ -50,7 +50,7 @@ function Navigationbar() {
           </div>
           <div>
             <Nav>
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
               <Dropdown
                 show={isDropdownVisible}
                 onToggle={toggleDropdown}

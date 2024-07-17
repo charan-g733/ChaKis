@@ -6,83 +6,147 @@ import Header from "../Header/header";
 const App = () => {
   return (
     <>
-    <Navigationbar></Navigationbar>
-    <Header></Header>
-    <div className="bussiness-container">
-      
-      <div className="bussiness-inner-container">
-        <div>
-          <h1 className="bussiness-title">Get your demo</h1>
-          <p className="bussiness-description">
-            Tell us your needs and we’ll start on a custom plan to drive
-            results.
-          </p>
-          <div className="bussiness-benefits">
-            <p>With ArchaeoByte as your learning partner, you can:</p>
-            <ul>
-              <li>
-                Train your entire workforce with all Leading Edge Technologies.
-              </li>
-              <li>
-                Prep employees for industry-recognized certification
-                exams
-              </li>
-              <li>
-                Develop highly skilled tech teams in risk-free practice
-                environments
-              </li>
-              <li>
-                Identify emerging skills gaps, learning trends, and industry
-                benchmarks
-              </li>
-              <li>
-                Integrate content with your existing learning management system
-              </li>
-            </ul>
+      <Navigationbar></Navigationbar>
+      <Header></Header>
+
+      <div className="archeobyte-container">
+        <h1 className="archeobyte-title">Why ArchaeoByte?</h1>
+        <p className="archeobyte-description">
+          We provide IT Solutions like you never Experienced before.
+        </p>
+
+        <div className="archeobyte-tech-features-container">
+          <div className="archeobyte-tech-feature-section">
+            <div className="archeobyte-tech-feature-text">
+              <h1>Lightning-Fast Performance</h1>
+              <p>
+                Experience unparalleled speed with our optimized web solutions.
+                We ensure your website loads in a flash, providing users with a
+                seamless and engaging experience, reducing bounce rates, and
+                increasing conversions.
+              </p>
+            </div>
+            <div className="archeobyte-tech-feature-image">
+              <img
+                src="images/lightning.webp"
+                alt="Lightning-Fast Performance"
+              />
+            </div>
+          </div>
+          <div className="archeobyte-tech-feature-section">
+            <div className="archeobyte-tech-feature-image">
+              <img
+                src="path/to/precision-accuracy.jpg"
+                alt="Precision and Accuracy"
+              />
+            </div>
+            <div className="archeobyte-tech-feature-text">
+              <h1>Precision and Accuracy</h1>
+              <p>
+                Our meticulous attention to detail guarantees precise and
+                accurate coding. Every element is crafted to perfection,
+                ensuring your website functions flawlessly across all devices
+                and platforms.
+              </p>
+            </div>
+          </div>
+          <div className="archeobyte-tech-feature-section">
+            <div className="archeobyte-tech-feature-text">
+              <h1>User-Centric Design</h1>
+              <p>
+                We prioritize user experience in every design decision. Our
+                intuitive and aesthetically pleasing interfaces ensure that
+                users can easily navigate and engage with your website, boosting
+                satisfaction and retention.
+              </p>
+            </div>
+            <div className="archeobyte-tech-feature-image">
+              <img
+                src="path/to/user-centric-design.jpg"
+                alt="User-Centric Design"
+              />
+            </div>
+          </div>
+          <div className="archeobyte-tech-feature-section">
+            <div className="archeobyte-tech-feature-image">
+              <img src="path/to/robust-security.jpg" alt="Robust Security" />
+            </div>
+            <div className="archeobyte-tech-feature-text">
+              <h1>Robust Security</h1>
+              <p>
+                Protect your digital assets with our top-notch security
+                measures. We implement the latest security protocols to
+                safeguard your website against threats, ensuring data integrity
+                and user trust.
+              </p>
+            </div>
           </div>
         </div>
-        <form className="bussiness-demo-form">
-          <div className="bussiness-form-row">
-            <input type="text" placeholder="First Name *" required />
-            <input type="text" placeholder="Last Name *" required />
+        <div className="archeobyte-application-models">
+          <h2>Application models</h2>
+          <p>
+            Explore our wide range of services and device services that we
+            offer. We excel in whatever we are into.
+          </p>
+          <div className="archeobyte-models-grid">
+            <div className="archeobyte-model">
+              <h3>Web</h3>
+              <p>
+                Build web apps and services for Windows, Linux, macOS, and
+                Docker.
+              </p>
+            </div>
+            <div className="archeobyte-model">
+              <h3>Mobile</h3>
+              <p>
+                Use a single codebase to build native mobile apps for iOS,
+                Android, and more.
+              </p>
+            </div>
+            <div className="archeobyte-model">
+              <h3>Desktop</h3>
+              <p>
+                Create native apps for Windows and macOS or build apps that run
+                anywhere with web technologies.
+              </p>
+            </div>
+            <div className="archeobyte-model">
+              <h3>Microservices</h3>
+              <p>
+                Create independently deployable microservices that run on Docker
+                containers.
+              </p>
+            </div>
+            <div className="archeobyte-model">
+              <h3>Cloud</h3>
+              <p>
+                Consume existing cloud services, or create and deploy your own.
+              </p>
+            </div>
+            <div className="archeobyte-model">
+              <h3>Machine learning</h3>
+              <p>
+                Add vision algorithms, speech processing, predictive models, and
+                more to your apps.
+              </p>
+            </div>
+            <div className="archeobyte-model">
+              <h3>Game development</h3>
+              <p>
+                Develop 2D and 3D games for the most popular desktops, phones,
+                and consoles.
+              </p>
+            </div>
+            <div className="archeobyte-model">
+              <h3>Internet of Things</h3>
+              <p>
+                Make IoT apps, with native support for the Raspberry Pi and
+                other single-board computers.
+              </p>
+            </div>
           </div>
-          <div className="bussiness-form-row">
-            <input type="email" placeholder="Work Email *" required />
-            <input type="text" placeholder="Phone Number *" required />
-          </div>
-          <div className="bussiness-form-row">
-            <select required>
-              <option>Where are you located? *</option>
-              <option>Location 1</option>
-              <option>Location 2</option>
-            </select>
-            <input type="text" placeholder="Company Name *" required />
-          </div>
-          <div className="bussiness-form-row">
-            <select required>
-              <option>Company Size *</option>
-              <option>1-50</option>
-              <option>51-200</option>
-            </select>
-            <select required>
-              <option>Number of learners *</option>
-              <option>1-50</option>
-              <option>51-200</option>
-            </select>
-          </div>
-          <div className="bussiness-form-row">
-            <input type="text" placeholder="Job Title *" required />
-            <select required>
-              <option>Job Level *</option>
-              <option>Entry Level</option>
-              <option>Mid Level</option>
-            </select>
-          </div>
-          <textarea placeholder="What are your organization's training needs? (Optional)"></textarea>
-          <button type="submit">Submit</button>
-        </form>
+        </div>
       </div>
-    </div>
     </>
   );
 };

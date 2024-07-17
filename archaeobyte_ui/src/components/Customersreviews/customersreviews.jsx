@@ -92,7 +92,7 @@ const CustomersReviews = () => {
 
   return (
     <div className="review-slider-container-unique-name">
-      <div>
+      <div className="review-slider-title">
         <h2 className="review-slider-title-unique-name">Live topics</h2>
         <p className="review-slider-description-unique-name">
           Up-to-the-minute discussions, straight from the community and

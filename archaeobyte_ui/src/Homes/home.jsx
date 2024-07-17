@@ -7,7 +7,8 @@ import Slots from '../components/Slots/slots';
 import Benefits from '../components/Benefits/benefits'
 import Numbers from '../components/Numbers/number';
 import Survey from '../components/Survey/survey';
-import ItServices from '../components/IT Services Main/itservices';
+import CustomersReviews from '../components/Customersreviews/customersreviews';
+// import ItServices from '../components/IT Services Main/itservices';
 
 
 const home = () => {
