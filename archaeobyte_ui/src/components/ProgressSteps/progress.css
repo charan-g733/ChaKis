@@ -1,0 +1,40 @@
+/* ProgressSteps.css */
+
+.progress-steps {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .step {
+    text-align: center;
+  }
+  
+  .step .icon {
+    font-size: 40px; /* Adjust based on your icon size */
+    color: #dcaa21; /* Adjust based on your preferred color */
+  }
+  
+  
+  .step p {
+    margin: 40px 20px 10px;
+    font-size: 20px;
+  }
+  
+  .step span {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .arrow {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .highlight-progress {
+    background-color: #ffdd00;
+    padding: 0 5px;
+  }
+  

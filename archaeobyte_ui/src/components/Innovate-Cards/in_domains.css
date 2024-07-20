@@ -1,0 +1,76 @@
+/* UniqueCards.css */
+
+.unique-card-domains {
+    display: flex;
+    gap: 20px; /* Adjust the gap between cards */
+    margin-top: 200px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  
+  .unique-card {
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1; /* Adjusted to take more space */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 80px;
+  }
+  
+  .unique-card:hover {
+    transform: translateY(-15px); /* Move the card up slightly on hover */
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  }
+  
+  .unique-card img {
+    width: 100%; /* Image takes full width of parent container */
+    max-width: 100%; /* Limit maximum width to maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+  
+  .unique-card .unique-card-details {
+    flex: 1;
+  }
+  
+  .unique-card h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
+  
+  .unique-card p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .unique-rating {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 5px; /* Adjust the gap between elements */
+    margin-bottom: 10px;
+  }
+  
+  .unique-rating-value {
+    color: #000; /* Black color for the rating value */
+    font-weight: bold;
+  }
+  
+  .unique-rating-star {
+    color: blue; /* Set the color of the rating star to blue */
+  }
+  
+  .unique-rating-text {
+    color: grey; /* Set the color of the rating text (137K) to grey */
+  }
+  
+  .unique-rating-description {
+    color: grey; /* Set the color of the description text ("6 months beginner") to grey */
+    font-size: 12px; /* Optional: Adjust the font size to match the design */
+    margin-left: 40px; /* Optional: Adjust the left margin for alignment */
+  }
+  

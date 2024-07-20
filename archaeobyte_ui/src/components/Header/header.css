@@ -9,22 +9,15 @@
 .custom-headbar .custom-brand {
   color: white !important;
   font-size: 0.8em;
-  /* Adjust font size */
   font-family: 'Inter', sans-serif;
-  /* Apply Inter font */
   font-weight: 500;
-  /* Apply medium weight (500) */
   text-decoration: none;
-  /* Remove default underline */
   margin-right: 20px;
-  /* Adjust space between links */
   position: relative;
-  /* Ensure relative positioning for pseudo-element */
 }
 
 .custom-headbar .custom-brand:hover {
   color: #dddddd !important;
-  /* Change hover color to grey */
 }
 
 .hover-underline::after {
@@ -39,12 +32,7 @@
   transition: width 0.3s ease;
 }
 
-.hover-underline:hover::after {
+.hover-underline:hover::after,
+.default-underline::after {
   width: 100%;
-}
-
-.default-underline {
-  width: 100%;
-  left: 0;
-  background: #fff;
 }

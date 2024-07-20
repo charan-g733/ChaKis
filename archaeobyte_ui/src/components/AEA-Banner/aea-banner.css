@@ -1,0 +1,90 @@
+.education-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.education-banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.education-banner-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.education-banner-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.education-banner-promo {
+    font-size: 1.8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.education-banner-courses {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.education-banner-course h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.education-banner-course p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.education-banner-divider {
+    width: 1px;
+    height: 60px;
+    background-color: #ddd;
+}
+
+.education-banner-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.education-banner-button:hover {
+    background-color: #e55d00;
+}
+
+.education-banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-banner-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}

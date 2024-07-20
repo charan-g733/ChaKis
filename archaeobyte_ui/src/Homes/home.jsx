@@ -24,6 +24,7 @@ const home = () => {
       <CustomersReviews></CustomersReviews>
       <Numbers></Numbers>
       <Survey></Survey>
+  
       
     </div>
   );
