@@ -76,7 +76,7 @@
 
 .custom-dropdown {
   background-color: white;
-  width: 200px;
+  width: 120px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeInDropdown 0.3s ease-out;
 }
@@ -84,10 +84,10 @@
 .custom-dropdown .dropdown-item {
   color: rgb(18, 18, 18);
   font-weight: bold;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 20px 0 20px;
   transition: background-color 0.3s ease;
 }
 

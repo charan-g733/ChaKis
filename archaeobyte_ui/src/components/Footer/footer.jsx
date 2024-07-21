@@ -29,13 +29,6 @@ const Footer = () => {
           <p>
             <FaEnvelope className="icon" /> support@nxtwave.tech
           </p>
-          <div className="social-media">
-            <FaFacebook className="icon" />
-            <FaInstagram className="icon" />
-            <FaTwitter className="icon" />
-            <FaLinkedin className="icon" />
-            <FaYoutube className="icon" />
-          </div>
         </div>
         <div className="footer-section quick-links">
           <h4>Quick Links</h4>
@@ -51,6 +44,13 @@ const Footer = () => {
             <li>Community</li>
           </ul>
         </div>
+          <div className="social-media">
+            <FaFacebook className="icon" />
+            <FaInstagram className="icon" />
+            <FaTwitter className="icon" />
+            <FaLinkedin className="icon" />
+            <FaYoutube className="icon" />
+          </div>
         <div className="footer-section payment-methods">
           <p>
             NxtWave, WeWork Rajapushpa Summit, Nanakramguda Rd, Financial

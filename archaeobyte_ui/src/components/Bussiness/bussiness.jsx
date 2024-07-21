@@ -2,7 +2,7 @@ import React from "react";
 import "./bussiness.css";
 import Navigationbar from "../Navigationbar/navigation";
 import Header from "../Header/header";
-
+import Footer from "../Footer/footer";
 const App = () => {
   return (
     <>
@@ -146,6 +146,7 @@ const App = () => {
             </div>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     </>
   );

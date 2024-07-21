@@ -4,6 +4,10 @@ import React from 'react';
 import { FaLaptopCode, FaUserGraduate, FaUserTie, FaMicrochip, FaProjectDiagram, FaRupeeSign } from "react-icons/fa";
 import './aea-progress.css';
 
+
+
+ 
+
 const AeaProgress = () => {
   return (
     <div className="progress-steps">

@@ -2,7 +2,7 @@ import React from "react";
 import "./teams.css";
 import Navigationbar from "../Navigationbar/navigation";
 import Header from "../Header/header";
-
+import Footer from "../Footer/footer";
 const Bussiness = () => {
   return (
     <>
@@ -81,7 +81,8 @@ const Bussiness = () => {
           <textarea placeholder="What are your organization's training needs? (Optional)"></textarea>
           <button type="submit">Submit</button>
         </form>
-      </div>
+        </div>
+        <Footer></Footer>
     </div>
     </>
     
