@@ -1,0 +1,89 @@
+/* Footer.css */
+.footer {
+    background-color: #0D1B2A;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.contact {
+    max-width: 300px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.contact .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    margin:auto 40px auto 40px;
+}
+
+.social-media .icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+.payment-methods
+{
+   max-width: 250px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.footer-bottom ul li {
+    margin-right: 20px;
+}

@@ -18,13 +18,6 @@ function Innovate_Banner() {
       </div>
       <div className="image-container">
         <img src="images/innovate5.webp" alt="Student" />
-        <div className="badge">
-          <div className="satisfied-students">
-            <span>100% Satisfied Students</span>
-            <span className="rating">5* Rating</span>
-          </div>
-          
-        </div>
       </div>
     </div>
   );

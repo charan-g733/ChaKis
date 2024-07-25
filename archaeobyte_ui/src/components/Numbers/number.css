@@ -1,14 +1,19 @@
 .credentials-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     padding: 20px;
     background-color: #f8f9fa;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   
   .credentials-header {
     margin-bottom: 20px;
+    width: 50%;
+    margin-left: 80px;
+    text-align: left;
   }
   
   .credentials-header h2 {
@@ -40,6 +45,7 @@
   .credentials-stats {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
     width: 100%;
   }
   
@@ -49,7 +55,7 @@
   }
   
   .credentials-stat h3 {
-    font-size: 36px;
+    font-size: 46px;
     color: #212529;
     margin-bottom: 10px;
   }

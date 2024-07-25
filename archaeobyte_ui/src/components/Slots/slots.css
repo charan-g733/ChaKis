@@ -1,63 +1,64 @@
 .custom-container {
-
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
   text-align: center;
-  margin-top:  20px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
-   justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   background-color: #f4f8fb;
 }
- .le{
+
+.le {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
- }
+}
+
 .custom-heading {
-  font-size: 35px;
+  font-size: 41px;
   font-weight: bold;
   display: block;
-  color: #123456; 
+  color: #123456;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .custom-subheading {
-  font-size: 20px;
-  color: #123456; 
+  font-size: 14px;
+  color: #123456;
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
 .custom-badges img {
-  margin: 0 10px; 
-  height: 150px; 
-} 
+  margin: 0 10px;
+  height: 180px;
+}
 
 .custom-cards {
   display: flex;
   justify-content: space-around;
-  position: relative; /* Ensure cards are positioned relative */
+  position: relative;
 }
 
 .custom-card {
   background: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: visible; /* Allow overflow for pop-out effect */
-  width: 45%; /* Fixed width */
-  height: 450px; /* Adjust height as needed to accommodate content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  width: 45%;
+  height: 450px;
   margin: 20px;
   padding: 20px;
-  position: relative; /* Ensure card is positioned relative */
-  z-index: 1; /* Ensure card is above other elements */
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensure even spacing between elements */
 }
 
 .custom-card-header {
@@ -70,23 +71,28 @@
 
 .custom-image {
   position: absolute;
-  top: -100px; /* Adjust this value to control how much of the image pops out */
-  height: 150px; /* Adjust height as needed */
+  top: -100px;
+  height: 150px;
   margin-right: 100px;
-  z-index: 2; /* Ensure image is above the card */
+  z-index: 2;
 }
 
 .custom-card-header span {
   font-size: 20px;
   font-weight: bold;
-  color: #0a2b4b; /* Custom color */
-  margin-left: 110px; /* Adjust this value if needed */
-  font-style :italic
+  color: #0a2b4b;
+  margin-left: 110px;
+  font-style: italic;
 }
 
 .custom-card-body {
   text-align: left;
   flex-grow: 1;
+  /* Ensure the card body takes full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Space content evenly, pushing the button down */
 }
 
 .custom-card-tag {
@@ -100,7 +106,7 @@
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
-  color: white; /* Custom color */
+  color: white;
   font-weight: bold;
 }
 
@@ -108,7 +114,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #3d5c7b; /* Custom color */
+  color: #3d5c7b;
 }
 
 .custom-card-info {
@@ -118,7 +124,16 @@
 .custom-card-info span {
   display: block;
   margin-bottom: 5px;
-  color: #ff6600; /* Custom color */
+  color: #ff6600;
+}
+
+.custom-card-button-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Center the button horizontally */
+  align-items: flex-end;
+  margin-bottom: 20px;
+  /* Align the button to the bottom */
 }
 
 .custom-card-button {
@@ -128,9 +143,11 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%; /* Make buttons the same width */
-  max-width: 200px; /* Set a maximum width to ensure consistency */
-  align-self: center; /* Center the button */
+  width: 100%;
+  max-width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s;
 }
 
 .custom-card-link {

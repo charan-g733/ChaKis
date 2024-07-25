@@ -1,10 +1,11 @@
-import React from 'react';
-import './slots.css';
+import React from "react";
+import "./slots.css";
+import NavLink from "react-bootstrap/esm/NavLink";
 
 const Slots = () => {
   return (
     <div className="custom-container">
-      <div className='le'>
+      <div className="le">
         <div className="custom-heading">
           Programs that will transform your Software Engineering Career
         </div>
@@ -21,7 +22,11 @@ const Slots = () => {
       <div className="custom-cards">
         <div className="custom-card">
           <div className="custom-card-header">
-            <img src="images/slots1.png" alt="CCBP 4.0 Academy" className="custom-image" />
+            <img
+              src="images/slots1.png"
+              alt="CCBP 4.0 Academy"
+              className="custom-image"
+            />
             <span>INNOVATE Program</span>
           </div>
           <div className="custom-card-body">
@@ -32,9 +37,13 @@ const Slots = () => {
               Learn through Hands-on Experience on Real Time Projects & become
               Industry Ready
             </div>
-            <button className="custom-card-button">
-              Register for Internship Program
-            </button>
+            <div className="custom-card-button-wrapper">
+              <button className="custom-card-button">
+                <NavLink href="/Innovate">
+                  Register for Internship Program
+                </NavLink>
+              </button>
+            </div>
           </div>
         </div>
         <div className="custom-card">
@@ -44,7 +53,9 @@ const Slots = () => {
               alt="Intensive 3.0"
               className="custom-image"
             />
-            <span>AEA <br></br> Program</span>
+            <span>
+              AEA <br></br> Program
+            </span>
           </div>
           <div className="custom-card-body">
             <div className="custom-card-tag">
@@ -54,9 +65,11 @@ const Slots = () => {
               Master the Right skill you deserve and become Market Ready
               Software Engineer
             </div>
-            <button className="custom-card-button">
-              Register for Free Master class
-            </button>
+            <div className="custom-card-button-wrapper">
+              <button className="custom-card-button">
+                <NavLink href="/AEA">Register for Free Master class</NavLink>
+              </button>
+            </div>
           </div>
         </div>
       </div>

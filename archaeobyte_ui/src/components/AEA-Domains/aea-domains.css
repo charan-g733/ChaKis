@@ -1,9 +1,10 @@
 /* UniqueCards.css */
 
 .unique-card-domains {
-    display: flex;
-    gap: 20px; /* Adjust the gap between cards */
-    margin-top: 10px;
+    display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 70px; /* Adjust the gap between cards */
+    margin: 100px 70px;
   }
   
   .unique-card {
@@ -25,7 +26,7 @@
   .unique-card img {
     width: 100%; /* Image takes full width of parent container */
     max-width: 100%; /* Limit maximum width to maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
+    height:250px; /* Maintain aspect ratio */
     border-radius: 8px;
   }
   

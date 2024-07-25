@@ -65,24 +65,24 @@ function Navigationbar() {
                   <FaChevronDown className="arrow-icon" />
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="custom-dropdown">
-                  <Dropdown.Item href="#option1">
+                  <Dropdown.Item href="/AEA">
                     {" "}
                     <img
                       src="images/Aea.png"
                       alt="AEA"
                       style={{
-                        height: "2.5em",
+                        height: "2.7em",
                         width: "6em",
                         verticalAlign: "middle",
                       }}
                     />
                   </Dropdown.Item>
-                  <Dropdown.Item href="#option2">
+                  <Dropdown.Item href="/Innovate">
                     <img
                       src="images/Innovate.png"
                       alt="Innovate.png"
                       style={{
-                        height: "2.5em",
+                        height: "2.7em",
                         width: "6em",
                         verticalAlign: "middle",
                       }}

@@ -9,6 +9,7 @@ import Numbers from '../components/Numbers/number';
 import Survey from '../components/Survey/survey';
 import CustomersReviews from '../components/Customersreviews/customersreviews';
 // import ItServices from '../components/IT Services Main/itservices';
+import Footer from '../components/Footer/footer';
 
 
 const home = () => {
@@ -24,8 +25,7 @@ const home = () => {
       <CustomersReviews></CustomersReviews>
       <Numbers></Numbers>
       <Survey></Survey>
-  
-      
+      <Footer></Footer>
     </div>
   );
 }
