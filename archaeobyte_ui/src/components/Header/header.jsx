@@ -37,7 +37,7 @@ function Header() {
               : "hover-underline text-white custom-brand"
           }
         >
-          ArchaeoByte IT Services
+          DevElet IT Services
         </NavLink>
       </Container>
     </Navbar>

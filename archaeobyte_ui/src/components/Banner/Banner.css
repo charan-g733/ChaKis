@@ -56,7 +56,7 @@
     color: #333; /* Darker text color for better contrast */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    font-family:'montserrat' /* Example of font family */
+    font-family: 'Montserrat', sans-serif; /* Example of font family */
 }
 
 .box1 {
@@ -84,7 +84,7 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    font-family:'arial'
+    font-family: 'Arial', sans-serif;
 }
 
 .individual {
@@ -96,4 +96,62 @@
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .banner-container {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .box1, .box2 {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .box1 {
+        top: 60px;
+        right: 20px;
+        width: 300px;
+    }
+
+    .box2 {
+        top: 40px;
+        left: 10px;
+        width: 260px;
+        height: auto;
+    }
+
+    .button {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container {
+        height: 250px; /* Adjust height for very small screens */
+    }
+
+    .box1, .box2 {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .box1 {
+        top: 50px;
+        right: 10px;
+        width: 260px;
+    }
+
+    .box2 {
+        top: 30px;
+        left: 5px;
+        width: 220px;
+        height: auto;
+    }
+
+    .button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
 }

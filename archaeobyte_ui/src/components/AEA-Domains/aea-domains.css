@@ -3,14 +3,14 @@
 .unique-card-domains {
     display: grid;
       grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 70px; /* Adjust the gap between cards */
+    gap: 20px; /* Adjust the gap between cards */
     margin: 100px 70px;
   }
   
   .unique-card {
     display: flex;
     flex-direction: column; /* Ensure content stacks vertically */
-    gap: 10px;
+    gap:  10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;

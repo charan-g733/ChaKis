@@ -10,7 +10,7 @@ const App = () => {
       <Header></Header>
 
       <div className="archeobyte-container">
-        <h1 className="archeobyte-title">Why ArchaeoByte?</h1>
+        <h1 className="archeobyte-title">Why DevElet?</h1>
         <p className="archeobyte-description">
           We provide IT Solutions like you never Experienced before.
         </p>

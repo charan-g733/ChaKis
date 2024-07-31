@@ -14,11 +14,10 @@ const Bussiness = () => {
         <div>
           <h1 className="bussiness-title">Get your demo</h1>
           <p className="bussiness-description">
-            Tell us your needs and we’ll start on a custom plan to drive
-            results.
+            Get in touch with us to start driving innovational upskilling at your organisation.
           </p>
           <div className="bussiness-benefits">
-            <p>With ArchaeoByte as your learning partner, you can:</p>
+            <p>With DevElet as your learning partner, you can:</p>
             <ul>
               <li>
                 Train your entire workforce with all Leading Edge Technologies.
@@ -28,8 +27,7 @@ const Bussiness = () => {
                 exams
               </li>
               <li>
-                Develop highly skilled tech teams in risk-free practice
-                environments
+                Develop highly skilled tech teams in a professional environment
               </li>
               <li>
                 Identify emerging skills gaps, learning trends, and industry

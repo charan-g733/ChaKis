@@ -1,46 +1,53 @@
-// ProgressSteps.js
-
 import React from 'react';
 import { FaLaptopCode, FaUserGraduate, FaUserTie, FaMicrochip, FaProjectDiagram, FaRupeeSign } from "react-icons/fa";
+import { PiGraduationCapBold } from "react-icons/pi";
+import { GoProjectSymlink } from "react-icons/go";
+import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
+import { SlEarphonesAlt } from "react-icons/sl";
+
+
+
+
 import './progress.css';
 
 const ProgressSteps = () => {
   return (
-    <div className="progress-steps">
-      <div className="step">
-        <FaLaptopCode className="icon" />
-        <p>Learn to Code</p>
-        <span>(30 weeks)</span>
+    <div className="progress-container">
+      <div className="progress-steps">
+        <div className="step">
+          <PiGraduationCapBold  className="icon" />
+          <p>Enhance your Experience with Internship program</p>
+          
+        </div>
+        <div className="arrow">→</div>
+        <div className="step">
+          <GoProjectSymlink  className="icon" />
+          <p>Complete 3 Real time projects</p>
+          
+        </div>
+        <div className="arrow">→</div>
+        <div className="step">
+          <FaUserTie className="icon" />
+          <p>Build Your Linkedin Profile like a Pro</p>
+          
+        </div>
+        <div className="arrow">→</div>
+        <div className="step">
+          <HiOutlineClipboardDocumentCheck  className="icon" />
+          <p>Create your ATS Friendly Resume</p>
+        </div>
+        <div className="arrow">→</div>
+        <div className="step">
+          <SlEarphonesAlt  className="icon" />
+          <p>Master the art of answering with Mock Interviews</p>
+        </div>
+        <div className="arrow">→</div>
+        <div className="step">
+          <FaRupeeSign className="icon" />
+          <p>Land into Stipend Based Internship at MNC's</p>
+        </div>
       </div>
-      <div className="arrow">→</div>
-      <div className="step">
-        <FaUserGraduate className="icon" />
-        <p>Master Full Stack Development</p>
-        <span>(40 weeks)</span>
-      </div>
-      <div className="arrow">→</div>
-      <div className="step">
-        <FaUserTie className="icon" />
-        <p>Build Your Developer Profile like a Pro</p>
-        <span>(40 weeks)</span>
-      </div>
-      <div className="arrow">→</div>
-      <div className="step">
-        <FaMicrochip className="icon" />
-        <p>Specialize in a <span className="highlight">4.0 Technology</span></p>
-        <span>(40 weeks)</span>
-      </div>
-      <div className="arrow">→</div>
-      <div className="step">
-        <FaProjectDiagram className="icon" />
-        <p>Develop Industry Grade 4.0 Projects</p>
-        <span>(20 weeks)</span>
-      </div>
-      <div className="arrow">→</div>
-      <div className="step">
-        <FaRupeeSign className="icon" />
-        <p>With IRC 4.0, get supported till you achieve a <span className="highlight">₹24 LPA</span> job</p>
-      </div>
+      <div className="underline-innovate"></div>
     </div>
   );
 };

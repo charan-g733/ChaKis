@@ -18,16 +18,16 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section contact">
           <img
-            src="/images/logo final may be.webp"
+            src="/images/DevElet_with_name.png"
             alt="NxtWave Logo"
             className="footer-logo"
           />
           <h4>Reach Us</h4>
           <p>
-            <FaWhatsapp className="icon" /> +919390111761 (WhatsApp only)
+            <FaWhatsapp className="icon" /> +919346116602
           </p>
           <p>
-            <FaEnvelope className="icon" /> support@nxtwave.tech
+            <FaEnvelope className="icon" /> workspace.archaeobyte@gmail.com
           </p>
         </div>
         <div className="footer-section quick-links">
@@ -38,10 +38,10 @@ const Footer = () => {
             <li>Innovate</li>
             <li>Hire with us</li>
             <li>Contact Us</li>
-            <li>Blog</li>
-            <li>About Us</li>
+            <li>Get in Touch</li>
+            <li>It Services</li>
             <li>Reviews</li>
-            <li>Community</li>
+            <li>FAQ's</li>
           </ul>
         </div>
           <div className="social-media">
@@ -53,15 +53,13 @@ const Footer = () => {
           </div>
         <div className="footer-section payment-methods">
           <p>
-            NxtWave, WeWork Rajapushpa Summit, Nanakramguda Rd, Financial
-            District, Manikonda Jagir, Telangana 500032
+            
           </p>
         </div>
       </div>
       <div className="footer-bottom">
         <ul>
           <li>Privacy Policy</li>
-          <li>Cookie Policy</li>
           <li>Terms and Conditions</li>
           <li>Grievance Redressal</li>
           <li>Corporate Information</li>

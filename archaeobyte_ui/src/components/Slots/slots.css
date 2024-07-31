@@ -1,3 +1,4 @@
+/* Slots component CSS */
 .custom-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -8,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #f4f8fb;
+  background-color: #cfd1d4;
 }
 
 .le {
@@ -29,21 +30,24 @@
 }
 
 .custom-subheading {
-  font-size: 14px;
-  color: #123456;
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
 .custom-badges img {
   margin: 0 10px;
-  height: 180px;
+  height: 240px;
 }
 
 .custom-cards {
   display: flex;
   justify-content: space-around;
   position: relative;
+  width: 100%;
 }
 
 .custom-card {
@@ -59,6 +63,7 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .custom-card-header {
@@ -69,30 +74,21 @@
   position: relative;
 }
 
-.custom-image {
-  position: absolute;
-  top: -100px;
-  height: 150px;
-  margin-right: 100px;
-  z-index: 2;
-}
 
 .custom-card-header span {
   font-size: 20px;
   font-weight: bold;
   color: #0a2b4b;
-  margin-left: 110px;
+  margin-left: 10px;
   font-style: italic;
 }
 
 .custom-card-body {
   text-align: left;
   flex-grow: 1;
-  /* Ensure the card body takes full height */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Space content evenly, pushing the button down */
 }
 
 .custom-card-tag {
@@ -130,10 +126,8 @@
 .custom-card-button-wrapper {
   display: flex;
   justify-content: center;
-  /* Center the button horizontally */
   align-items: flex-end;
   margin-bottom: 20px;
-  /* Align the button to the bottom */
 }
 
 .custom-card-button {
@@ -156,4 +150,192 @@
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Media Queries for Mobile View */
+/* @media (max-width: 768px) {
+  .custom-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .custom-subheading {
+    text-align: center;
+  }
+
+  .custom-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-card {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .custom-image {
+    top: -80px;
+    height: 120px;
+    margin-right: 0;
+  }
+
+  .custom-card-header span {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .custom-card-tag span {
+    font-size: 12px;
+  }
+
+  .custom-card-title {
+    font-size: 16px;
+  }
+
+  .custom-card-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-heading {
+    font-size: 24px;
+  }
+
+  .custom-subheading {
+    font-size: 12px;
+  }
+
+  .custom-badges img {
+    height: 120px;
+  }
+
+  .custom-card {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .custom-image {
+    top: -60px;
+    height: 100px;
+  }
+
+  .custom-card-header span {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .custom-card-tag span {
+    font-size: 10px;
+  }
+
+  .custom-card-title {
+    font-size: 14px;
+  }
+
+  .custom-card-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+} */
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .custom-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .custom-subheading {
+    text-align: center;
+  }
+
+  .custom-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-card {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .custom-image {
+    top: -80px;
+    height: 120px;
+    margin-right: 0;
+  }
+
+  .custom-card-header {
+    margin-bottom: 40px; /* Increased margin to create space */
+  }
+
+  .custom-card-header span {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .custom-card-tag span {
+    font-size: 12px;
+  }
+
+  .custom-card-title {
+    font-size: 16px;
+  }
+
+  .custom-card-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-heading {
+    font-size: 24px;
+  }
+
+  .custom-subheading {
+    font-size: 12px;
+  }
+
+  .custom-badges img {
+    height: 120px;
+  }
+
+  .custom-card {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .custom-image {
+    top: -60px;
+    height: 100px;
+  }
+
+  .custom-card-header {
+    margin-bottom: 20px; /* Increased margin to create more space */
+  }
+
+  .custom-card-header span {
+    margin-left: 0;
+    font-size: 16px;
+    margin-top: 38px;
+  }
+
+  .custom-card-tag span {
+    font-size: 10px;
+  }
+
+  .custom-card-title {
+    font-size: 14px;
+  }
+
+  .custom-card-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }

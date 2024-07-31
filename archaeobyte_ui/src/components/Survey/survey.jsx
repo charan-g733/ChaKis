@@ -16,13 +16,13 @@ const Survey = () => {
         </div>
       </div>
       <div className="learning-component-content">
-        <h2>World-class learning for you</h2>
+        <h2>World-class Digital Transformation</h2>
         <p>
-          Pursue a <strong>promotion</strong>, a <strong>raise</strong>, or switch careers. 96% of learners who have taken a course <strong>report career benefits</strong>.
+          We Develop applications <strong>You Experienced Never before</strong>. Switch to  <strong>Digital Transformation</strong> with our IT Services.
           <br />
-          <em>- ArchaeoByte Leaners Outcome Survey, India (2024)</em>
+          <em>- DevElet Development Centre (2024)</em>
         </p>
-        <button>Particpate in Survey</button>
+        <button>Get In Touch</button>
       </div>
     </div>
   );

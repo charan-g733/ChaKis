@@ -46,7 +46,7 @@
 }
 
 .learning-component-content {
-  text-align:left; 
+  text-align: left; 
   margin-left: 20%;
 }
 
@@ -71,4 +71,61 @@
 
 .learning-component-content button:hover {
   background-color: #0056b3;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .learning-component-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .learning-component-images {
+    width: 100%;
+    margin-right: 0;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .learning-component-image {
+    position: relative;
+  }
+
+  .learning-component-image-top,
+  .learning-component-image-middle,
+  .learning-component-image-bottom {
+    position: static;
+    margin-bottom: 20px;
+    left: auto;
+    top: auto;
+    bottom: auto;
+  }
+
+  .learning-component-image-middle {
+    margin-left: 0;
+  }
+
+  .learning-component-image img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .learning-component-content {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .learning-component-content h2 {
+    font-size: 24px;
+  }
+
+  .learning-component-content p {
+    font-size: 14px;
+  }
+
+  .learning-component-content button {
+    margin: 20px auto 0;
+  }
 }

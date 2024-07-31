@@ -7,7 +7,7 @@ const EducationBanner = () => {
             <div className="education-banner-content">
                 <div className="education-banner-text">
                     <h1 className="education-banner-title">AEA Program</h1>
-                    <p className="education-banner-promo">Aspire, Elevate, Accelerate</p>
+                    <p className="education-banner-promo"><i>Aspire, Elevate, Accelerate</i></p>
                     <div className="education-banner-courses">
                         <div className="education-banner-course">
                             <h3>Training</h3>

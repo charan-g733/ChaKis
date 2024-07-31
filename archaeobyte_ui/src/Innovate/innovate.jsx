@@ -8,6 +8,7 @@ import Header from "../components/Header/header";
 const Innovate=()=>{
     return (
       <div>
+      
         <Navigationbar></Navigationbar>
         <Header></Header>
         <InnovateBanner></InnovateBanner>
