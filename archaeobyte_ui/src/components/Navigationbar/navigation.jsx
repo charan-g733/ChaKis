@@ -34,70 +34,66 @@ function Navigationbar() {
   }, [isDropdownVisible]);
 
   return (
-    <>
-      <Navbar className="custom-navbar">
-        <Container className="custom-container-nav">
-          <div>
-            <Navbar.Brand href="/">
-              <img
-                src="/images/logo final may be.webp"
-                width="80"
-                height="80"
-                className="d-inline-block align-top"
-                alt="Company logo"
-              />
-            </Navbar.Brand>
-          </div>
-          <div>
-            <Nav>
-              <Nav.Link href="/">Home</Nav.Link>
-              <Dropdown
-                show={isDropdownVisible}
-                onToggle={toggleDropdown}
-                ref={dropdownRef}
+    <Navbar expand="lg" className="custom-navbar">
+      <Container className="custom-container-nav">
+        <Navbar.Brand href="/">
+          <img
+            src="/images/DevElet_logo.png"
+            width="80"
+            height="80"
+            className="d-inline-block align-top"
+            alt="Company logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Dropdown
+              show={isDropdownVisible}
+              onToggle={toggleDropdown}
+              ref={dropdownRef}
+            >
+              <Dropdown.Toggle
+                as={Nav.Link}
+                href="#programs"
+                className="programs-link"
               >
-                <Dropdown.Toggle
-                  as={Nav.Link}
-                  href="#programs"
-                  className="programs-link"
-                >
-                  Programs
-                  <FaChevronDown className="arrow-icon" />
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="custom-dropdown">
-                  <Dropdown.Item href="/AEA">
-                    {" "}
-                    <img
-                      src="images/Aea.png"
-                      alt="AEA"
-                      style={{
-                        height: "2.7em",
-                        width: "6em",
-                        verticalAlign: "middle",
-                      }}
-                    />
-                  </Dropdown.Item>
-                  <Dropdown.Item href="/Innovate">
-                    <img
-                      src="images/Innovate.png"
-                      alt="Innovate.png"
-                      style={{
-                        height: "2.7em",
-                        width: "6em",
-                        verticalAlign: "middle",
-                      }}
-                    />
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Nav.Link href="#reviews">Reviews</Nav.Link>
-              <Nav.Link href="#hire">Hire with Us</Nav.Link>
-              <Nav.Link href="#faq">FAQ’s</Nav.Link>
-            </Nav>
-          </div>
-        </Container>
-      </Navbar>
-    </>
+                Programs
+                <FaChevronDown className="arrow-icon" />
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="custom-dropdown">
+                <Dropdown.Item href="/AEA">
+                  <img
+                    src="images/Aea.png"
+                    alt="AEA"
+                    style={{
+                      height: "2.7em",
+                      width: "6em",
+                      verticalAlign: "middle",
+                    }}
+                  />
+                </Dropdown.Item>
+                <Dropdown.Item href="/Innovate">
+                  <img
+                    src="images/Innovate.png"
+                    alt="Innovate"
+                    style={{
+                      height: "2.7em",
+                      width: "6em",
+                      verticalAlign: "middle",
+                    }}
+                  />
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Nav.Link href="#reviews">Reviews</Nav.Link>
+            <Nav.Link href="#hire">Hire with Us</Nav.Link>
+            <Nav.Link href="#faq">Get in Touch</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

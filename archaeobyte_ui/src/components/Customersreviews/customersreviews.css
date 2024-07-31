@@ -20,21 +20,21 @@
     color: #333;
     align-items: center;
 }
-.review-slider-title
-{
-        text-align: left;
-        gap: 10px;
-        align-items: center;
-        margin-left: 14px;
+
+.review-slider-title {
+    text-align: left;
+    gap: 10px;
+    align-items: center;
+    margin-left: 14px;
+    font-size: 1rem;
 }
+
 .review-slider-description-unique-name {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
     line-height: 1.5;
     width: 100%;
-    
-
 }
 
 .review-slider-reviews-container-unique-name {
@@ -72,7 +72,7 @@
 }
 
 .review-slider-review-text-unique-name {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #333;
 }
@@ -95,4 +95,51 @@
 
 .review-slider-view-all-posts-unique-name:hover {
     background-color: #0056b3;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .review-slider-container-unique-name {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .review-slider-reviews-container-unique-name {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .review-slider-review-card-unique-name {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .review-slider-review-card-unique-name:nth-child(3) {
+        width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .review-slider-title {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .review-slider-title-unique-name {
+        font-size: 1.5rem;
+    }
+
+    .review-slider-description-unique-name {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .review-slider-review-text-unique-name {
+        font-size: 0.8rem;
+    }
+
+    .review-slider-review-author-unique-name {
+        font-size: 0.8rem;
+    }
 }

@@ -1,3 +1,9 @@
+.progress-container {
+  position: relative;
+  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .progress-steps {
   margin-top: 50px;
   display: flex;

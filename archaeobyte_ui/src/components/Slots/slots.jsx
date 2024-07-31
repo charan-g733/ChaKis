@@ -15,18 +15,18 @@ const Slots = () => {
         </div>
 
         <div className="custom-badges">
-          <img src="images/sch.png" alt="Badge 1" />
+          <img src="images/sch_logo.png" alt="Badge 1" />
         </div>
       </div>
 
       <div className="custom-cards">
         <div className="custom-card">
           <div className="custom-card-header">
-            <img
+            {/* <img
               src="images/slots1.png"
               alt="CCBP 4.0 Academy"
               className="custom-image"
-            />
+            /> */}
             <span>INNOVATE Program</span>
           </div>
           <div className="custom-card-body">
@@ -48,13 +48,13 @@ const Slots = () => {
         </div>
         <div className="custom-card">
           <div className="custom-card-header">
-            <img
+            {/* <img
               src="images/slots2.png"
               alt="Intensive 3.0"
               className="custom-image"
-            />
+            /> */}
             <span>
-              AEA <br></br> Program
+              AEA  Program
             </span>
           </div>
           <div className="custom-card-body">
@@ -78,3 +78,4 @@ const Slots = () => {
 };
 
 export default Slots;
+

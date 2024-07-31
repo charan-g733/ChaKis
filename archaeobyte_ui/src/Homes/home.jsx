@@ -10,22 +10,64 @@ import Survey from '../components/Survey/survey';
 import CustomersReviews from '../components/Customersreviews/customersreviews';
 // import ItServices from '../components/IT Services Main/itservices';
 import Footer from '../components/Footer/footer';
+import AnimatedComponent from '../components/AnimatedComponent/AnimatedComponent';
+import FAQs from '../components/FAQS/faq';
+import { FaQ } from 'react-icons/fa6';
 
 
 const home = () => {
   return (
     <div>
+    
+        <Navigationbar></Navigationbar>
+      
      
-      <Navigationbar></Navigationbar>
-      <Header></Header>
-      <Banner></Banner>
-      <Alumni></Alumni>
-      <Slots></Slots>
-      <Benefits></Benefits>
-      <CustomersReviews></CustomersReviews>
-      <Numbers></Numbers>
-      <Survey></Survey>
-      <Footer></Footer>
+        <Header></Header>
+      
+     <AnimatedComponent>
+      <div>
+        <Banner></Banner>
+      </div>
+     </AnimatedComponent>
+     <AnimatedComponent>
+      <div>
+        <Alumni></Alumni>
+      </div>
+     </AnimatedComponent>
+     <AnimatedComponent>
+      <div>
+        <Slots></Slots>
+      </div>
+     </AnimatedComponent>
+     <AnimatedComponent>
+      <div>
+        <Benefits></Benefits>
+      </div>
+     </AnimatedComponent>
+     <AnimatedComponent>
+      <div>
+        <CustomersReviews></CustomersReviews>
+      </div>
+      </AnimatedComponent>
+      <AnimatedComponent>
+      <div>
+        <Numbers></Numbers>
+      </div>
+     </AnimatedComponent>
+     <AnimatedComponent>
+      <div>
+        <Survey></Survey>
+      </div>
+     </AnimatedComponent>
+
+     
+     <AnimatedComponent>
+      <div>
+        <Footer></Footer>
+      </div>
+     </AnimatedComponent> 
+     
+    
     </div>
   );
 }
