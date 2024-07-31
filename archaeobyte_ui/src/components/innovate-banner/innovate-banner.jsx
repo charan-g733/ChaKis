@@ -8,7 +8,7 @@ function Innovate_Banner() {
         <h4>100% QUALITY INTERNSHIPS</h4>
         <h1>
           Find Your Perfect Domain <br />
-          And Enhance Your <span className="highlight">Experience</span>
+          And Enhance Your {"  "}<span className="highlight">Experience</span>
         </h1>
         <p>
          Explore our <span className="highlight">Leading Internship Domains </span> and join {' '}

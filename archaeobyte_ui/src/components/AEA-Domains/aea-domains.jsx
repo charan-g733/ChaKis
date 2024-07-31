@@ -1,7 +1,5 @@
-// UniqueCards.js
-
-import React from 'react';
-import './aea-domains.css';
+import React from "react";
+import "./aea-domains.css";
 
 const AEACards = () => {
   return (

@@ -1,12 +1,13 @@
-// ProgressSteps.js
-
-import React from 'react';
-import { FaLaptopCode, FaUserGraduate, FaUserTie, FaMicrochip, FaProjectDiagram, FaRupeeSign } from "react-icons/fa";
-import './aea-progress.css';
-
-
-
- 
+import React from "react";
+import {
+  FaLaptopCode,
+  FaUserGraduate,
+  FaUserTie,
+  FaMicrochip,
+  FaProjectDiagram,
+  FaRupeeSign,
+} from "react-icons/fa";
+import "./aea-progress.css";
 
 const AeaProgress = () => {
   return (
@@ -31,7 +32,9 @@ const AeaProgress = () => {
       <div className="arrow">→</div>
       <div className="step">
         <FaMicrochip className="icon" />
-        <p>Specialize in a <span className="highlight">4.0 Technology</span></p>
+        <p>
+          Specialize in {" "}a <span className="highlight"> 4.0 Technology</span>
+        </p>
         <span>(40 weeks)</span>
       </div>
       <div className="arrow">→</div>
@@ -43,7 +46,10 @@ const AeaProgress = () => {
       <div className="arrow">→</div>
       <div className="step">
         <FaRupeeSign className="icon" />
-        <p>With IRC 4.0, get supported till you achieve a <span className="highlight">₹24 LPA</span> job</p>
+        <p>
+          With IRC 4.0, get supported till you achieve a{" "}
+          <span className="highlight">₹24 LPA</span> job
+        </p>
       </div>
     </div>
   );

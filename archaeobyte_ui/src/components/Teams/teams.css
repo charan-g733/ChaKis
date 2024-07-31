@@ -1,5 +1,4 @@
 .bussiness-back {
-
     padding-top: 5%;
 }
 
@@ -8,7 +7,6 @@
     margin: 20px auto;
     padding: 20px;
     text-align: left;
-
     align-items: center;
     gap: 60px;
 }
@@ -71,7 +69,6 @@
     margin-top: 20px;
     text-align: center;
     width: 50%;
-    height: full;
 }
 
 .bussiness-form-row {
@@ -82,13 +79,12 @@
 
 .bussiness-form-row input,
 .bussiness-form-row select {
-    width: 58%;
-    height: 100%;
+    width: 48%;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 6px;
-    margin: 5px 5px;
-    font-size: 1.2rem;
+    margin: 5px 0;
+    font-size: 1rem;
 }
 
 textarea {
@@ -107,4 +103,38 @@ button {
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .bussiness-inner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bussiness-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bussiness-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .bussiness-demo-form {
+        width: 90%;
+    }
+
+    .bussiness-form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bussiness-form-row input,
+    .bussiness-form-row select {
+        width: 100%;
+        margin: 5px 0;
+    }
 }

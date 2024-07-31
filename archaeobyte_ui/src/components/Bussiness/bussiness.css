@@ -8,8 +8,8 @@
 }
 
 .archeobyte-tech-feature-image img {
-    width: 40%;
-    height: 10%;
+    width: 50%;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -144,4 +144,35 @@
 .archeobyte-tech-feature-text p {
     font-size: 1rem;
     margin-bottom: 10px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .archeobyte-tech-feature-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .archeobyte-tech-feature-text,
+    .archeobyte-tech-feature-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .archeobyte-title {
+        font-size: 2rem;
+    }
+
+    .archeobyte-description {
+        font-size: 1rem;
+    }
+
+    .archeobyte-application-models h2 {
+        font-size: 1.5rem;
+    }
+
+    .archeobyte-model {
+        width: 90%;
+        margin: 10px 0;
+    }
 }

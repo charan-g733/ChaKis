@@ -14,7 +14,7 @@
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
@@ -28,12 +28,12 @@
     font-weight: bold;
     color: #0056b3;
     margin-bottom: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .education-banner-promo {
     font-size: 1.8rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #ff6600;
     margin-bottom: 20px;
@@ -87,4 +87,59 @@
 .education-banner-image img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .education-banner-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .education-banner-text {
+        padding: 10px;
+    }
+
+    .education-banner-title {
+        font-size: 2rem;
+    }
+
+    .education-banner-promo {
+        font-size: 1.2rem;
+    }
+
+    .education-banner-courses {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .education-banner-course h3 {
+        font-size: 1rem;
+    }
+
+    .education-banner-course p {
+        font-size: 0.9rem;
+    }
+
+    .education-banner-divider {
+        width: 100%;
+        height: 1px;
+        background-color: #ddd;
+        margin: 10px 0;
+    }
+
+    .education-banner-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .education-banner-image {
+        margin-top: 20px;
+    }
+
+    .education-banner-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
 }
