@@ -14,19 +14,19 @@ const Slots = () => {
           Recognized as the Greatest Brand in Upskilling & Career Development
         </div>
 
-        <div className="custom-badges">
-          <img src="images/sch_logo.png" alt="Badge 1" />
+        <div className="custom-badges-wrapper">
+          <div className="custom-badges">
+            <img src="images/sch_logo.png" alt="SCH Logo" />
+          </div>
+          <div className="custom-badges">
+            <img src="images/aicte.png" alt="AICTE Logo" />
+          </div>
         </div>
       </div>
 
       <div className="custom-cards">
         <div className="custom-card">
           <div className="custom-card-header">
-            {/* <img
-              src="images/slots1.png"
-              alt="CCBP 4.0 Academy"
-              className="custom-image"
-            /> */}
             <span>INNOVATE Program</span>
           </div>
           <div className="custom-card-body">
@@ -48,14 +48,7 @@ const Slots = () => {
         </div>
         <div className="custom-card">
           <div className="custom-card-header">
-            {/* <img
-              src="images/slots2.png"
-              alt="Intensive 3.0"
-              className="custom-image"
-            /> */}
-            <span>
-              AEA  Program
-            </span>
+            <span>AEA Program</span>
           </div>
           <div className="custom-card-body">
             <div className="custom-card-tag">
@@ -67,7 +60,7 @@ const Slots = () => {
             </div>
             <div className="custom-card-button-wrapper">
               <button className="custom-card-button">
-                <NavLink href="/AEA">Register for Free Master class</NavLink>
+                <NavLink href="/AEA">Register for Free AEA Master class</NavLink>
               </button>
             </div>
           </div>
@@ -78,4 +71,3 @@ const Slots = () => {
 };
 
 export default Slots;
-

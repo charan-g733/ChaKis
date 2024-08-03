@@ -7,10 +7,10 @@ import {
   FaEnvelope,
   FaFacebook,
   FaInstagram,
-  FaTwitter,
+  FaXTwitter,
   FaLinkedin,
   FaYoutube,
-} from "react-icons/fa";
+} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -44,13 +44,13 @@ const Footer = () => {
             <li>FAQ's</li>
           </ul>
         </div>
-          <div className="social-media">
-            <FaFacebook className="icon" />
-            <FaInstagram className="icon" />
-            <FaTwitter className="icon" />
-            <FaLinkedin className="icon" />
-            <FaYoutube className="icon" />
-          </div>
+        <div className="social-media">
+          <FaFacebook className="icon fa-facebook" />
+          <FaInstagram className="icon fa-instagram" />
+          <FaXTwitter className="icon fa-x-twitter" />
+          <FaLinkedin className="icon fa-linkedin" />
+          <FaYoutube className="icon fa-youtube" />
+        </div>
       </div>
       <div className="footer-bottom">
         <ul>
