@@ -1,4 +1,3 @@
-/* Slots component CSS */
 .custom-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -33,14 +32,22 @@
   font-size: 16px;
   color: #000000;
   font-weight: bold;
-
   margin-top: 20px;
   margin-bottom: 40px;
+  text-align: left;
+}
+
+.custom-badges-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds space between logos */
+  margin-bottom: 20px; /* Adds space between badges and cards */
 }
 
 .custom-badges img {
-  margin: 0 10px;
   height: 240px;
+  max-width: 100%; /* Ensures images do not exceed container width */
 }
 
 .custom-cards {
@@ -73,7 +80,6 @@
   margin-bottom: 20px;
   position: relative;
 }
-
 
 .custom-card-header span {
   font-size: 20px;
@@ -152,190 +158,137 @@
   font-weight: bold;
 }
 
-/* Media Queries for Mobile View */
-/* @media (max-width: 768px) {
-  .custom-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .custom-subheading {
-    text-align: center;
-  }
-
-  .custom-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .custom-card {
-    width: 80%;
-    margin: 20px 0;
-  }
-
-  .custom-image {
-    top: -80px;
-    height: 120px;
-    margin-right: 0;
-  }
-
-  .custom-card-header span {
-    margin-left: 0;
-    font-size: 18px;
-  }
-
-  .custom-card-tag span {
-    font-size: 12px;
-  }
-
-  .custom-card-title {
-    font-size: 16px;
-  }
-
-  .custom-card-button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .custom-heading {
-    font-size: 24px;
-  }
-
-  .custom-subheading {
-    font-size: 12px;
-  }
-
-  .custom-badges img {
-    height: 120px;
-  }
-
-  .custom-card {
-    width: 90%;
-    height: auto;
-    padding: 15px;
-  }
-
-  .custom-image {
-    top: -60px;
-    height: 100px;
-  }
-
-  .custom-card-header span {
-    margin-left: 0;
-    font-size: 16px;
-  }
-
-  .custom-card-tag span {
-    font-size: 10px;
-  }
-
-  .custom-card-title {
-    font-size: 14px;
-  }
-
-  .custom-card-button {
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-} */
-
-
-/* Media Queries for Mobile View */
 @media (max-width: 768px) {
+  .custom-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjusted padding for mobile */
+  }
+
   .custom-heading {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 10px; /* Adjusted space */
   }
 
   .custom-subheading {
+    font-size: 16px;
     text-align: center;
+    margin-bottom: 20px; /* Adjusted space */
+  }
+
+  .custom-badges-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between logos */
+    margin-bottom: 20px; /* Adjusted space */
+  }
+
+  .custom-badges img {
+    height: 120px; /* Adjusted height for mobile */
   }
 
   .custom-cards {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    gap: 10px; /* Space between cards */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .custom-card {
-    width: 80%;
-    margin: 20px 0;
-  }
-
-  .custom-image {
-    top: -80px;
-    height: 120px;
-    margin-right: 0;
+    width: 48%; /* Cards take 48% width to fit side by side */
+    margin: 0; /* Remove additional margin */
+    padding: 15px; /* Adjusted padding for mobile */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
 
   .custom-card-header {
-    margin-bottom: 40px; /* Increased margin to create space */
+    margin-bottom: 10px; /* Adjusted margin */
   }
 
   .custom-card-header span {
-    margin-left: 0;
     font-size: 18px;
   }
 
   .custom-card-tag span {
     font-size: 12px;
+    display: block; /* Ensure tags stack vertically */
+    margin-bottom: 10px; /* Adjusted margin */
   }
 
   .custom-card-title {
     font-size: 16px;
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+
+  .custom-card-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjusted margin */
   }
 
   .custom-card-button {
     padding: 8px 16px;
     font-size: 14px;
+    width: 100%; /* Ensure button spans full width */
+    max-width: 200px; /* Set max width for buttons */
   }
 }
 
 @media (max-width: 480px) {
   .custom-heading {
     font-size: 24px;
+    margin-bottom: 10px; /* Adjusted space */
   }
 
   .custom-subheading {
     font-size: 12px;
+    margin-bottom: 15px; /* Adjusted space */
   }
 
   .custom-badges img {
-    height: 120px;
+    height: 100px; /* Further adjusted height */
+  }
+
+  .custom-cards {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center;
+    gap: 10px; /* Space between cards */
   }
 
   .custom-card {
-    width: 90%;
-    height: auto;
-    padding: 15px;
-  }
-
-  .custom-image {
-    top: -60px;
-    height: 100px;
-  }
-
-  .custom-card-header {
-    margin-bottom: 20px; /* Increased margin to create more space */
+    width: 48%; /* Ensure cards are side by side */
+    margin: 0; /* Remove margin for perfect alignment */
+    padding: 10px; /* Adjusted padding for mobile */
   }
 
   .custom-card-header span {
-    margin-left: 0;
     font-size: 16px;
-    margin-top: 38px;
+    margin-top: 20px; /* Adjusted margin */
   }
 
   .custom-card-tag span {
     font-size: 10px;
+    /* margin-bottom: 5px; Adjusted margin */
   }
 
   .custom-card-title {
     font-size: 14px;
+    /* margin-bottom: 15px; Adjusted margin */
   }
+/* 
+  .custom-card-button-wrapper {
+    margin-top: 15px; 
+  } */
 
   .custom-card-button {
-    padding: 6px 12px;
+    /* padding: 6px 12px; */
     font-size: 12px;
+    width: 100%; /* Ensure button spans full width */
+    max-width: 150px; /* Set max width for buttons */
   }
 }
