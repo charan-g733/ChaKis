@@ -63,7 +63,7 @@ function Navigationbar() {
                 className="programs-link"
               >
                 Programs
-                <FaChevronDown className="arrow-icon" />
+                <FaChevronDown className="arrow-icon" style={{ color: "black" }} />
               </Dropdown.Toggle>
               <Dropdown.Menu className="custom-dropdown">
                 <Dropdown.Item href="/AEA">
