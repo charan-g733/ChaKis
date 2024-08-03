@@ -16,7 +16,7 @@ const reviews = [
   },
   {
     id: 3,
-    text: "I had a wonderful experience working with @ArchaeoByte, it boosted my confidence, and I'm thankful for the mentorship and guidance I received during my time as an intern. I'm looking forward to working with you again.",
+    text: "I had a wonderful experience working with @DevElet, it boosted my confidence, and I'm thankful for the mentorship and guidance I received during my time as an intern. I'm looking forward to working with you again.",
     author: "SANGANI HEPSIBA",
     img: "images/umak.jpg",
   },
@@ -28,7 +28,7 @@ const reviews = [
   },
   {
     id: 5,
-    text: "It is really a very great opportunity for the freshers. Thank you Archaeobyte Team😊.",
+    text: "It is really a very great opportunity for the freshers. Thank you DevElet Team😊.",
     author: "Sambaru Srinath ",
     img: "images/umak.jpg",
   },
@@ -40,7 +40,7 @@ const reviews = [
   },
   {
     id: 7,
-    text: "Working with ArchaeoByte is very impressive and thanks for this opportunity to work with your team. You guys helped me in every aspect to complete my course on time. Once again thanks to the whole team.",
+    text: "Working with DevElet is very impressive and thanks for this opportunity to work with your team. You guys helped me in every aspect to complete my course on time. Once again thanks to the whole team.",
     author: "Kummari Anjali ",
     img: "images/umak.jpg",
   },
@@ -59,33 +59,9 @@ const reviews = [
 ];
 
 const CustomersReviews = () => {
-  const [startIndex, setStartIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setStartIndex((prevIndex) => (prevIndex + 1) % reviews.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const getDisplayedReviews = () => {
-    const endIndex = startIndex + 3;
-    if (endIndex <= reviews.length) {
-      return reviews.slice(startIndex, endIndex);
-    } else {
-      return [
-        ...reviews.slice(startIndex),
-        ...reviews.slice(0, endIndex - reviews.length),
-      ];
-    }
-  };
-
-  const displayedReviews = getDisplayedReviews();
-
   return (
     <div className="review-slider-container-unique-name">
-      <div className="review-slider-title">
+      <div className="review-slider-header-unique-name">
         <h2 className="review-slider-title-unique-name">Our Feedback</h2>
         <p className="review-slider-description-unique-name">
           Up-to-the-minute discussions, straight from the community and
@@ -96,27 +72,25 @@ const CustomersReviews = () => {
         </button>
       </div>
       <div className="review-slider-reviews-container-unique-name">
-        {displayedReviews.map((review, index) => (
-          <div
-            key={review.id}
-            className="review-slider-review-card-unique-name"
-            style={{ order: index === 1 ? 2 : 1 }}
-          >
-            <img
-              src={review.img}
-              alt={review.author}
-              className="review-slider-author-img-unique-name"
-            />
-            <div>
-              <p className="review-slider-review-text-unique-name">
-                {review.text}
-              </p>
-              <p className="review-slider-review-author-unique-name">
-                by {review.author}
-              </p>
+        <div className="review-slider-review-wrapper-unique-name">
+          {reviews.map((review) => (
+            <div key={review.id} className="review-slider-review-card-unique-name">
+              <img
+                src={review.img}
+                alt={review.author}
+                className="review-slider-author-img-unique-name"
+              />
+              <div>
+                <p className="review-slider-review-text-unique-name">
+                  {review.text}
+                </p>
+                <p className="review-slider-review-author-unique-name">
+                  by {review.author}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
