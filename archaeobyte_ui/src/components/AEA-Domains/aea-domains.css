@@ -1,5 +1,3 @@
-/* UniqueCards.css */
-
 .unique-card-domains {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -10,7 +8,7 @@
 .unique-card {
   display: flex;
   flex-direction: column;
-  gap:  10px;
+  gap: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
@@ -72,16 +70,11 @@
   margin-left: 40px;
 }
 
-/* Media queries for mobile responsiveness */
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .unique-card-domains {
     grid-template-columns: 1fr;
-    margin: 20px;
-    gap: 20px;
-  }
-
-  .unique-card {
-    padding: 20px;
+    margin: 50px 20px;
   }
 
   .unique-card img {
@@ -98,6 +91,34 @@
 
   .unique-rating-description {
     font-size: 12px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .unique-card-domains {
+    margin: 20px 10px;
+  }
+
+  .unique-card img {
+    height: 150px;
+  }
+
+  .unique-card h4 {
+    font-size: 14px;
+  }
+
+  .unique-card p {
+    font-size: 12px;
+  }
+
+  .unique-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .unique-rating-description {
+    font-size: 10px;
     margin-left: 0;
   }
 }

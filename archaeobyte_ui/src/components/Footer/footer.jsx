@@ -51,11 +51,6 @@ const Footer = () => {
             <FaLinkedin className="icon" />
             <FaYoutube className="icon" />
           </div>
-        <div className="footer-section payment-methods">
-          <p>
-            
-          </p>
-        </div>
       </div>
       <div className="footer-bottom">
         <ul>

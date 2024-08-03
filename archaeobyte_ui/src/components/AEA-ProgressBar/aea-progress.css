@@ -5,34 +5,39 @@
 }
 
 .progress-steps {
-  margin-top: 50px;
   display: flex;
   align-items: center;
-  margin-left: 80px;
-  margin-right: 80px;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .step {
   text-align: center;
-  width: 180px;
+  width: 200px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 50%;
+  position: relative;
+  margin: 10px;
 }
 
 .step .icon {
-  margin-top: 10px;
   font-size: 30px;
   color: #dcaa21;
+  background-color: #121008;
+  border-radius: 50%;
+  padding: 20px;
+  box-sizing: content-box;
 }
 
 .step p {
-  margin: 30px 20px 10px;
-  font-weight: bolder;
+  margin: 20px -30px 10px;
+  font-weight: bold;
   font-size: 20px;
+  color: #645e5e;
 }
 
 .step span {
@@ -42,37 +47,53 @@
 }
 
 .arrow {
-  margin: 0 10px;
   font-size: 20px;
   color: #000;
+  margin: 0 20px;
 }
 
-.highlight {
+.underline {
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  z-index: -1;
+}
+
+.step:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -69px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 12px;
   background-color: #ffdd00;
-  padding: 0 5px;
 }
 
-/* Media queries for mobile responsiveness */
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .progress-steps {
     flex-direction: column;
     align-items: center;
-    margin: 0 20px;
   }
 
   .step {
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 
   .step .icon {
-    font-size: 24px;
+    font-size: 20px;
+    padding: 15px;
   }
 
   .step p {
-    margin: 20px 10px 5px;
     font-size: 16px;
+    margin: 10px 0;
   }
 
   .step span {
@@ -80,6 +101,44 @@
   }
 
   .arrow {
-    display: none;
+    font-size: 18px;
+    margin: 10px 0;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    width: 120px;
+    height: 120px;
+  }
+
+  .step .icon {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .step p {
+    font-size: 10px;
+  }
+
+  .step span {
+    font-size: 10px;
+  }
+
+  .arrow {
+    font-size: 16px;
+    margin: 5px 0;
+    transform: rotate(90deg);
+  }
+
+  .underline {
+    bottom: -50px;
+  }
+
+  .step:hover::after {
+    width: 120px;
+    height: 8px;
+    bottom: -53px;
   }
 }

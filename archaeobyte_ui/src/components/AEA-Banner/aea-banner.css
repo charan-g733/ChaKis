@@ -16,6 +16,8 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    flex-wrap: wrap;
+    /* Added to allow wrapping on smaller screens */
 }
 
 .education-banner-text {
@@ -44,6 +46,15 @@
     gap: 20px;
     margin-bottom: 20px;
     align-items: center;
+    flex-wrap: wrap;
+    /* Added to allow wrapping on smaller screens */
+}
+
+.education-banner-course {
+    flex: 1 1 100%;
+    /* Adjusts to take full width on small screens */
+    text-align: center;
+    /* Center text on small screens */
 }
 
 .education-banner-course h3 {
@@ -82,6 +93,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    /* Added margin for better spacing on small screens */
 }
 
 .education-banner-image img {
@@ -89,17 +102,35 @@
     border-radius: 10px;
 }
 
-/* Media queries for mobile responsiveness */
 @media (max-width: 768px) {
     .education-banner-content {
         flex-direction: column;
-        padding: 10px;
     }
 
     .education-banner-text {
+        text-align: center;
         padding: 10px;
     }
 
+    .education-banner-title {
+        font-size: 2.5rem;
+    }
+
+    .education-banner-promo {
+        font-size: 1.5rem;
+    }
+
+    .education-banner-courses {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .education-banner-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
     .education-banner-title {
         font-size: 2rem;
     }
@@ -108,38 +139,8 @@
         font-size: 1.2rem;
     }
 
-    .education-banner-courses {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .education-banner-course h3 {
-        font-size: 1rem;
-    }
-
-    .education-banner-course p {
-        font-size: 0.9rem;
-    }
-
-    .education-banner-divider {
-        width: 100%;
-        height: 1px;
-        background-color: #ddd;
-        margin: 10px 0;
-    }
-
     .education-banner-button {
         font-size: 0.9rem;
         padding: 8px 16px;
-    }
-
-    .education-banner-image {
-        margin-top: 20px;
-    }
-
-    .education-banner-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
     }
 }

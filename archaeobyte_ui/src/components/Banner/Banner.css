@@ -129,24 +129,27 @@
 
 @media (max-width: 480px) {
     .banner-container {
-        height: 250px; /* Adjust height for very small screens */
+        height: 180px; /* Adjust height for very small screens */
     }
-
+            .box-title
+            {
+                font-size: 2.5em;
+            }
     .box1, .box2 {
         padding: 10px;
-        font-size: 0.8em;
+        font-size: 0.4em;
     }
 
     .box1 {
-        top: 50px;
-        right: 10px;
-        width: 260px;
+        top: 40px;
+        right: 13px;
+        width: 160px;
     }
 
     .box2 {
-        top: 30px;
+        top: 10px;
         left: 5px;
-        width: 220px;
+        width: 120px;
         height: auto;
     }
 

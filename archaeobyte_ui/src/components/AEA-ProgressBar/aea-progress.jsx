@@ -1,20 +1,21 @@
-import React from 'react';
-import { FaLaptopCode, FaUserGraduate, FaUserTie, FaMicrochip, FaProjectDiagram, FaRupeeSign } from "react-icons/fa";
+import React from "react";
+import {
+  FaUserGraduate,
+  FaUserTie,
+  FaRupeeSign,
+} from "react-icons/fa";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import { SlEarphonesAlt } from "react-icons/sl";
 
-
-
-import './aea-progress.css';
+import "./aea-progress.css";
 
 const AeaProgress = () => {
   return (
     <div className="progress-container">
       <div className="progress-steps">
         <div className="step">
-        <FaChalkboardTeacher
-        className="icon" />
+          <FaChalkboardTeacher className="icon" />
           <p>Get 1:1 Training from Top mentors </p>
           <span>(8 weeks)</span>
         </div>
@@ -32,13 +33,13 @@ const AeaProgress = () => {
         </div>
         <div className="arrow">→</div>
         <div className="step">
-          <CgFileDocument  className="icon" />
+          <CgFileDocument className="icon" />
           <p>Prepare your ATS Friendly Resume</p>
           <span>(1 week)</span>
         </div>
         <div className="arrow">→</div>
         <div className="step">
-          <SlEarphonesAlt  className="icon" />
+          <SlEarphonesAlt className="icon" />
           <p>Excel your confidence through Mock Interviews</p>
           <span>(1 week)</span>
         </div>

@@ -9,12 +9,17 @@
 
 .footer-content {
     display: flex;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 20px;
+    text-align: center;
+    /* Ensure centered text on smaller screens */
 }
 
 .footer-section {
     margin: 10px;
+    flex: 1 1 200px;
+    /* Flex-grow, flex-shrink, flex-basis for responsiveness */
 }
 
 .contact {
@@ -45,6 +50,8 @@
 .contact p {
     display: flex;
     align-items: center;
+    justify-content: center;
+    /* Center align text on smaller screens */
     margin: 5px 0;
 }
 
@@ -56,7 +63,8 @@
 
 .social-media {
     display: flex;
-    margin:auto 40px auto 40px;
+    justify-content: center;
+    margin: auto;
 }
 
 .social-media .icon {
@@ -64,17 +72,18 @@
     height: 35px;
     margin-right: 15px;
 }
-.payment-methods
-{
-   max-width: 250px;
+
+.payment-methods {
+    max-width: 250px;
 }
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    border-top: 1px solid #444;
+    border-top: 2px solid #f8f8f8;
     padding-top: 20px;
 }
 
@@ -83,7 +92,32 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .footer-bottom ul li {
-    margin-right: 20px;
+    margin: 10px 20px;
+    /* Adjusted for better spacing on smaller screens */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-content {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .footer-bottom ul li {
+        margin-bottom: 10px;
+    }
 }

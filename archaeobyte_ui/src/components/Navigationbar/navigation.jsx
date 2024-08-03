@@ -34,7 +34,10 @@ function Navigationbar() {
   }, [isDropdownVisible]);
 
   return (
-    <Navbar expand="lg" className="custom-navbar">
+    <Navbar
+      expand="lg"
+      className={`custom-navbar ${isDropdownVisible ? "dropdown-open" : ""}`}
+    >
       <Container className="custom-container-nav">
         <Navbar.Brand href="/">
           <img
