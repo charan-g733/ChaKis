@@ -7,25 +7,30 @@
 .progress-steps {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .step {
   text-align: center;
   width: 200px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 50%;
   position: relative;
+  margin: 10px;
 }
 
 .step .icon {
-  margin-top: 10px;
   font-size: 30px;
   color: #dcaa21;
-  background-color: #121008; /* Yellow background color */
-  border-radius: 50%; /* Make the background a circle */
-  padding: 20px; /* Space around the icon */
-  box-sizing: content-box; /* Ensure padding is included in the element's size */
+  background-color: #121008;
+  border-radius: 50%;
+  padding: 20px;
+  box-sizing: content-box;
 }
 
 .step p {
@@ -42,10 +47,9 @@
 }
 
 .arrow {
-  margin: 50px 40px 0; /* Move the arrows down */
   font-size: 20px;
   color: #000;
-
+  margin: 0 20px;
 }
 
 .underline {
@@ -67,4 +71,74 @@
   width: 200px;
   height: 12px;
   background-color: #ffdd00;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .progress-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+  }
+
+  .step .icon {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .step p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .step span {
+    font-size: 12px;
+  }
+
+  .arrow {
+    font-size: 18px;
+    margin: 10px 0;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    width: 120px;
+    height: 120px;
+  }
+
+  .step .icon {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .step p {
+    font-size: 10px;
+  }
+
+  .step span {
+    font-size: 10px;
+  }
+
+  .arrow {
+    font-size: 16px;
+    margin: 5px 0;
+    transform: rotate(90deg);
+  }
+
+  .underline {
+    bottom: -50px;
+  }
+
+  .step:hover::after {
+    width: 120px;
+    height: 8px;
+    bottom: -53px;
+  }
 }

@@ -1,5 +1,5 @@
-import React from 'react';
-import './innovate-banner.css';
+import React from "react";
+import "./innovate-banner.css";
 
 function Innovate_Banner() {
   return (
@@ -11,8 +11,10 @@ function Innovate_Banner() {
           And Enhance Your <span className="highlight">Experience</span>
         </h1>
         <p>
-         Explore our <span className="highlight">Leading Internship Domains </span> and join {' '}
-          <span className="highlight">3000+</span> Online Registered Students.
+          Explore our{" "}
+          <span className="highlight">Leading Internship Domains </span> and
+          join <span className="highlight">3000+</span> Online Registered
+          Students.
         </p>
         <button className="explore-btn">Explore All Internships</button>
       </div>

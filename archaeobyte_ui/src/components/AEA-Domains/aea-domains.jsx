@@ -1,7 +1,7 @@
 // UniqueCards.js
 
-import React from 'react';
-import './aea-domains.css';
+import React from "react";
+import "./aea-domains.css";
 
 const AEACards = () => {
   return (
@@ -29,8 +29,7 @@ const AEACards = () => {
         <div className="unique-card-details">
           <h4>Python Development</h4>
           <p>
-            Skills you'll gain: Python, Django, Flask, HTML, CSS, JS 
-            & More....
+            Skills you'll gain: Python, Django, Flask, HTML, CSS, JS & More....
           </p>
           <div className="unique-rating">
             <span className="unique-rating-value">4.9</span>
@@ -48,8 +47,7 @@ const AEACards = () => {
         <div className="unique-card-details">
           <h4>Front-End Development</h4>
           <p>
-            Skills you'll gain: HTML, CSS, React, JS, UX Design,
-            SQL & More....
+            Skills you'll gain: HTML, CSS, React, JS, UX Design, SQL & More....
           </p>
           <div className="unique-rating">
             <span className="unique-rating-value">5.0</span>
@@ -67,8 +65,8 @@ const AEACards = () => {
         <div className="unique-card-details">
           <h4>Java Development</h4>
           <p>
-            Skills you'll gain: Java, Springboot, JSP & Servlets, RESTful Web Services,
-            SQL and More.....
+            Skills you'll gain: Java, Springboot, JSP & Servlets, RESTful Web
+            Services, SQL and More.....
           </p>
           <div className="unique-rating">
             <span className="unique-rating-value">4.9</span>
@@ -86,8 +84,8 @@ const AEACards = () => {
         <div className="unique-card-details">
           <h4>Machine Learning with Data Science & Data Analytics</h4>
           <p>
-            Skills you'll gain: Python, Data Science, Data Visualization, Machine Learning, 
-            & More...
+            Skills you'll gain: Python, Data Science, Data Visualization,
+            Machine Learning, & More...
           </p>
           <div className="unique-rating">
             <span className="unique-rating-value">4.7</span>
@@ -105,8 +103,8 @@ const AEACards = () => {
         <div className="unique-card-details">
           <h4>Cloud Computing in AWS with DevOps </h4>
           <p>
-            Skills you'll gain: Cloud computing, AWS all services, DevOps, Jenkins, Git
-            & More....
+            Skills you'll gain: Cloud computing, AWS all services, DevOps,
+            Jenkins, Git & More....
           </p>
           <div className="unique-rating">
             <span className="unique-rating-value">4.8</span>
@@ -118,7 +116,6 @@ const AEACards = () => {
           </p>
         </div>
       </div>
-      
     </div>
   );
 };

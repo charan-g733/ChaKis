@@ -35,10 +35,7 @@ const App = () => {
           </div>
           <div className="archeobyte-tech-feature-section">
             <div className="archeobyte-tech-feature-image">
-              <img
-                src="path/to/precision-accuracy.jpg"
-                alt="Precision and Accuracy"
-              />
+              <img src="images/target.webp" alt="Precision and Accuracy" />
             </div>
             <div className="archeobyte-tech-feature-text">
               <h1>Precision and Accuracy</h1>
@@ -61,15 +58,12 @@ const App = () => {
               </p>
             </div>
             <div className="archeobyte-tech-feature-image">
-              <img
-                src="path/to/user-centric-design.jpg"
-                alt="User-Centric Design"
-              />
+              <img src="images/ui.webp" alt="User-Centric Design" />
             </div>
           </div>
           <div className="archeobyte-tech-feature-section">
             <div className="archeobyte-tech-feature-image">
-              <img src="path/to/robust-security.jpg" alt="Robust Security" />
+              <img src="images/security.jpeg" alt="Robust Security" />
             </div>
             <div className="archeobyte-tech-feature-text">
               <h1>Robust Security</h1>
@@ -146,8 +140,8 @@ const App = () => {
             </div>
           </div>
         </div>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </>
   );
 };

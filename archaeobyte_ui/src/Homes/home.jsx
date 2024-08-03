@@ -11,8 +11,7 @@ import CustomersReviews from '../components/Customersreviews/customersreviews';
 // import ItServices from '../components/IT Services Main/itservices';
 import Footer from '../components/Footer/footer';
 import AnimatedComponent from '../components/AnimatedComponent/AnimatedComponent';
-import FAQs from '../components/FAQS/faq';
-import { FaQ } from 'react-icons/fa6';
+
 
 
 const home = () => {

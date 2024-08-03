@@ -4,21 +4,27 @@
   display: flex;
   justify-content: space-between;
   height: 90px;
-  /* background: linear-gradient(135deg, #e0eff3, #b4b7c1, #9b9ea5, #bcbcc2, #dedce0, #e7e4e9); */
   background-color: rgba(229, 230, 235, 0.573);
   background-size: 400% 400%;
   animation: color-shift 30s ease infinite;
   font-family: 'Roboto', sans-serif;
-  z-index: 1000; /* Ensure navbar is in front */
+  z-index: 1000;
+  transition: margin-bottom 0.3s ease;
+}
+
+.custom-navbar .dropdown-open {
+  margin-bottom: 390px;
 }
 
 @keyframes color-shift {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -34,13 +40,13 @@
 .navbar-brand img {
   height: 80px;
   width: 80px;
-  z-index: 1001; /* Ensure logo is in front */
+  z-index: 1001;
   margin-left: 20px;
 }
 
 .navbar-toggler {
   margin-right: 20px;
-  z-index: 1001; /* Ensure toggler is in front */
+  z-index: 1001;
 }
 
 .navbar-nav {
@@ -83,7 +89,7 @@
   width: 120px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeInDropdown 0.3s ease-out;
-  z-index: 1002; /* Ensure dropdown is in front */
+  z-index: 1002;
   position: relative;
 }
 
@@ -93,9 +99,9 @@
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   transition: background-color 0.3s ease;
-  background-color: white; /* Ensure background is white */
+  background-color: white;
 }
 
 .custom-dropdown .dropdown-item:hover {
@@ -107,6 +113,7 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -132,7 +139,6 @@
   display: none;
 }
 
-/* Media Queries */
 @media (max-width: 992px) {
   .navbar-nav {
     flex-direction: column;
@@ -141,7 +147,7 @@
     position: absolute;
     top: 90px;
     left: 0;
-    background-color: white;
+    background-color: rgb(226, 226, 226);
     z-index: 1001;
   }
 
@@ -153,7 +159,7 @@
     text-align: left;
     padding: 10px 20px;
     color: black;
-    background-color: white;
+    background-color: rgb(226, 226, 226);
   }
 
   .custom-container-nav {
@@ -163,7 +169,7 @@
   }
 
   .navbar-collapse {
-    z-index: 1001; /* Ensure collapse menu is in front */
+    z-index: 1001;
   }
 }
 

@@ -1,35 +1,48 @@
+/* progress.css */
+
 .progress-container {
   position: relative;
-  margin: 0 80px; /* Combine left and right margin */
+  margin: 0 80px;
 }
 
 .progress-steps {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  /* Allow wrapping for smaller screens */
 }
 
 .step {
   text-align: center;
+  flex: 1;
+  /* Allow flex items to grow */
+  min-width: 30px;
+  /* Set a minimum width for the steps *
+  margin: 10px;
+  /* Add margin for spacing between steps */
 }
 
 .step .icon {
-  font-size: 40px; /* Adjust based on your icon size */
-  color: #dcaa21; /* Adjust based on your preferred color */
+  font-size: 2px;
+  color: #dcaa21;
 }
 
 .step p {
-  margin: 40px 20px 10px;
-  font-size: 20px;
+  margin: 10px 0;
+  font-size: 2px;
+  /* Adjust font size for better readability on mobile */
 }
 
-.step span {
-  font-size: 14px;
-  color: #666;
+.arrow {
+  font-size: 20px;
+  color: #000;
+  display: none;
+  /* Hide arrows by default for smaller screens */
 }
 
 .underline-innovate {
   position: absolute;
-  bottom: -62px; /* Adjust this value as needed */
+  bottom: -62px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -37,13 +50,48 @@
   z-index: -1;
 }
 
-.arrow {
-  margin: 0 10px;
-  font-size: 20px;
-  color: #000;
+@media (min-width: 768px) {
+  .progress-steps {
+    flex-wrap: nowrap;
+    /* Prevent wrapping for larger screens */
+  }
+
+  .arrow {
+    display: block;
+    /* Show arrows for larger screens */
+  }
 }
 
-.highlight-progress {
-  background-color: #ffdd00;
-  padding: 0 5px;
+@media (max-width: 767px) {
+  .progress-container {
+    margin: 0 20px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .step .icon {
+    font-size: 20px;
+    /* Adjust icon size for smaller screens */
+  }
+
+  .step p {
+    font-size: 10px;
+    /* Adjust font size for better readability on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-container {
+    margin: 0 10px;
+    /* Adjust margin for very small screens */
+  }
+
+  .step .icon {
+    font-size: 25px;
+    /* Adjust icon size for very small screens */
+  }
+
+  .step p {
+    font-size: 12px;
+    /* Adjust font size for better readability on very small screens */
+  }
 }

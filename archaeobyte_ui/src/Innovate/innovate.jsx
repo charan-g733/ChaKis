@@ -14,7 +14,7 @@ const Innovate=()=>{
         <InnovateBanner></InnovateBanner>
         <ProgressSteps></ProgressSteps>
             <InnovateCards></InnovateCards>
-            <Footer></Footer>
+          <Footer></Footer>
       </div>
     );
 }

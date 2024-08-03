@@ -1,77 +1,131 @@
 /* UCards.css */
 
 .u-card-domains {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-    gap: 20px; 
-    margin: 100px 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px;
+  margin: 150px 70px;
+}
 
-    
+.u-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 80px;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.u-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.u-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.u-card .u-card-details {
+  flex: 1;
+}
+
+.u-card h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.u-card p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.u-rating {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.u-rating-value {
+  color: #000;
+  font-weight: bold;
+}
+
+.u-rating-star {
+  color: blue;
+}
+
+.u-rating-text {
+  color: grey;
+}
+
+.u-rating-description {
+  color: grey;
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .u-card-domains {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 50px 20px;
   }
-  
+
   .u-card {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    flex: 1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 80px;
+    margin-top: 40px;
   }
-  
-  .u-card:hover {
-    transform: translateY(-15px); 
-    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1); 
-  }
-  
+
   .u-card img {
-    width: 100%; /* Image takes full width of parent container */
-    max-width: 100%; /* Limit maximum width to maintain aspect ratio */
-    height: 180px; /* Maintain aspect ratio */
-    border-radius: 8px;
+    height: 150px;
   }
-  
-  .u-card .u-card-details {
-    flex: 1;
-  }
-  
+
   .u-card h4 {
-    margin: 0 0 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
-  
+
   .u-card p {
-    margin: 0;
-    font-size: 12px;
-    color: #666;
+    font-size: 10px;
   }
-  
-  .u-rating {
-    display: flex;
-    margin-top: 15px;
-    align-items: center;
-    gap: 5px; /* Adjust the gap between elements */
-    margin-bottom: 10px;
-  }
-  
-  .u-rating-value {
-    color: #000; /* Black color for the rating value */
-    font-weight: bold;
-  }
-  
-  .u-rating-star {
-    color: blue; /* Set the color of the rating star to blue */
-  }
-  
-  .u-rating-text {
-    color: grey; /* Set the color of the rating text (137K) to grey */
-  }
-  
+
   .u-rating-description {
-    color: grey; /* Set the color of the description text ("6 months beginner") to grey */
-    font-size: 12px; /* Optional: Adjust the font size to match the design */
-    margin-left: 40px; /* Optional: Adjust the left margin for alignment */
+    font-size: 10px;
+    margin-left: 20px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .u-card-domains {
+    grid-template-columns: 1fr;
+    margin: 20px 10px;
+  }
+
+  .u-card {
+    margin-top: 20px;
+  }
+
+  .u-card img {
+    height: 120px;
+  }
+
+  .u-card h4 {
+    font-size: 14px;
+  }
+
+  .u-card p {
+    font-size: 9px;
+  }
+
+  .u-rating-description {
+    font-size: 9px;
+    margin-left: 10px;
+  }
+}
