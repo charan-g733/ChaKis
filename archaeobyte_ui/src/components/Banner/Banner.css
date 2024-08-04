@@ -1,160 +1,169 @@
 /* Banner component CSS */
 .banner-container {
-    position: relative;
-    width: 100%;
-    height: 420px; /* Adjust height as needed */
-    overflow: hidden;
-    margin: 5px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 420px; /* Adjust height as needed */
+  overflow: hidden;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-container .slick-slider {
-    width: 90%; /* Adjust width as needed */
-    height: 100%; /* Adjust height as needed */
+  width: 90%; /* Adjust width as needed */
+  height: 100%; /* Adjust height as needed */
 }
 
 .banner-container .slick-slide {
-    position: relative;
+  position: relative;
 }
 
 .banner-container .slick-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .slick-prev,
 .slick-next {
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 2;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .slick-prev {
-    left: 10px;
+  left: 10px;
+
 }
 
 .slick-next {
-    right: 10px;
+  right: 10px;
 }
 
-.box1, .box2 {
-    position: absolute;
-    padding: 20px;
-    background: white;
-    color: #333; /* Darker text color for better contrast */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    font-family: 'Montserrat', sans-serif; /* Example of font family */
+.box1,
+.box2 {
+  position: absolute;
+  padding: 20px;
+  background: white;
+  color: #333; /* Darker text color for better contrast */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", sans-serif; /* Example of font family */
 }
 
 .box1 {
-    top: 80px;
-    right: 80px;
-    width: 400px;
+  top: 80px;
+  right: 80px;
+  width: 400px;
 }
 
 .box2 {
-    top: 60px;
-    left: 20px;
-    width: 300px;
-    height: 340px;
+  top: 60px;
+  left: 20px;
+  width: 300px;
+  height: 340px;
 }
 
 /* Button styles */
 .button-container {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Arial", sans-serif;
 }
 
 .individual {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 .organization {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .banner-container {
-        height: 300px; /* Adjust height for smaller screens */
-    }
+  .banner-container {
+    height: 300px; /* Adjust height for smaller screens */
+  }
 
-    .box1, .box2 {
-        padding: 15px;
-        font-size: 0.9em;
-    }
+  .box1,
+  .box2 {
+    padding: 15px;
+    font-size: 0.9em;
+  }
 
-    .box1 {
-        top: 60px;
-        right: 20px;
-        width: 300px;
-    }
+  .box1 {
+    top: 60px;
+    right: 20px;
+    width: 300px;
+  }
 
-    .box2 {
-        top: 40px;
-        left: 10px;
-        width: 260px;
-        height: auto;
-    }
+  .box2 {
+    top: 40px;
+    left: 10px;
+    width: 260px;
+    height: auto;
+  }
 
-    .button {
-        padding: 8px 15px;
-    }
+  .button {
+    padding: 8px 15px;
+  }
+  .slick-next .slick-prev {
+    display: none !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .banner-container {
-        height: 180px; /* Adjust height for very small screens */
-    }
-            .box-title
-            {
-                font-size: 2.5em;
-            }
-    .box1, .box2 {
-        padding: 10px;
-        font-size: 0.4em;
-    }
+  .banner-container {
+    height: 180px; /* Adjust height for very small screens */
+  }
+  .box-title {
+    font-size: 2.5em;
+  }
+  .box1,
+  .box2 {
+    padding: 10px;
+    font-size: 0.4em;
+  }
 
-    .box1 {
-        top: 40px;
-        right: 13px;
-        width: 160px;
-    }
+  .box1 {
+    top: 20px;
+    right: 42px;
+    width: 160px;
+  }
 
-    .box2 {
-        top: 10px;
-        left: 5px;
-        width: 120px;
-        height: auto;
-    }
+  .box2 {
+    top: 10px;
+    left: 42px;
+    width: 120px;
+    height: auto;
+  }
 
-    .button {
-        padding: 6px 10px;
-        font-size: 0.8em;
-    }
+  .button {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+  .slick-next .slick-prev {
+    display: none !important;
+  }
 }
