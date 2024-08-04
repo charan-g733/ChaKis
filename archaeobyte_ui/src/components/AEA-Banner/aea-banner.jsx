@@ -2,6 +2,13 @@ import React from "react";
 import "./aea-banner.css";
 
 const EducationBanner = () => {
+  const scrollToCards = () => {
+    const element = document.getElementById("unique-cards-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div className="education-banner">
       <div className="education-banner-content">
@@ -14,9 +21,8 @@ const EducationBanner = () => {
             <div className="education-banner-course">
               <h3>Training</h3>
               <p>
-                {" "}
                 Get certified Training by IBM, Infosys, Nasscom with Top
-                Mentorship support{" "}
+                Mentorship support
               </p>
             </div>
             <div className="education-banner-divider"></div>
@@ -24,16 +30,16 @@ const EducationBanner = () => {
               <h3>Internship</h3>
               <p>
                 Apply your skills and gain In-Hand Experience in our Internship
-                Program.{" "}
+                Program.
               </p>
             </div>
             <div className="education-banner-divider"></div>
             <div className="education-banner-course">
               <h3>Placement Assistance</h3>
-              <p>Get Placed at Top MNC's with Minumum 10LPA Salary.</p>
+              <p>Get Placed at Top MNC's with Minimum 10LPA Salary.</p>
             </div>
           </div>
-          <button className="education-banner-button">Register Now</button>
+          <button className="education-banner-button" onClick={scrollToCards}>Register Now</button>
         </div>
         <div className="education-banner-image">
           <img src="images/aea-banner1.webp" alt="Online Education" />

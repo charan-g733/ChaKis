@@ -74,6 +74,24 @@
   margin-left: 40px;
 }
 
+
+.unique-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.unique-card {
+  /* Your existing card styles */
+}
+
+.unique-card img {
+  width: 100%; /* Ensure image scales properly */
+  height: auto;
+}
+
+/* Additional styles to ensure card appears as expected */
+
 @media (max-width: 768px) {
   .unique-card-domains {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

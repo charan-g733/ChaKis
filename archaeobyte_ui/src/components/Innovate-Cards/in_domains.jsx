@@ -2,9 +2,13 @@ import React from "react";
 import "./in_domains.css";
 
 const InnovateCards = () => {
+  const handleCardClick = () => {
+    window.location.href = "https://forms.gle/4RNijxChXPwv8m929";
+  };
+
   return (
-    <div className="u-card-domains">
-      <div className="u-card">
+    <div className="u-card-domains" id="internship-cards">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/python.webp" alt="Python" />
         <div className="u-card-details">
           <h4>Python Development</h4>
@@ -19,7 +23,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/java.webp" alt="Java" />
         <div className="u-card-details">
           <h4>Java Development</h4>
@@ -37,8 +41,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/fsd.jpg" alt="FSD" />
         <div className="u-card-details">
           <h4>Full Stack Web Development</h4>
@@ -56,8 +59,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/DataScience.jpg" alt="Data Science" />
         <div className="u-card-details">
           <h4>Data Science</h4>
@@ -75,8 +77,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/DataAnalytics.jpg" alt="Data Analytics" />
         <div className="u-card-details">
           <h4>Data Analytics</h4>
@@ -91,7 +92,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/MachineLearning.jpg" alt="Machine Learning" />
         <div className="u-card-details">
           <h4>Machine Learning </h4>
@@ -109,8 +110,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/front-end-dev.jpg" alt="Front end development" />
         <div className="u-card-details">
           <h4>Front-End Development</h4>
@@ -125,7 +125,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/uxdesign.jpg" alt="UX design" />
         <div className="u-card-details">
           <h4>UX Design</h4>
@@ -143,7 +143,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/android1.jpg" alt="Android Development" />
         <div className="u-card-details">
           <h4>Android Development</h4>
@@ -157,11 +157,11 @@ const InnovateCards = () => {
             <span className="u-rating-text">(173K reviews)</span>
           </div>
           <p className="u-rating-description">
-            Inytermediate · Virtual Internship 1 month
+            Intermediate · Virtual Internship 1 month
           </p>
         </div>
       </div>
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/aws.jpg" alt="AWS" />
         <div className="u-card-details">
           <h4>AWS Cloud Computing</h4>
@@ -179,7 +179,7 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/AWSonDevops.png" alt="Devops on aws" />
         <div className="u-card-details">
           <h4>DevOps on AWS</h4>
@@ -196,73 +196,18 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-      <div className="u-card">
+      <div className="u-card" onClick={handleCardClick}>
         <img src="images/pythonflask.png" alt="Python flask" />
         <div className="u-card-details">
           <h4>Python Flask Development</h4>
           <p>Skills you'll gain: Python, Flask, SQL , Server & More......</p>
           <div className="u-rating">
-            <span className="u-rating-value">4.2</span>
+            <span className="u-rating-value">4.8</span>
             <span className="u-rating-star">★</span>
-            <span className="u-rating-text">(103K reviews)</span>
+            <span className="u-rating-text">(450K reviews)</span>
           </div>
           <p className="u-rating-description">
             Intermediate · Virtual Internship 1 month
-          </p>
-        </div>
-      </div>
-
-      <div className="u-card">
-        <img src="images/deeplearning.webp" alt="Deep learning" />
-        <div className="u-card-details">
-          <h4>Deep Learning</h4>
-          <p>
-            Skills you'll gain: Deep Learning Models, NPL, CNN's, Keras &
-            More....
-          </p>
-          <div className="u-rating">
-            <span className="u-rating-value">4.4</span>
-            <span className="u-rating-star">★</span>
-            <span className="u-rating-text">(137K reviews)</span>
-          </div>
-          <p className="u-rating-description">
-            Intermediate · Virtual Internship 1 month
-          </p>
-        </div>
-      </div>
-      <div className="u-card">
-        <img src="images/cybersecurity.jpg" alt="Cyber security" />
-        <div className="u-card-details">
-          <h4>Cyber Security</h4>
-          <p>
-            Skills you'll gain: Mongo, Express JS, React/Angular, Node, Backend
-            Language...
-          </p>
-          <div className="u-rating">
-            <span className="u-rating-value">4.5</span>
-            <span className="u-rating-star">★</span>
-            <span className="u-rating-text">(14K reviews)</span>
-          </div>
-          <p className="u-rating-description">
-            Beginner · Virtual Internship 1 month
-          </p>
-        </div>
-      </div>
-      <div className="u-card">
-        <img src="images/powerbi.png" alt="Power Bi" />
-        <div className="u-card-details">
-          <h4>Power BI</h4>
-          <p>
-            Skills you'll gain: Mongo, Express JS, React/Angular, Node, Backend
-            Language...
-          </p>
-          <div className="u-rating">
-            <span className="u-rating-value">4.7</span>
-            <span className="u-rating-star">★</span>
-            <span className="u-rating-text">(88K reviews)</span>
-          </div>
-          <p className="u-rating-description">
-            Beginner · Virtual Internship 1 month
           </p>
         </div>
       </div>

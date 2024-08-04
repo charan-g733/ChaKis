@@ -2,8 +2,7 @@
 
 .progress-container {
   position: relative;
-  margin: 0 80px;
-  /* Combine left and right margin */
+  margin: 0 80px; /* Combine left and right margin */
 }
 
 .progress-steps {
@@ -13,21 +12,24 @@
 
 .step {
   text-align: center;
-  flex: 1;
-    /* Allow flex items to grow */
-    min-width: 150px;
+  flex: 1; /* Allow flex items to grow */
+  min-width: 150px;
+  position: relative;
 }
 
 .step .icon {
-  font-size: 40px;
-  /* Adjust based on your icon size */
-  color: #dcaa21;
-  /* Adjust based on your preferred color */
+  font-size: 40px; /* Base size for larger screens */
+  color: #dcaa21; /* Adjust based on your preferred color */
+  background-color: #000; /* Circle background */
+  border-radius: 50%; /* Make it circular */
+  padding: 20px; /* Space around icon for the circle */
+  display: inline-block; /* Ensure circle wraps around icon */
+  color: #fff; /* Icon color inside the circle */
 }
 
 .step p {
-  margin: 40px 20px 10px;
-  font-size: 20px;
+  margin: 20px 10px 10px; /* Adjust margins */
+  font-size: 18px; /* Base size for larger screens */
 }
 
 .step span {
@@ -37,8 +39,7 @@
 
 .underline-innovate {
   position: absolute;
-  bottom: -62px;
-  /* Adjust this value as needed */
+  bottom: -62px; /* Adjust this value as needed */
   left: 0;
   width: 100%;
   height: 2px;
@@ -59,46 +60,43 @@
 
 @media (min-width: 768px) {
   .progress-steps {
-    flex-wrap: nowrap;
-    /* Prevent wrapping for larger screens */
+    flex-wrap: nowrap; /* Prevent wrapping for larger screens */
   }
 
   .arrow {
-    display: block;
-    /* Show arrows for larger screens */
+    display: block; /* Show arrows for larger screens */
   }
 }
 
 @media (max-width: 767px) {
   .progress-container {
-    margin: 0 20px;
-    /* Adjust margin for smaller screens */
+    margin: 0 20px; /* Adjust margin for smaller screens */
   }
 
   .step .icon {
-    font-size: 80%;
-    /* Adjust icon size for smaller screens */
+    font-size: 70px !important ; /* Increase icon size for smaller screens */
+    padding: 30px; /* Increase padding to enlarge the circle */
   }
 
   .step p {
-    font-size: 10px;
-    /* Adjust font size for better readability on mobile */
+    font-size: 20px !important;
+     /* Increase font size for better readability */
   }
 }
 
 @media (max-width: 480px) {
   .progress-container {
-    margin: 0 10px;
-    /* Adjust margin for very small screens */
+    margin: 0 10px; /* Adjust margin for very small screens */
+    background-color: #f0f4ff;
+
   }
 
   .step .icon {
-    font-size: 85px;
-    /* Adjust icon size for very small screens */
+    font-size: 80px; /* Further increase icon size */
+    padding: 35px; /* Further increase padding to enlarge the circle */
   }
 
   .step p {
-    font-size: 12px;
-    /* Adjust font size for better readability on very small screens */
+    font-size: 22px; /* Further increase font size for better readability */
   }
 }

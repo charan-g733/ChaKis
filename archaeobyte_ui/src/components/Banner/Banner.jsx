@@ -44,7 +44,7 @@ const Banner = () => {
               <NavLink className="button individual" href="/">
                 Plan for individuals
               </NavLink>
-              <NavLink className="button organization" href="/team">
+              <NavLink className="button organization" href="/Coming Soon">
                 Plan for your organization
               </NavLink>
             </div>
