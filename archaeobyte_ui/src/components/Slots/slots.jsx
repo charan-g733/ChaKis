@@ -27,7 +27,7 @@ const Slots = () => {
       <div className="custom-cards">
         <div className="custom-card">
           <div className="custom-card-header">
-            <span>INNOVATE Program</span>
+            <span className="aea-span" >INNOVATE Program</span>
           </div>
           <div className="custom-card-body">
             <div className="custom-card-tag">
@@ -48,7 +48,7 @@ const Slots = () => {
         </div>
         <div className="custom-card">
           <div className="custom-card-header">
-            <span>AEA Program</span>
+            <span className="aea-span">AEA Program</span>
           </div>
           <div className="custom-card-body">
             <div className="custom-card-tag">
@@ -60,7 +60,9 @@ const Slots = () => {
             </div>
             <div className="custom-card-button-wrapper">
               <button className="custom-card-button">
-                <NavLink href="/AEA">Register for Free AEA Master class</NavLink>
+                <NavLink href="/AEA">
+                  Register for Free AEA Master class
+                </NavLink>
               </button>
             </div>
           </div>

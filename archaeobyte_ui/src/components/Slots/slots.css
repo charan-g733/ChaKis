@@ -292,4 +292,7 @@
     width: 100%; /* Ensure button spans full width */
     max-width: 150px; /* Set max width for buttons */
   }
+  .aea-span{
+    width:50%;
+  }
 }

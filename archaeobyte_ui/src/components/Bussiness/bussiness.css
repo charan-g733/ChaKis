@@ -147,15 +147,18 @@
 }
 
 /* Media queries for mobile responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+   
     .archeobyte-tech-feature-section {
         flex-direction: column;
         text-align: center;
+        width:300px;
+        margin-left: -25px;
     }
 
     .archeobyte-tech-feature-text,
     .archeobyte-tech-feature-image {
-        max-width: 80%;
+        max-width: 100%;
         margin-bottom: 20px;
     }
 
@@ -175,4 +178,5 @@
         width: 90%;
         margin: 10px 0;
     }
+    
 }
