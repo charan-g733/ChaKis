@@ -29,20 +29,16 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-section quick-links">
-          <h4>Quick Links</h4>
+          <h4 className="footer-h4">Quick Links</h4>
           <ul>
             <li>Home</li>
-            <li>Academy</li>
-            <li>Intensive</li>
+            <li>AEA</li>
+            <li>Innovate</li>
             <li>Hire with us</li>
             <li>Contact Us</li>
-            <li>Blog</li>
-            <li>About Us</li>
+            <li>Get in Touch</li>
+            <li>It Services</li>
             <li>Reviews</li>
-            <li>Community</li>
-            <li>4.0 Champions</li>
-            <li>NxtWave'22 Review</li>
-            <li>Python Tutorial</li>
           </ul>
         </div>
         <div className="social-media">
