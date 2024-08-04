@@ -12,13 +12,11 @@
     justify-content: space-around;
     margin-bottom: 20px;
     text-align: center;
-    /* Ensure centered text on smaller screens */
 }
 
 .footer-section {
     margin: 10px;
     flex: 1 1 200px;
-    /* Flex-grow, flex-shrink, flex-basis for responsiveness */
 }
 
 .contact {
@@ -40,6 +38,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    columns: 2; /* Adds two columns for quick links */
+    column-gap: 20px;
 }
 
 .footer-section ul li {
@@ -50,7 +50,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Center align text on smaller screens */
     margin: 5px 0;
 }
 
@@ -71,32 +70,31 @@
     height: 35px;
     margin-right: 15px;
     transition: transform 0.3s ease, color 0.3s ease;
-    color: #ffffff; /* Initial color */
+    color: #ffffff;
 }
 
 .social-media .icon:hover {
-    transform: scale(1.2); /* Pop effect */
+    transform: scale(1.2);
 }
 
-/* Specific hover colors */
 .social-media .fa-facebook:hover {
-    color: #1877f2; /* Facebook Blue */
+    color: #1877f2;
 }
 
 .social-media .fa-instagram:hover {
-    color: #e1306c; /* Instagram Pink */
+    color: #e1306c;
 }
 
 .social-media .fa-x-twitter:hover {
-    color: #010000; /* Twitter X Blue */
+    color: #010000;
 }
 
 .social-media .fa-linkedin:hover {
-    color: #0077b5; /* LinkedIn Blue */
+    color: #0077b5;
 }
 
 .social-media .fa-youtube:hover {
-    color: #ff0000; /* YouTube Red */
+    color: #ff0000;
 }
 
 .footer-bottom {
@@ -120,10 +118,8 @@
 
 .footer-bottom ul li {
     margin: 10px 20px;
-    /* Adjusted for better spacing on smaller screens */
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .footer-content {
         text-align: center;

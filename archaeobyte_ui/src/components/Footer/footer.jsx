@@ -1,7 +1,5 @@
 import React from "react";
 import "./footer.css";
-
-// Import icons from react-icons
 import {
   FaWhatsapp,
   FaEnvelope,
@@ -34,14 +32,17 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li>Home</li>
-            <li>AEA</li>
-            <li>Innovate</li>
+            <li>Academy</li>
+            <li>Intensive</li>
             <li>Hire with us</li>
             <li>Contact Us</li>
-            <li>Get in Touch</li>
-            <li>It Services</li>
+            <li>Blog</li>
+            <li>About Us</li>
             <li>Reviews</li>
-            <li>FAQ's</li>
+            <li>Community</li>
+            <li>4.0 Champions</li>
+            <li>NxtWave'22 Review</li>
+            <li>Python Tutorial</li>
           </ul>
         </div>
         <div className="social-media">
