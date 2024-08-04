@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-section contact">
+        <div className="footer-section-contact">
           <img
             src="/images/DevElet_with_name.png"
             alt="NxtWave Logo"
@@ -27,21 +27,24 @@ const Footer = () => {
             <FaWhatsapp className="icon" /> +919346116602
           </p>
           <p>
-            <FaEnvelope className="icon" /> workspace.archaeobyte@gmail.com
+            <FaEnvelope className="icon" /> tech.develet@gmail.com
           </p>
         </div>
         <div className="footer-section quick-links">
           <h4>Quick Links</h4>
           <ul>
             <li>Home</li>
-            <li>AEA</li>
-            <li>Innovate</li>
+            <li>Academy</li>
+            <li>Intensive</li>
             <li>Hire with us</li>
             <li>Contact Us</li>
-            <li>Get in Touch</li>
-            <li>It Services</li>
+            <li>Blog</li>
+            <li>About Us</li>
             <li>Reviews</li>
-            <li>FAQ's</li>
+            <li>Community</li>
+            <li>4.0 Champions</li>
+            <li>NxtWave'22 Review</li>
+            <li>Python Tutorial</li>
           </ul>
         </div>
         <div className="social-media">
