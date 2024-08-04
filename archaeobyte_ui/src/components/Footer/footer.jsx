@@ -1,7 +1,5 @@
 import React from "react";
 import "./footer.css";
-
-// Import icons from react-icons
 import {
   FaWhatsapp,
   FaEnvelope,

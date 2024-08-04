@@ -66,6 +66,7 @@ const DataAnalystCard = () => {
                 </div>
                 <div className="unique-explore-certificates">
                     <a href="/AEA">Explore all Courses</a>
+                    
                 </div>
             </div>
         </div>

@@ -19,6 +19,10 @@
     flex: 1 1 200px;
 }
 
+.contact {
+    max-width: 300px;
+}
+
 .footer-logo {
     width: 150px;
     margin-bottom: 20px;
@@ -40,6 +44,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    columns: 2; /* Adds two columns for quick links */
+    column-gap: 20px;
 }
 
 .quick-links ul li {
@@ -126,7 +132,6 @@
     margin: 10px 20px;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .footer-content {
         text-align: center;
