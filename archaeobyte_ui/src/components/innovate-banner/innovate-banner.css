@@ -76,3 +76,44 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .banner-container-innovate {
+    padding: 20px;
+    flex-direction: column;
+    /* Stack items vertically */
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin-top: 20px;
+    /* Add spacing between text and image */
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .explore-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
