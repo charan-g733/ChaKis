@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./customersreviews.css";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+
 
 const reviews = [
   {
@@ -59,15 +61,24 @@ const reviews = [
 ];
 
 const CustomersReviews = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleViewAllPosts = () => {
+    navigate('/Feedback Links'); // Redirect to the FeedbackLinks component
+  };
+
   return (
-    <div className="review-slider-container-unique-name">
+    <div id="customer-reviews" className="review-slider-container-unique-name">
       <div className="review-slider-header-unique-name">
         <h2 className="review-slider-title-unique-name">Our Feedback</h2>
         <p className="review-slider-description-unique-name">
           Up-to-the-minute discussions, straight from the community and
           happening now.
         </p>
-        <button className="review-slider-view-all-posts-unique-name">
+        <button 
+          className="review-slider-view-all-posts-unique-name"
+          onClick={handleViewAllPosts} // Add onClick handler
+        >
           View All Posts
         </button>
       </div>

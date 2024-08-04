@@ -1,0 +1,52 @@
+.coming-soon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../../../public/images/comingsoon.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: #ffffff;
+  }
+  
+  .content-cmg {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .h3_cmg {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: rgba(220, 6, 6, 0.8);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .h1_cmg {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin: 0 0 20px;
+    color: white;
+  }
+  
+  .progress-bar-cmg {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-cmg {
+    height: 100%;
+    background: linear-gradient(90deg, #00b4db, #f538a0);
+    transition: width 0.5s ease;
+  }
+  
+  .p_cmg {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+  }
+  

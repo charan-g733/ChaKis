@@ -15,6 +15,8 @@ import AEA from './AEA/aea';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import ComingSoon from './components/Coming Soon/cmg';
+import FeedbackLinks from './components/Feedback Cards/feedback';
 
 
 function App() {
@@ -26,6 +28,10 @@ function App() {
         <Route path="/team" element={<Teams />} />
         <Route path="/Innovate" element={<Innovate/>}/>
         <Route path="/AEA" element={<AEA/>}/>
+        <Route path = "/Coming Soon" element={<ComingSoon/>}/>
+        <Route path = "/Feedback Links" element={<FeedbackLinks/>}/>
+
+        
         </Routes>
       </div>
       

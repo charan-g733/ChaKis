@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 import { FaChevronDown } from "react-icons/fa";
-
 import "./navigation.css";
 
 function Navigationbar() {
@@ -39,7 +38,7 @@ function Navigationbar() {
       className={`custom-navbar ${isDropdownVisible ? "dropdown-open" : ""}`}
     >
       <Container className="custom-container-nav">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className="navbar-brand-container">
           <img
             src="/images/DevElet_logo.png"
             width="80"
@@ -47,6 +46,10 @@ function Navigationbar() {
             className="d-inline-block align-top"
             alt="Company logo"
           />
+          <span className="brand-text">
+            <span className="brand-dev">Dev</span>
+            <span className="brand-elet">Elet.</span>
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -90,9 +93,21 @@ function Navigationbar() {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link href="#reviews">Reviews</Nav.Link>
-            <Nav.Link href="#hire">Hire with Us</Nav.Link>
-            <Nav.Link href="#faq">Get in Touch</Nav.Link>
+            <Nav.Link href="#customer-reviews">Reviews</Nav.Link>
+            <Nav.Link
+              href="https://forms.gle/48TEisj4vGCMkPng9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hire with Us
+            </Nav.Link>
+            <Nav.Link
+              href="https://forms.gle/KWVFjp5syUQ2mfYw9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get in Touch
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

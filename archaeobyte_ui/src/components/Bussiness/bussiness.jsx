@@ -3,6 +3,7 @@ import "./bussiness.css";
 import Navigationbar from "../Navigationbar/navigation";
 import Header from "../Header/header";
 import Footer from "../Footer/footer";
+import Survey from "../Survey/survey"
 const App = () => {
   return (
     <>
@@ -141,6 +142,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Survey></Survey>
       <Footer></Footer>
     </>
   );

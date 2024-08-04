@@ -20,7 +20,7 @@ function Header() {
           Individual Learning
         </NavLink>
         <NavLink
-          to="/team"
+          to="/Coming Soon"
           className={({ isActive }) =>
             isActive
               ? "hover-underline text-white custom-brand default-underline"
@@ -45,3 +45,5 @@ function Header() {
 }
 
 export default Header;
+
+

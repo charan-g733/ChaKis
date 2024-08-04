@@ -1,0 +1,46 @@
+.fl-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    height: 100%;
+    background: #f4f4f4;
+  }
+  
+  .fl-card {
+    background: #fff;
+    border: 10px solid #61c63a;
+    box-shadow: 1000px 10px 200px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .fl-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .fl-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .fl-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .fl-link:hover {
+    border-bottom: 2px solid #ff416c;
+    color: #ff416c;
+  }
+  
