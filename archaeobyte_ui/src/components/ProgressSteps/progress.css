@@ -99,4 +99,7 @@
   .step p {
     font-size: 22px; /* Further increase font size for better readability */
   }
+  .step{
+    width: 100% !important;
+  }
 }

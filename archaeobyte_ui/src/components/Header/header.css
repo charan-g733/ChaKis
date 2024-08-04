@@ -36,3 +36,20 @@
 .default-underline::after {
   width: 100%;
 }
+@media (max-width: 992px) {
+  .custom-headbar {
+    height: auto !important;
+    padding: 10px 0;
+  }
+
+  .custom-headbar .custom-brand {
+    font-size: 0.6em;
+    margin-right: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .custom-headbar .custom-brand + .custom-brand {
+    margin-top: 10px;
+  }
+}

@@ -43,7 +43,6 @@
 
 .slick-prev {
   left: 10px;
-
 }
 
 .slick-next {
@@ -128,42 +127,32 @@
   .button {
     padding: 8px 15px;
   }
-  .slick-next .slick-prev {
-    display: none !important;
-  }
+
+  
 }
 
 @media (max-width: 480px) {
   .banner-container {
-    height: 180px; /* Adjust height for very small screens */
+    height: 360px; /* Adjust height for very small screens */
   }
+
   .box-title {
-    font-size: 2.5em;
+    font-size: 3.0em;
   }
+
   .box1,
   .box2 {
+    position: static; /* Remove absolute positioning */
     padding: 10px;
-    font-size: 0.4em;
-  }
-
-  .box1 {
-    top: 20px;
-    right: 42px;
-    width: 160px;
-  }
-
-  .box2 {
-    top: 10px;
-    left: 42px;
-    width: 120px;
-    height: auto;
+    font-size: 0.6em;
+    margin-top: 10px; /* Add margin to space out from the image */
+    width: auto; /* Let the width adjust automatically */
+    height: auto; /* Let the height adjust automatically */
   }
 
   .button {
     padding: 6px 10px;
     font-size: 0.8em;
   }
-  .slick-next .slick-prev {
-    display: none !important;
-  }
+  
 }

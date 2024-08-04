@@ -21,7 +21,7 @@ const Banner = () => {
     <div className="banner-container">
       <Slider {...settings}>
         <div className="slide">
-          <img src="images/banner6.jpg" alt="Slide 1" />
+          <img src="images/banner6.jpg" alt="Slide 1" className="bannerimage"/>
           <div className="box1">
             <h1 className="box-title">
               Invest in learning that grows with you
