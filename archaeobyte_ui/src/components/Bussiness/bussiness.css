@@ -151,11 +151,13 @@
     .archeobyte-tech-feature-section {
         flex-direction: column;
         text-align: center;
+        width: 300px;
+        
     }
 
     .archeobyte-tech-feature-text,
     .archeobyte-tech-feature-image {
-        max-width: 80%;
+        max-width: 120%;
         margin-bottom: 20px;
     }
 
