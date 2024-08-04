@@ -46,10 +46,11 @@
   color: #000000;
 }
 
+
 .arrow {
+  margin: 0 10px;
   font-size: 20px;
   color: #000;
-  margin: 0 20px;
 }
 
 .underline {

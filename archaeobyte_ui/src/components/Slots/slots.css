@@ -174,7 +174,7 @@
   .custom-subheading {
     font-size: 16px;
     text-align: center;
-    margin-bottom: 20px; /* Adjusted space */
+    margin-bottom: 10px; /* Adjusted space */
   }
 
   .custom-badges-wrapper {
@@ -182,7 +182,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px; /* Space between logos */
-    margin-bottom: 20px; /* Adjusted space */
+    margin-bottom: 10px; /* Adjusted space */
   }
 
   .custom-badges img {
@@ -203,6 +203,7 @@
     margin: 0; /* Remove additional margin */
     padding: 15px; /* Adjusted padding for mobile */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
+    height: 350px;
   }
 
   .custom-card-header {
@@ -228,7 +229,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Adjusted margin */
+    margin-top: 10px; /* Adjusted margin */
   }
 
   .custom-card-button {

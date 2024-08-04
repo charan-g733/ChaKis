@@ -3,51 +3,58 @@
 .progress-container {
   position: relative;
   margin: 0 80px;
+  /* Combine left and right margin */
 }
 
 .progress-steps {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  /* Allow wrapping for smaller screens */
 }
 
 .step {
   text-align: center;
   flex: 1;
-  /* Allow flex items to grow */
-  min-width: 30px;
-  /* Set a minimum width for the steps *
-  margin: 10px;
-  /* Add margin for spacing between steps */
+    /* Allow flex items to grow */
+    min-width: 150px;
 }
 
 .step .icon {
-  font-size: 2px;
+  font-size: 40px;
+  /* Adjust based on your icon size */
   color: #dcaa21;
+  /* Adjust based on your preferred color */
 }
 
 .step p {
-  margin: 10px 0;
-  font-size: 2px;
-  /* Adjust font size for better readability on mobile */
+  margin: 40px 20px 10px;
+  font-size: 20px;
 }
 
-.arrow {
-  font-size: 20px;
-  color: #000;
-  display: none;
-  /* Hide arrows by default for smaller screens */
+.step span {
+  font-size: 14px;
+  color: #666;
 }
 
 .underline-innovate {
   position: absolute;
   bottom: -62px;
+  /* Adjust this value as needed */
   left: 0;
   width: 100%;
   height: 2px;
   background-color: #ccc;
   z-index: -1;
+}
+
+.arrow {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.highlight-progress {
+  background-color: #ffdd00;
+  padding: 0 5px;
 }
 
 @media (min-width: 768px) {
@@ -69,7 +76,7 @@
   }
 
   .step .icon {
-    font-size: 20px;
+    font-size: 80%;
     /* Adjust icon size for smaller screens */
   }
 
@@ -86,7 +93,7 @@
   }
 
   .step .icon {
-    font-size: 25px;
+    font-size: 85px;
     /* Adjust icon size for very small screens */
   }
 

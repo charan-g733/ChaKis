@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  FaLaptopCode,
-  FaUserGraduate,
+
   FaUserTie,
-  FaMicrochip,
-  FaProjectDiagram,
+
   FaRupeeSign,
 } from "react-icons/fa";
 import { PiGraduationCapBold } from "react-icons/pi";
