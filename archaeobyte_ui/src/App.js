@@ -6,7 +6,7 @@ import {
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from '../src/Homes/home';
+import Home from './Homes/home';
 import Bussiness from './components/Bussiness/bussiness';
 import Teams from './components/Teams/teams';
 import Innovate from './Innovate/innovate';
@@ -26,8 +26,8 @@ function App() {
           <Route path="/" element={<Home />} />
         <Route path="/business" element={<Bussiness />} />
         <Route path="/team" element={<Teams />} />
-        <Route path="/Innovate" element={<Innovate/>}/>
-        <Route path="/AEA" element={<AEA/>}/>
+        <Route path="/innovate" element={<Innovate/>}/>
+        <Route path="/aea" element={<AEA/>}/>
         <Route path = "/Coming Soon" element={<ComingSoon/>}/>
         <Route path = "/Feedback Links" element={<FeedbackLinks/>}/>
 

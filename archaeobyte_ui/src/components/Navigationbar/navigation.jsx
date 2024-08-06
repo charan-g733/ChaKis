@@ -69,7 +69,7 @@ function Navigationbar() {
                 <FaChevronDown className="arrow-icon" style={{ color: "black" }} />
               </Dropdown.Toggle>
               <Dropdown.Menu className="custom-dropdown">
-                <Dropdown.Item href="/AEA">
+                <Dropdown.Item href="/aea">
                   <img
                     src="images/Aea.png"
                     alt="AEA"
@@ -80,7 +80,7 @@ function Navigationbar() {
                     }}
                   />
                 </Dropdown.Item>
-                <Dropdown.Item href="/Innovate">
+                <Dropdown.Item href="/innovate">
                   <img
                     src="images/Innovate.png"
                     alt="Innovate"
@@ -93,8 +93,8 @@ function Navigationbar() {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link href="#customer-reviews">Reviews</Nav.Link>
-            <Nav.Link
+            <Nav.Link href="https://develet.in/#customer-reviews">Reviews</Nav.Link>
+           <Nav.Link
               href="https://forms.gle/48TEisj4vGCMkPng9"
               target="_blank"
               rel="noopener noreferrer"
