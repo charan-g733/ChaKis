@@ -10,7 +10,7 @@ import Home from '../src/Homes/home';
 import Bussiness from './components/Bussiness/bussiness';
 import Teams from './components/Teams/teams';
 import Innovate from './Innovate/innovate';
-import AEA from './AEA/aea';
+import AEA from '../src/AEA/aea';
 
 
 import "slick-carousel/slick/slick.css"; 
