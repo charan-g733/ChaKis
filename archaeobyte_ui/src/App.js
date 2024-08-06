@@ -28,8 +28,8 @@ function App() {
         <Route path="/team" element={<Teams />} />
         <Route path="/innovate" element={<Innovate/>}/>
         <Route path="/aea" element={<AEA/>}/>
-        <Route path = "/coming-soon" element={<ComingSoon/>}/>
-        <Route path = "/feedback-links" element={<FeedbackLinks/>}/>
+        <Route path = "/Coming Soon" element={<ComingSoon/>}/>
+        <Route path = "/Feedback Links" element={<FeedbackLinks/>}/>
 
         
         </Routes>
