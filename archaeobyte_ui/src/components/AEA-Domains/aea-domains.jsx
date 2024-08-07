@@ -14,7 +14,7 @@ const AEACards = () => {
             <p>
               Skills you'll gain: Mongo, Express JS, React/Angular, Node, Backend
               Language & more....
-            </p>
+            </p> 
             <div className="unique-rating">
               <span className="unique-rating-value">4.8</span>
               <span className="unique-rating-star">★</span>
