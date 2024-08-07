@@ -211,6 +211,56 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
+      <div className="u-card" onClick={handleCardClick}>
+        <img src="images/deeplearning.webp" alt="Python flask" />
+        <div className="u-card-details">
+          <h4>Deep Learning</h4>
+          <p>Skills you'll gain: Python, Keras, CNN Models, RCNN Models, ANN & Many more......</p>
+          <div className="u-rating">
+            <span className="u-rating-value">4.8</span>
+            <span className="u-rating-star">★</span>
+            <span className="u-rating-text">(303K reviews)</span>
+          </div>
+          <p className="u-rating-description">
+            Intermediate · Virtual Internship 1 month
+          </p>
+        </div>
+      </div>
+
+
+      <div className="u-card" onClick={handleCardClick}>
+        <img src="images/powerbi.png" alt="Python flask" />
+        <div className="u-card-details">
+          <h4>Power BI</h4>
+          <p>Skills you'll gain: Data modeling & DAX, Report Creation, Data Visualization, Dashboard Creation & More......</p>
+          <div className="u-rating">
+            <span className="u-rating-value">4.6</span>
+            <span className="u-rating-star">★</span>
+            <span className="u-rating-text">(224K reviews)</span>
+          </div>
+          <p className="u-rating-description">
+            Intermediate · Virtual Internship 1 month
+          </p>
+        </div>
+      </div>
+
+
+      <div className="u-card" onClick={handleCardClick}>
+        <img src="images/cybersecurity.jpg" alt="Python flask" />
+        <div className="u-card-details">
+          <h4>Cyber Security</h4>
+          <p>Skills you'll gain: CIA triad, IAM , Federation, CNS, GDPR, HIPAA, HAshing & More......</p>
+          <div className="u-rating">
+            <span className="u-rating-value">4.7</span>
+            <span className="u-rating-star">★</span>
+            <span className="u-rating-text">(150K reviews)</span>
+          </div>
+          <p className="u-rating-description">
+            Intermediate · Virtual Internship 1 month
+          </p>
+        </div>
+      </div>
+
     </div>
   );
 };
