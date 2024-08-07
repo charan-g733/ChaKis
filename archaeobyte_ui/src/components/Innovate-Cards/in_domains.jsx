@@ -3,7 +3,7 @@ import "./in_domains.css";
 
 const InnovateCards = () => {
   const handleCardClick = () => {
-    window.location.href = "https://forms.gle/4RNijxChXPwv8m929";
+    window.location.href = "https://forms.gle/DMuXFzxJD6zYcxUJ9";
   };
 
   return (

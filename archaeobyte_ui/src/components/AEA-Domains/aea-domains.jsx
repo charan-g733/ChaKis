@@ -5,7 +5,7 @@ import { faEye, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import "./aea-domains.css";
 
 const AEACards = () => {
-  const redirectUrl = "https://forms.gle/FreTkB3M1Rpyhvah7";
+  const redirectUrl = "https://forms.gle/V1vnjutjPu1QQeS39";
 
   const handleBrochureClick = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -33,13 +33,13 @@ const AEACards = () => {
             </p>
             <button 
               className="unique-brochure-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1QlAK4BQz8waTLiL9B7yuK3enCQMhcKrB/view?usp=sharing")}
             >
               <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button 
               className="unique-enroll-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
             >
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
             </button>
@@ -67,13 +67,13 @@ const AEACards = () => {
             </p>
             <button 
               className="unique-brochure-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1RRQrJQ4TMhoXXqGlTLs5p0n9Z56t837E/view?usp=sharing")}
             >
               <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button 
               className="unique-enroll-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
             >
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
             </button>
@@ -102,13 +102,13 @@ const AEACards = () => {
             </p>
             <button 
               className="unique-brochure-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1GLxtAWtCUUTAO5_yu5_OcKkc4zDjF6F5/view?usp=sharing")}
             >
               <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button 
               className="unique-enroll-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
             >
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
             </button>
@@ -138,13 +138,13 @@ const AEACards = () => {
             </p>
             <button 
               className="unique-brochure-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1YcW5chwVekaFSKuGl5fHk8Z9h1sSZ2Se/view?usp=sharing")}
             >
               <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button 
               className="unique-enroll-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
             >
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
             </button>
@@ -174,13 +174,13 @@ const AEACards = () => {
             </p>
             <button 
               className="unique-brochure-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1Julc6wUZ6C8oAh-kR2-xREDB023coPgr/view?usp=sharing")}
             >
               <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button 
               className="unique-enroll-button"
-              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+              onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
             >
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
             </button>
