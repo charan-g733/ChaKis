@@ -1,31 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faUserPlus } from "@fortawesome/free-solid-svg-icons";
+
 import "./aea-domains.css";
 
 const AEACards = () => {
   const redirectUrl = "https://forms.gle/FreTkB3M1Rpyhvah7";
 
+  const handleBrochureClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="unique-card-domains" id="unique-cards-section">
-      <a href={redirectUrl} target="_blank" rel="noopener noreferrer" className="unique-card-link">
-        <div className="unique-card">
-          <img src="images/fsd.jpg" alt="Full Stack Development" />
-          <div className="unique-card-details">
-            <h4>Full Stack Development</h4>
-            <p>
-              Skills you'll gain: Mongo, Express JS, React/Angular, Node, Backend
-              Language & more....
-            </p>
-            <div className="unique-rating">
-              <span className="unique-rating-value">4.8</span>
-              <span className="unique-rating-star">★</span>
-              <span className="unique-rating-text">(137K reviews)</span>
-            </div>
-            <p className="unique-rating-description">
-              Beginner · Professional Certification Course 3 months
-            </p>
-          </div>
-        </div>
-      </a>
       
       <a href={redirectUrl} target="_blank" rel="noopener noreferrer" className="unique-card-link">
         <div className="unique-card">
@@ -35,6 +22,7 @@ const AEACards = () => {
             <p>
               Skills you'll gain: Python, Django, Flask, HTML, CSS, JS & More....
             </p>
+            
             <div className="unique-rating">
               <span className="unique-rating-value">4.9</span>
               <span className="unique-rating-star">★</span>
@@ -43,6 +31,19 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Beginner · Professional Certification Course 3 months
             </p>
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
+            </button>
+            <button 
+              className="unique-enroll-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
+            </button>
+            
           </div>
         </div>
       </a>
@@ -55,6 +56,7 @@ const AEACards = () => {
             <p>
               Skills you'll gain: HTML, CSS, React, JS, UX Design, SQL & More....
             </p>
+            
             <div className="unique-rating">
               <span className="unique-rating-value">5.0</span>
               <span className="unique-rating-star">★</span>
@@ -63,6 +65,19 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Beginner · Professional Certification Course 3 months
             </p>
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
+            </button>
+            <button 
+              className="unique-enroll-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
+            </button>
+            
           </div>
         </div>
       </a>
@@ -76,6 +91,7 @@ const AEACards = () => {
               Skills you'll gain: Java, Springboot, JSP & Servlets, RESTful Web
               Services, SQL and More.....
             </p>
+            
             <div className="unique-rating">
               <span className="unique-rating-value">4.9</span>
               <span className="unique-rating-star">★</span>
@@ -84,6 +100,19 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Intermediate · Professional Certification Course 3 months
             </p>
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
+            </button>
+            <button 
+              className="unique-enroll-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
+            </button>
+            
           </div>
         </div>
       </a>
@@ -97,6 +126,8 @@ const AEACards = () => {
               Skills you'll gain: Python, Data Science, Data Visualization,
               Machine Learning, & More...
             </p>
+            
+              
             <div className="unique-rating">
               <span className="unique-rating-value">4.7</span>
               <span className="unique-rating-star">★</span>
@@ -105,6 +136,19 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Intermediate · Professional Certification Course 3 months
             </p>
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
+            </button>
+            <button 
+              className="unique-enroll-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
+            </button>
+            
           </div>
         </div>
       </a>
@@ -118,6 +162,8 @@ const AEACards = () => {
               Skills you'll gain: Cloud computing, AWS all services, DevOps,
               Jenkins, Git & More....
             </p>
+            
+            
             <div className="unique-rating">
               <span className="unique-rating-value">4.8</span>
               <span className="unique-rating-star">★</span>
@@ -126,6 +172,19 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Intermediate · Professional Certification Course 3 months
             </p>
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
+            </button>
+            <button 
+              className="unique-enroll-button"
+              onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}
+            >
+              <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
+            </button>
+            
           </div>
         </div>
       </a>
