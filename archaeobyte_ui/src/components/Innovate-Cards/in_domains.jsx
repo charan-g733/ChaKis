@@ -1,29 +1,32 @@
-import React from "react";
+import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import "./in_domains.css";
 
 const InnovateCards = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
   const handleCardClick = () => {
-    window.location.href = "https://forms.gle/4RNijxChXPwv8m929";
+    navigate('/register-innovate'); // Navigate to the registration route
   };
 
   return (
-    <div className="u-card-domains" id="internship-cards">
-      <div className="u-card" onClick={handleCardClick}>
-        <img src="images/python.webp" alt="Python" />
-        <div className="u-card-details">
-          <h4>Python Development</h4>
-          <p>Skills you'll gain: Python, Flask, & More...</p>
-          <div className="u-rating">
-            <span className="u-rating-value">4.8</span>
-            <span className="u-rating-star">★</span>
-            <span className="u-rating-text">(501K reviews)</span>
+    
+
+      <div className="u-card-domains" id="internship-cards">
+        <div className="u-card" onClick={() => handleCardClick('Python Development')}>
+          <img src="images/python.webp" alt="Python" />
+          <div className="u-card-details">
+            <h4>Python Development</h4>
+            <p>Skills you'll gain: Python, Flask, & More...</p>
+            <div className="u-rating">
+              <span className="u-rating-value">4.8</span>
+              <span className="u-rating-star">★</span>
+              <span className="u-rating-text">(501K reviews)</span>
+            </div>
+            <p className="u-rating-description">Beginner · Virtual Internship 1 month</p>
           </div>
-          <p className="u-rating-description">
-            Beginner · Virtual Internship 1 month
-          </p>
         </div>
-      </div>
-      <div className="u-card" onClick={handleCardClick}>
+        <div className="u-card" onClick={handleCardClick}>
         <img src="images/java.webp" alt="Java" />
         <div className="u-card-details">
           <h4>Java Development</h4>
@@ -260,8 +263,10 @@ const InnovateCards = () => {
           </p>
         </div>
       </div>
-
-    </div>
+    
+        {/* Repeat similar blocks for other cards */}
+      </div>
+    
   );
 };
 

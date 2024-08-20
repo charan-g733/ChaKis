@@ -4,7 +4,7 @@ import ProgressSteps from "../components/ProgressSteps/progress"
 import Navigationbar from "../components/Navigationbar/navigation";
 import Footer from "../components/Footer/footer";
 import Header from "../components/Header/header";
-
+import React from 'react';
 const Innovate=()=>{
     return (
       <div>

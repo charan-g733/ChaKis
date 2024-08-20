@@ -1,0 +1,229 @@
+/* Style for the form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the form vertically */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f4f8; /* Light background color for the container */
+    position: relative; /* Required for absolute positioning of background image */
+  }
+  
+  /* Apply the background image to the form */
+  .form-container form {
+    width: 40%; /* Adjusted to occupy 60% of the viewport width */
+    max-width: 800px; /* Optional: maximum width */
+    min-width: 400px; /* Optional: minimum width */
+    padding: 40px 30px; /* Padding inside the form */
+    border: 2px solid #e1e5e9; /* Light border around the form */
+    border-radius: 15px; /* Rounded corners for the form */
+    background-color: #ffffff; /* White background color for the form */
+    box-shadow: 0 4px 8px rgb(205, 45, 205); /* Soft shadow for a 3D effect */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: relative; /* Ensure form is positioned relative to container */
+    z-index: 1; /* Ensure form is above background image */
+  }
+  
+  
+  /* Style for headings */
+  form h2 {
+    margin-bottom: 20px;
+    color: #333; /* Darker color for the heading */
+    text-align: center; /* Center align the heading */
+  }
+  
+  /* Style for labels */
+  form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold; /* Make label text bold */
+    color: #555; /* Slightly darker gray color for text */
+  }
+  
+  /* Style for input fields */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+  
+  /* Style for radio buttons */
+  form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Style for fieldset */
+  form fieldset {
+    border: 1px solid #ddd; /* Light border around fieldset */
+    border-radius: 5px; /* Rounded corners for fieldset */
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  /* Style for legend */
+  form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: blue; /* Accent color for legend */
+  }
+  
+  /* Style for checkbox */
+  form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Style for submit button */
+  form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #007bff; /* Primary button color */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  /* Button hover effect */
+  form button:hover {
+    background-color: #0056b3; /* Darker shade of the button color */
+  }
+  
+  .form-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+  
+  /* Default styles for input fields */
+  input[type="text"],
+  input[type="email"] {
+    border: 1px solid #ccc; /* Default border color */
+    padding: 8px;
+    margin-bottom: 10px; /* Margin between fields */
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Styles for input fields when they are focused */
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: violet; /* Change border color to violet */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Styles for input fields when they have content */
+  input[type="text"].filled,
+  input[type="email"].filled {
+    border-color: violet; /* Change border color to violet */
+  }
+  
+  
+  /* Center the submit button */
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button[type="submit"] {
+    align-self: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none;
+    border-radius: 4px;
+    background-color: darkviolet; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(204, 55, 204); /* Darker color on hover */
+  }
+  
+  .title {
+    color: #333; /* Default color for the rest of the text */
+    font-family: 'Arial', sans-serif; /* Font family for the title */
+    font-size: 24px; /* Font size for the title */
+    font-weight: bold; /* Font weight for the title */
+  }
+  
+  .title .dev {
+    color: blue; /* Color for "Dev" */
+    font-family: 'Arial', sans-serif; /* Font family for "Dev" */
+    font-style: bold; /* Font style for "Dev" */
+  }
+  
+  .title .elet {
+    color: red; /* Color for "Elet" */
+    font-family: 'Arial', sans-serif; /* Font family for "Elet" */
+    font-weight: bold; /* Font weight for "Elet" */
+  }
+  
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .modal-content h2 {
+    margin: 0;
+    font-size: 24px; /* Increased font size for the message */
+  }
+  
+  .modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px; /* Further reduced padding for a smaller button */
+    border: none;
+    background-color: darkviolet;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size */
+  }
+  
+  .modal-content button:hover {
+    background-color: rgb(204, 55, 204);
+  }
+  
+  
+  

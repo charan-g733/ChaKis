@@ -4,11 +4,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 import { FaChevronDown } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import "./navigation.css";
 
 function Navigationbar() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const dropdownRef = useRef(null);
+  const navigate = useNavigate(); // Define navigate
 
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
@@ -94,17 +96,14 @@ function Navigationbar() {
               </Dropdown.Menu>
             </Dropdown>
             <Nav.Link href="https://develet.in/#customer-reviews">Reviews</Nav.Link>
-           <Nav.Link
-              href="https://forms.gle/48TEisj4vGCMkPng9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hire with Us
-            </Nav.Link>
             <Nav.Link
-              href="https://forms.gle/KWVFjp5syUQ2mfYw9"
-              target="_blank"
-              rel="noopener noreferrer"
+            onClick={() => navigate("/hire-with-us")} // Use navigate to route to the form
+            >
+            Hire with Us
+            </Nav.Link>
+
+            <Nav.Link
+              onClick={() => navigate("/get_in_touch")} // Use navigate
             >
               Get in Touch
             </Nav.Link>

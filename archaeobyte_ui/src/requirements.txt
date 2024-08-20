@@ -1,0 +1,5 @@
+Flask
+Flask-Mail
+smtplib
+email
+python-dotenv
