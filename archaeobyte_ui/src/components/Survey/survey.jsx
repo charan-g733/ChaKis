@@ -1,9 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './survey.css';
 
 const Survey = () => {
+  const navigate = useNavigate();
+
   const handleGetInTouchClick = () => {
-    window.open("https://forms.gle/KWVFjp5syUQ2mfYw9", "_blank");
+    console.log('Button clicked'); // Debug: Check if this log appears
+    navigate('/get_in_touch');
   };
 
   return (

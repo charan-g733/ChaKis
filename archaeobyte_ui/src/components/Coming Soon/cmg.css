@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('../../../public/images/comingsoon.jpg') no-repeat center center fixed; /* Background image */
+    background: url('../../../src/images/comingsoon.jpg') no-repeat center center fixed; /* Background image */
     background-size: cover;
     color: #ffffff;
   }
