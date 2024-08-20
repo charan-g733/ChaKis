@@ -33,8 +33,11 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Beginner · Professional Certification Course 3 months
             </p>
-            <button className="unique-brochure-button" onClick={() => handleBrochureClick("https://your-brochure-link.com/python")}>
-              <FontAwesomeIcon icon={faEye} /> View Brochure
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1QlAK4BQz8waTLiL9B7yuK3enCQMhcKrB/view?usp=sharing")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button className="unique-enroll-button" onClick={handleEnrollClick}>
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
@@ -59,8 +62,11 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Beginner · Professional Certification Course 3 months
             </p>
-            <button className="unique-brochure-button" onClick={() => handleBrochureClick("https://your-brochure-link.com/front-end")}>
-              <FontAwesomeIcon icon={faEye} /> View Brochure
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1RRQrJQ4TMhoXXqGlTLs5p0n9Z56t837E/view?usp=sharing")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button className="unique-enroll-button" onClick={handleEnrollClick}>
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
@@ -85,8 +91,11 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Intermediate · Professional Certification Course 3 months
             </p>
-            <button className="unique-brochure-button" onClick={() => handleBrochureClick("https://your-brochure-link.com/java")}>
-              <FontAwesomeIcon icon={faEye} /> View Brochure
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1GLxtAWtCUUTAO5_yu5_OcKkc4zDjF6F5/view?usp=sharing")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button className="unique-enroll-button" onClick={handleEnrollClick}>
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
@@ -111,8 +120,11 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Intermediate · Professional Certification Course 3 months
             </p>
-            <button className="unique-brochure-button" onClick={() => handleBrochureClick("https://your-brochure-link.com/ml")}>
-              <FontAwesomeIcon icon={faEye} /> View Brochure
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1YcW5chwVekaFSKuGl5fHk8Z9h1sSZ2Se/view?usp=sharing")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button className="unique-enroll-button" onClick={handleEnrollClick}>
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
@@ -137,8 +149,11 @@ const AEACards = () => {
             <p className="unique-rating-description">
               Intermediate · Professional Certification Course 3 months
             </p>
-            <button className="unique-brochure-button" onClick={() => handleBrochureClick("https://your-brochure-link.com/aws")}>
-              <FontAwesomeIcon icon={faEye} /> View Brochure
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1Julc6wUZ6C8oAh-kR2-xREDB023coPgr/view?usp=sharing")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
             </button>
             <button className="unique-enroll-button" onClick={handleEnrollClick}>
               <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course

@@ -63,13 +63,13 @@ const DataAnalystCard = () => {
                                 <p className="unique-rating-description">Beginner · Professional Certification Course 3 months</p>
                                 <button 
                                     className="unique-brochure-button"
-                                    onClick={() => handleBrochureClick("https://your-brochure-link.com/frontend")}
+                                    onClick={() => handleBrochureClick("https://drive.google.com/file/d/1RRQrJQ4TMhoXXqGlTLs5p0n9Z56t837E/view?usp=sharing")}
                                 >
                                     <FontAwesomeIcon icon={faEye} /> View Brochure
                                 </button>
                                 <button 
                                     className="unique-enroll-button"
-                                    onClick={() => handleBrochureClick("https://your-brochure-link.com/frontend")}
+                                    onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
                                 >
                                     <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
                                 </button>
@@ -90,13 +90,13 @@ const DataAnalystCard = () => {
                                 <p className="unique-rating-description">Intermediate · Professional Certification Course 3 months</p>
                                 <button 
                                     className="unique-brochure-button"
-                                    onClick={() => handleBrochureClick("https://your-brochure-link.com/aws")}
+                                    onClick={() => handleBrochureClick("https://drive.google.com/file/d/1Julc6wUZ6C8oAh-kR2-xREDB023coPgr/view?usp=sharing")}
                                 >
                                     <FontAwesomeIcon icon={faEye} /> View Brochure
                                 </button>
                                 <button 
                                     className="unique-enroll-button"
-                                    onClick={() => handleBrochureClick("https://your-brochure-link.com/aws")}
+                                    onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
                                 >
                                     <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
                                 </button>
