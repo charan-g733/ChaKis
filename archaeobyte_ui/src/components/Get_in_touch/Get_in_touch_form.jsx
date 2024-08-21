@@ -192,13 +192,18 @@ const Get_in_touch_form = () => {
       </form>
 
       {showModal && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <h2>Thanks for registering!</h2>
-            <button onClick={handleCloseModal}>Close</button>
-          </div>
+      <div className="modal-overlay">
+        <div className="modal-content">
+          <h2>Thanks for registering!</h2>
+          <p>
+            <span className="note">Note:- </span>
+            Please check your mail for further communication.
+          </p>
+          <button onClick={handleCloseModal}>Close</button>
         </div>
-      )}
+      </div>
+    )}
+
     </div>
   );
 };

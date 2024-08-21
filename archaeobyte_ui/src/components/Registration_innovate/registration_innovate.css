@@ -183,7 +183,6 @@
   }
   
   
-
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -209,6 +208,16 @@
   .modal-content h2 {
     margin: 0;
     font-size: 24px; /* Increased font size for the message */
+  }
+  
+  .modal-content p {
+    margin: 10px 0 0; /* Margin adjustments for spacing */
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+  .modal-content p span.note {
+    font-weight: bold; /* Makes the "Note:-" bold */
+    color: black; /* Color of the note */
   }
   
   .modal-content button {
