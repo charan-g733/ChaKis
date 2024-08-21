@@ -403,6 +403,82 @@ function sendThankYouEmailItServices(toEmail, name) {
   });
 }
 
+function sendThankYouEmailDemoRequest(toEmail, firstName, lastName) {
+  console.log('To Email:', toEmail);
+  console.log('First Name:', firstName); // Debugging output
+  console.log('Last Name:', lastName);   // Debugging output
+
+
+  const mailOptions = {
+    from: '"DevElet" <tech.develet@gmail.com>', // Replace with your email
+    to: toEmail,
+    subject: 'Thank You for Your Demo Request!',
+    html: `
+      <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6; border: 2px solid #000; padding: 20px; border-radius: 10px; background-color: #f4f4f4; max-width: 600px; margin: auto;">
+        <p style="font-size: 14px; color: black;">Dear <strong>${firstName} ${lastName}</strong>,</p>
+        <p style="font-size: 14px; color: black;">Thank you for completing the demo request form! We appreciate your interest in exploring how DevElet can enhance your organization's upskilling efforts.<br>Our team has received your request and will review the details shortly. You will receive further communication from us via email with additional information and next steps.</p>
+        <h2 style="color: red; font-size: 20px; border-bottom: 2px solid black; padding-bottom: 10px; margin-bottom: 20px;">Here’s What You’ll Gain:</h2>
+        
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue; margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Advanced Training</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Build your technical skills through comprehensive sessions.</p>
+        </div>
+
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Exclusive 1:1 Mentoring</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Receive personalized guidance from industry experts.</p>
+        </div>
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Real-World Projects</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Work on projects that enhance your portfolio.</p>
+        </div>
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Expert Doubt-Clearing Sessions</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Get your questions resolved promptly by experts.</p>
+        </div>
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Practical Hands-On Experience</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Gain practical experience that aligns with industry standards.</p>
+        </div>
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Recognizable Certificates</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Earn certificates that validate your achievements.</p>
+        </div>
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Professional Resume & LinkedIn Building</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Stand out to recruiters with tailored resume and LinkedIn sessions.</p>
+        </div>
+        <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
+          <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Intensive Mock Interviews</h3>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Prepare for job interviews with practical mock sessions.</p>
+        </div>
+
+        <p style="font-size: 14px; color: black;">Please allow us some time to process your application. We will be in touch soon with the next steps.</p>
+
+        <p style="font-size: 14px; color: black;">Meanwhile, feel free to connect with us and stay updated:</p>
+
+        <p style="font-size: 14px; color: blue;">
+          <a href="https://in.linkedin.com/company/archaeobyte" style="color: blue; text-decoration: none;">LinkedIn</a><br>
+          <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
+          <a href="https://wa.me/yourlink" style="color: blue; text-decoration: none;">WhatsApp</a>
+        </p>
+
+        <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
+        <strong>Team DevElet</strong></p>
+      </div>
+    `
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+    } else {
+      console.log('Email sent:', info.response);
+    }
+  });
+}
+
+
 
 
 
@@ -497,6 +573,46 @@ app.post('/api/hire_with_us', (req, res) => {
     res.send({ message: 'Registration successful!' });
   });
 });
+
+// API endpoint to handle form submission
+app.post('/api/submit-demo-request', (req, res) => {
+  const {
+    firstName,
+    lastName,
+    workEmail,
+    phoneNumber,
+    companyLocation,
+    companyName,
+    companySize,
+    numberOfLearners,
+    jobTitle,
+    jobLevel,
+    trainingNeeds
+  } = req.body;
+
+  const query = `INSERT INTO business_demo_requests 
+    (first_name, last_name, work_email, phone_number, company_location, 
+    company_name, company_size, number_of_learners, job_title, job_level, training_needs)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+
+  db.query(
+    query,
+    [firstName, lastName, workEmail, phoneNumber, companyLocation, companyName, companySize, numberOfLearners, jobTitle, jobLevel, trainingNeeds],
+    (err, result) => {
+      if (err) {
+        console.error('Error inserting data:', err);
+        res.status(500).json({ message: 'Failed to submit demo request.' });
+        return;
+      }
+
+      // Send thank you email
+      sendThankYouEmailDemoRequest(workEmail, firstName, lastName);
+      
+      res.status(200).json({ message: 'Demo request submitted successfully.' });
+    }
+  );
+});
+
 
 // Start the server
 app.listen(port, () => {
