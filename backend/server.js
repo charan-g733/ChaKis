@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Jashu$93',
+  password: 'Kishan@123',
   database: 'dev_elet_db'
 });
 
@@ -334,7 +334,7 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
 
 function sendThankYouEmailHireWithUs(toEmail, name) {
   console.log('To Email:', toEmail);
-  console.log('Name:', name); // Debugging output
+  console.log('Name:', name); 
 
   const mailOptions = {
     from: '"DevElet" <tech.develet@gmail.com>', // Replace with your email

@@ -14,6 +14,17 @@
     text-align: center;
 }
 
+.footer .quick-links ul li a {
+    color: white; /* Set the link color to white */
+    text-decoration: underline; /* Add underline to the links */
+  }
+  
+  .footer .quick-links ul li a:hover {
+    color: white; /* Ensure the link color remains white on hover */
+    text-decoration: underline; /* Keep the underline on hover */
+  }
+  
+
 .footer-section {
     margin: 10px;
     flex: 1 1 200px;
@@ -53,6 +64,7 @@
 .quick-links ul li {
     margin-bottom: 8px;
     font-size: 14px;
+    text-decoration: none;
     color: #ffffff;
 }
 

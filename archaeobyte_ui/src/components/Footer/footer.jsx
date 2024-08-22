@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 import {
   FaWhatsapp,
@@ -17,7 +18,7 @@ const Footer = () => {
         <div className="footer-section-contact">
           <img
             src="/images/DevElet_with_name.png"
-            alt="NxtWave Logo"
+            alt="DevElet Logo"
             className="footer-logo"
           />
           <h4>Reach Us</h4>
@@ -31,21 +32,40 @@ const Footer = () => {
         <div className="footer-section quick-links">
           <h4 className="footer-h4">Quick Links</h4>
           <ul>
-            <li>Home</li>
-            <li>AEA</li>
-            <li>Innovate</li>
-            <li>Hire with us</li>
-            <li>Contact Us</li>
-            <li>Get in Touch</li>
-            <li>It Services</li>
-            <li>Reviews</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/aea">AEA</Link>
+            </li>
+            <li>
+              <Link to="/innovate">Innovate</Link>
+            </li>
+            <li>
+              <Link to="/hire-with-us">Hire with us</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+            <li>
+              <Link to="/get_in_touch">IT Services Form</Link>
+            </li>
+            <li>
+              <Link to="/business">IT Services We Offer</Link>
+            </li>
+            <li>
+              <Link to="/reviews">Reviews</Link>
+            </li>
+            <li>
+              <Link to="/ourteam"><b>Team DevElet</b></Link>
+            </li>
           </ul>
         </div>
         <div className="social-media">
+        <FaLinkedin className="icon fa-linkedin" />
           <FaFacebook className="icon fa-facebook" />
           <FaInstagram className="icon fa-instagram" />
           <FaXTwitter className="icon fa-x-twitter" />
-          <FaLinkedin className="icon fa-linkedin" />
           <FaYoutube className="icon fa-youtube" />
         </div>
       </div>

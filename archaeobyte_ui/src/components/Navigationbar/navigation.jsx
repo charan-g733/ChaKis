@@ -67,7 +67,7 @@ function Navigationbar() {
                 href="#programs"
                 className="programs-link"
               >
-                Programs
+                <i>Programs</i>
                 <FaChevronDown className="arrow-icon" style={{ color: "black" }} />
               </Dropdown.Toggle>
               <Dropdown.Menu className="custom-dropdown">
