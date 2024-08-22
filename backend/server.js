@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Kishan@123',
+  password: 'Jashu$93',//Kishan@123
   database: 'dev_elet_db'
 });
 
@@ -130,22 +130,27 @@ const path = require('path');
 const PDFDocument = require('pdfkit');
 const { PassThrough } = require('stream');
 const internIdFilePath = path.join(__dirname, 'internId.json');
+
 // Function to get the next intern ID
 function getNextInternId(callback) {
   // Read the current intern ID from the file
   fs.readFile(internIdFilePath, 'utf8', (err, data) => {
-    let lastInternId = 8000; // Default ID if the file doesn't exist or is empty
+    let lastInternId = 0; // Default ID if the file doesn't exist or is empty
+    let currentMonth = new Date().getMonth() + 1; // Get the current month number
     if (!err && data) {
       const fileData = JSON.parse(data);
-      lastInternId = fileData.lastInternId || 8000;
+      lastInternId = fileData.lastInternId || 0;
+      if (fileData.month !== currentMonth) {
+        lastInternId = 0; // Reset the ID if the month has changed
+      }
     }
 
     // Increment the ID and format it
     lastInternId += 1;
-    const newInternId = `24K0J${lastInternId.toString().padStart(4, '0')}`;
+    const newInternId = `24K0J${currentMonth}${lastInternId.toString().padStart(3, '0')}`;
 
-    // Write the updated ID back to the file
-    fs.writeFile(internIdFilePath, JSON.stringify({ lastInternId }), (err) => {
+    // Write the updated ID and month back to the file
+    fs.writeFile(internIdFilePath, JSON.stringify({ lastInternId, month: currentMonth }), (err) => {
       if (err) {
         console.error('Error saving intern ID:', err);
       }
@@ -153,7 +158,6 @@ function getNextInternId(callback) {
     });
   });
 }
-
 // Function to create a PDF offer letter in memory
 function createOfferLetter(name, college, domain, internId, callback) {
   const doc = new PDFDocument({ size: 'A4' });
