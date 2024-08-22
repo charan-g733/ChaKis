@@ -9,7 +9,7 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa6";
-
+//footer
 const Footer = () => {
   return (
     <footer className="footer">
