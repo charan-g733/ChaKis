@@ -9,6 +9,7 @@ const Registration_innovate = ({ domain }) => {
     mobile: '',
     college: '',
     year_of_passout: '',
+    todays_date: '', // New state for today's date
     domain: domain || '',
     declaration: false
   });
@@ -77,6 +78,11 @@ const Registration_innovate = ({ domain }) => {
           Year Of Passout:
           <input type="text" name="year_of_passout" value={formData.year_of_passout} onChange={handleChange} className={formData.year_of_passout ? 'filled' : ''} required />
         </label>
+        <label>
+          Today's Date:
+          <input type="date" name="todays_date" value={formData.todays_date} onChange={handleChange} className={formData.todays_date ? 'filled' : ''} required />
+        </label>
+
         <fieldset>
           <legend>Select Domain:</legend>
           {/* Make sure the domain selected by the card is pre-selected */}
@@ -234,6 +240,7 @@ const Registration_innovate = ({ domain }) => {
             Cyber Security
           </label>
         </fieldset>
+        {/* Rest of the fields including domain selection */}
         <label>
           <input
             type="checkbox"

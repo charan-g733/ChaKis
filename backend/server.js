@@ -499,29 +499,30 @@ app.post('/api/registrations', (req, res) => {
 });
 
 app.post('/api/registrations_innovate', (req, res) => {
-  const { name, email, mobile, college, year_of_passout, domain, declaration } = req.body;
+  const { name, email, mobile, college, year_of_passout, todays_date, domain, declaration } = req.body;
 
   // Input validation
-  if (!name || !email || !mobile || !college || !year_of_passout || !domain || declaration === undefined) {
+  if (!name || !email || !mobile || !college || !year_of_passout || !todays_date || !domain || declaration === undefined) {
     return res.status(400).send({ error: 'All fields are required' });
   }
 
   // SQL query
   const sql = `
-    INSERT INTO registrations_innovate (name, email, mobile, college, year_of_passout, domain, declaration) 
-    VALUES (?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO registrations_innovate (name, email, mobile, college, year_of_passout, todays_date, domain, declaration) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `;
 
   // Execute query
-  db.query(sql, [name, email, mobile, college, year_of_passout, domain, declaration], (err, result) => {
+  db.query(sql, [name, email, mobile, college, year_of_passout, todays_date, domain, declaration], (err, result) => {
     if (err) {
       console.error(err);
       return res.status(500).send({ error: 'Failed to register' });
     }
-    sendThankYouEmailInnovate(email, name,college,domain); // Send thank-you email
+    sendThankYouEmailInnovate(email, name, college, domain); // Send thank-you email
     res.send({ message: 'Registration successful!' });
   });
 });
+
 
 app.post('/api/it_services', (req, res) => {
   const { name, email, mobile, role, domain } = req.body;

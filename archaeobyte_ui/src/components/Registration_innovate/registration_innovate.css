@@ -43,7 +43,8 @@
   form input[type="text"],
   form input[type="email"],
   form input[type="tel"],
-  form input[type="number"] {
+  form input[type="number"],
+  form input[type="date"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -118,7 +119,9 @@
   
   /* Default styles for input fields */
   input[type="text"],
-  input[type="email"] {
+  input[type="email"],
+  input[type="date"]
+  {
     border: 1px solid #ccc; /* Default border color */
     padding: 8px;
     margin-bottom: 10px; /* Margin between fields */
@@ -128,14 +131,18 @@
   
   /* Styles for input fields when they are focused */
   input[type="text"]:focus,
-  input[type="email"]:focus {
+  input[type="email"]:focus,
+  input[type="date"]:focus
+   {
     border-color: violet; /* Change border color to violet */
     outline: none; /* Remove default outline */
   }
   
   /* Styles for input fields when they have content */
   input[type="text"].filled,
-  input[type="email"].filled {
+  input[type="email"].filled,
+  input[type="date"].filled
+   {
     border-color: violet; /* Change border color to violet */
   }
   
