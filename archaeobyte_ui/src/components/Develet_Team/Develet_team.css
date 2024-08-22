@@ -1,0 +1,84 @@
+.develet-team-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.develet-team-title {
+    font-size: 36px;
+    color: #e87c53;
+    margin-bottom: 50px;
+}
+
+.develet-team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.develet-team-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.develet-team-card:hover {
+    transform: translateY(-10px);
+}
+
+.develet-team-image-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #f9dcc4;
+}
+
+.develet-team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.develet-team-name {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.develet-team-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.develet-team-role {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.develet-team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.develet-team-social-icon {
+    font-size: 20px; /* Adjust icon size */
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.develet-team-social-icon:hover {
+    color: #4c6ad8;
+}
