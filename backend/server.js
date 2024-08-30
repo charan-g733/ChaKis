@@ -1,8 +1,11 @@
+const https = require('https');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
-const nodemailer = require('nodemailer'); // Import nodemailer
+const nodemailer = require('nodemailer');
+const fs = require('fs');
+const path = require('path');
 
 // Initialize express app
 const app = express();
@@ -14,9 +17,9 @@ app.use(bodyParser.json());
 
 // Create a connection to the database
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: '127.0.0.1',
   user: 'root',
-  password: 'Jashu$93',//Kishan@123
+  password: 'Jashu$93',
   database: 'dev_elet_db'
 });
 
@@ -36,6 +39,7 @@ const transporter = nodemailer.createTransport({
     pass: 'grqihiywsktgmjee'   // Replace with your email password
   }
 });
+
 // Function to send a styled thank-you email
 function sendThankYouEmailAEA(toEmail, name, domain) {
   console.log('To Email:', toEmail);
@@ -45,7 +49,7 @@ function sendThankYouEmailAEA(toEmail, name, domain) {
   const mailOptions = {
     from: '"DevElet" <tech.develet@gmail.com>', // Replace with your email
     to: toEmail,
-    subject:'Thank you for registering with DevElet!',
+    subject: 'Thank you for registering with DevElet!',
     html: `
       <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6; border: 2px solid #000; padding: 20px; border-radius: 10px; background-color: #f4f4f4; max-width: 600px; margin: auto;">
         <div style="text-align: center; padding-bottom: 20px;">
@@ -117,16 +121,6 @@ function sendThankYouEmailAEA(toEmail, name, domain) {
   });
 }
 
-
-
-//const pdfkit = require('pdfkit');
-//const path = require('path');
-
-// Path to the file storing the last intern ID
-
-
-const fs = require('fs');
-const path = require('path');
 const PDFDocument = require('pdfkit');
 const { PassThrough } = require('stream');
 const internIdFilePath = path.join(__dirname, 'internId.json');
@@ -158,6 +152,7 @@ function getNextInternId(callback) {
     });
   });
 }
+
 // Function to create a PDF offer letter in memory
 function createOfferLetter(name, college, domain, internId, callback) {
   const doc = new PDFDocument({ size: 'A4' });
@@ -187,7 +182,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   doc.font('Helvetica-Bold').fontSize(16);
   doc.text(`Name: ${name}`, { align: 'left' });
   doc.moveDown(0.5);
-  doc.text(`Intern Id: ${internId}`, { align: 'left' }); 
+  doc.text(`Intern Id: ${internId}`, { align: 'left' });
   doc.moveDown(0.5);
   doc.text(`College Name: ${college}`, { align: 'left' });
   doc.moveDown(0.5);
@@ -222,7 +217,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
 
   const footerImages = ['Board_Of_Directors1.jpg', 'Board_Of_Directors2.jpg', 'AICTE_logo.jpg', 'SCH_logo.jpg'];
   const footerImageWidth = 100;
-  const footerImageHeight = 100; 
+  const footerImageHeight = 100;
   const xStart = 50;
   const yPosition = doc.y;
   const imageSpacing = 20;
@@ -312,7 +307,7 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
         <strong>Team DevElet</strong></p>
       </div>
        `,
-          
+
         attachments: [
           {
             filename: `${internId}_Offer_Letter.pdf`,
@@ -333,12 +328,9 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
   });
 }
 
-
-
-
 function sendThankYouEmailHireWithUs(toEmail, name) {
   console.log('To Email:', toEmail);
-  console.log('Name:', name); 
+  console.log('Name:', name);
 
   const mailOptions = {
     from: '"DevElet" <tech.develet@gmail.com>', // Replace with your email
@@ -482,11 +474,6 @@ function sendThankYouEmailDemoRequest(toEmail, firstName, lastName) {
   });
 }
 
-
-
-
-
-
 // Define a route to handle form submissions
 app.post('/api/registrations', (req, res) => {
   const { name, email, mobile, college, year_of_passout, domain, declaration } = req.body;
@@ -497,7 +484,7 @@ app.post('/api/registrations', (req, res) => {
       res.status(500).send({ error: 'Failed to register' });
       return;
     }
-    sendThankYouEmailAEA(email, name,domain); // Send thank-you email
+    sendThankYouEmailAEA(email, name, domain); // Send thank-you email
     res.send({ message: 'Registration successful!' });
   });
 });
@@ -512,9 +499,9 @@ app.post('/api/registrations_innovate', (req, res) => {
 
   // SQL query
   const sql = `
-    INSERT INTO registrations_innovate (name, email, mobile, college, year_of_passout, todays_date, domain, declaration) 
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-  `;
+      INSERT INTO registrations_innovate (name, email, mobile, college, year_of_passout, todays_date, domain, declaration) 
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    `;
 
   // Execute query
   db.query(sql, [name, email, mobile, college, year_of_passout, todays_date, domain, declaration], (err, result) => {
@@ -526,7 +513,6 @@ app.post('/api/registrations_innovate', (req, res) => {
     res.send({ message: 'Registration successful!' });
   });
 });
-
 
 app.post('/api/it_services', (req, res) => {
   const { name, email, mobile, role, domain } = req.body;
@@ -612,14 +598,18 @@ app.post('/api/submit-demo-request', (req, res) => {
 
       // Send thank you email
       sendThankYouEmailDemoRequest(workEmail, firstName, lastName);
-      
+
       res.status(200).json({ message: 'Demo request submitted successfully.' });
     }
   );
 });
 
+const options = {
+  key: fs.readFileSync('../../private/develet.key'),
+  cert: fs.readFileSync('../../private/c20c5dd8762eac9c.crt'),
+  ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
+};
 
-// Start the server
-app.listen(port, () => {
+https.createServer(options, app).listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
