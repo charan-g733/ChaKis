@@ -143,7 +143,7 @@ button {
   
   .modal-content button {
     margin-top: 20px;
-    padding: 10px 20px; /* Further reduced padding for a smaller button */
+    padding: 10px 20px; /* Further reduced padding for a smaller button for styling */
     border: none;
     background-color: darkviolet;
     color: white;
