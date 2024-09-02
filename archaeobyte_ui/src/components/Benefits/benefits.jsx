@@ -12,10 +12,12 @@ const DataAnalystCard = () => {
         navigate('/AEA');
     };
 
-    const redirectUrl = "https://forms.gle/FreTkB3M1Rpyhvah7";
-
     const handleBrochureClick = (url) => {
-        window.open(url, "_blank", "noopener,noreferrer");
+        if (url.startsWith('http')) {
+            window.open(url, "_blank", "noopener,noreferrer");
+        } else {
+            navigate(url);
+        }
     };
 
     return (
@@ -49,7 +51,7 @@ const DataAnalystCard = () => {
             <div className="unique-recommended-certificates">
                 <h3>Recommended Professional Courses</h3>
                 <div className="unique-certificates">
-                    <a href={redirectUrl} target="_blank" rel="noopener noreferrer" className="unique-card-link">
+                    <a href="/AEA" className="unique-card-link">
                         <div className="unique-card-fn">
                             <img src="images/uxdesign1.png" alt="Front-End Development" />
                             <div className="unique-card-details">
@@ -69,14 +71,14 @@ const DataAnalystCard = () => {
                                 </button>
                                 <button 
                                     className="unique-enroll-button"
-                                    onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
+                                    onClick={() => navigate('/AEA')}
                                 >
                                     <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
                                 </button>
                             </div>
                         </div>
                     </a>
-                    <a href={redirectUrl} target="_blank" rel="noopener noreferrer" className="unique-card-link">
+                    <a href="/AEA" className="unique-card-link">
                         <div className="unique-card-fn">
                             <img src="images/aws.jpg" alt="AWS Cloud Computing" />
                             <div className="unique-card-details">
@@ -96,7 +98,7 @@ const DataAnalystCard = () => {
                                 </button>
                                 <button 
                                     className="unique-enroll-button"
-                                    onClick={() => handleBrochureClick("https://forms.gle/V1vnjutjPu1QQeS39")}
+                                    onClick={() => navigate('/AEA')}
                                 >
                                     <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
                                 </button>

@@ -24,7 +24,7 @@ const Numbers = () => {
       <div ref={ref} className={`credentials-stats fade-in ${onScreen ? 'show' : ''}`}>
         <div className="credentials-stat">
           <h3>
-            {onScreen && <CountUp start={0} end={3164} suffix="" duration={2.5} />}
+            {onScreen && <CountUp start={0} end={3325} suffix="" duration={2.5} />}
           </h3>
           <p>Join over 3000 individuals who have earned an Internship</p>
         </div>

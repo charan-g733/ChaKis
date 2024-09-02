@@ -106,9 +106,9 @@ function sendThankYouEmailAEA(toEmail, name, domain) {
         <p style="font-size: 14px; color: black;">Meanwhile, feel free to connect with us and stay updated:</p>
 
         <p style="font-size: 14px; color: blue;">
-          <a href="https://in.linkedin.com/company/archaeobyte" style="color: blue; text-decoration: none;">LinkedIn</a><br>
+          <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://wa.me/yourlink" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/EENMvu2CllqFLSq3hPuFvI" style="color: blue; text-decoration: none;">WhatsApp</a>
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
@@ -220,7 +220,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   doc.font('Helvetica-Bold').fontSize(16).text('For DevElet Technologies LLP.', { align: 'left' });
   doc.moveDown(1);
 
-  const footerImages = ['Board_Of_Directors1.jpg', 'Board_Of_Directors2.jpg', 'AICTE_logo.jpg', 'SCH_logo.jpg'];
+  const footerImages = ['sign1.jpeg', 'sign2.jpeg', 'AICTE_logo.jpg', 'SCH_logo.jpg'];
   const footerImageWidth = 100;
   const footerImageHeight = 100;
   const xStart = 50;
@@ -303,9 +303,9 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
         </p>
 
         <p style="font-size: 14px; color: blue;">
-          <a href="https://in.linkedin.com/company/archaeobyte" style="color: blue; text-decoration: none;">LinkedIn</a><br>
+          <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://wa.me/yourlink" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/HEE40iaW70R0F0ejMenkVH" style="color: blue; text-decoration: none;">WhatsApp</a>
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
@@ -387,7 +387,7 @@ function sendThankYouEmailItServices(toEmail, name) {
         <p style="font-size: 14px; color: black;">We have recieved your application for <strong>IT services</strong>, thanks for your trust in DevElet.<br>We will get back to you soon with further details.<br>In the meantime, feel free to visit our website or follow us on LinkedIn to stay updated with our latest news and updates. </p>
         <p style="font-size: 14px; color: black;">Important Links:-</p>
         
-          <li><a href="https://www.linkedin.com/company/archaeobyte/" style="color: blue; text-decoration: none;">LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a></li>
           <li><a href="https://develet.in/" style="color: blue; text-decoration: none;">Our Website</a></li>
         
         <p style="font-size: 14px; color: black;">Best regards,<br>The DevElet Team</p>
@@ -459,9 +459,9 @@ function sendThankYouEmailDemoRequest(toEmail, firstName, lastName) {
         <p style="font-size: 14px; color: black;">Meanwhile, feel free to connect with us and stay updated:</p>
 
         <p style="font-size: 14px; color: blue;">
-          <a href="https://in.linkedin.com/company/archaeobyte" style="color: blue; text-decoration: none;">LinkedIn</a><br>
+          <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://wa.me/yourlink" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://wa.me/919346116602" style="color: blue; text-decoration: none;">WhatsApp</a>
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>

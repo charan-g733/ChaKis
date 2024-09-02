@@ -10,7 +10,7 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa6";
-//footer
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -62,11 +62,21 @@ const Footer = () => {
           </ul>
         </div>
         <div className="social-media">
-        <FaLinkedin className="icon fa-linkedin" />
-          <FaFacebook className="icon fa-facebook" />
-          <FaInstagram className="icon fa-instagram" />
-          <FaXTwitter className="icon fa-x-twitter" />
-          <FaYoutube className="icon fa-youtube" />
+          <a href="https://www.linkedin.com/company/develetindia/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="icon fa-linkedin" />
+          </a>
+          <a href="https://www.instagram.com/develetindia?utm_source=qr&igsh=MWZudnZtaGprczNrNw==" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="icon fa-instagram" />
+          </a>
+          <a href="https://www.facebook.com/DeveletIndia" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="icon fa-facebook" />
+          </a>
+          <a href="https://twitter.com/DeveletIndia" target="_blank" rel="noopener noreferrer">
+            <FaXTwitter className="icon fa-x-twitter" />
+          </a>
+          <a href="https://www.youtube.com/channel/UC1234567890" target="_blank" rel="noopener noreferrer">
+            <FaYoutube className="icon fa-youtube" />
+          </a>
         </div>
       </div>
       <div className="footer-bottom">

@@ -13,30 +13,27 @@ const DeveletTeam = () => {
             socialLinks: {
                 facebook: '#',
                 twitter: '#',
-                linkedin: '#'
+                linkedin: 'https://www.linkedin.com/in/dr-p-h-v-sesha-talpa-sai-54a443bb/'
             }
         },
         {
             name: 'Kishan Tiwari',
-            role: 'Cheif Executive Officer',
+            role: 'Chief Executive Officer',
             description: 'Visionary leader with a robust foundation in Software Engineering. Excellence at transforming business needs into cutting-edge software solutions',
             imageUrl: 'images/kishan.png',
             socialLinks: {
-                
-                linkedin: '#'
+                linkedin: 'https://www.linkedin.com/in/kishan-tiwari-40917b228/'
             }
         },
         {
             name: 'Katakam Jaswanthi',
-            role: 'Cheif Operational Officer',
+            role: 'Chief Operational Officer',
             description: 'Innovative Software Engineer skilled in turning visionary concepts into practical software solutions, enhancing business performance through technical excellence and creativity.',
             imageUrl: 'images/jaswanthi.jpeg',
             socialLinks: {
-                
-                linkedin: '#'
+                linkedin: 'https://www.linkedin.com/in/katakam-jaswanthi-54b337247/'
             }
         },
-        
     ];
 
     return (
@@ -52,12 +49,11 @@ const DeveletTeam = () => {
                         <p className="develet-team-description">{member.description}</p>
                         <p className="develet-team-role">{member.role}</p>
                         <div className="develet-team-socials">
-                           
-                           
-                            
-                            <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="develet-team-social-icon">
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
+                            {member.socialLinks.linkedin && (
+                                <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="develet-team-social-icon">
+                                    <FontAwesomeIcon icon={faLinkedin} />
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))}
