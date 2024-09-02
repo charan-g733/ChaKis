@@ -27,7 +27,7 @@ const Registration_innovate = ({ domain }) => {
     e.preventDefault();
 
     try {
-      await axios.post('https://develet.in:5000/api/registrations_innovate', formData);
+      await axios.post('http://localhost:5000/api/registrations_innovate', formData);
       setShowModal(true);
     } catch (error) {
       console.error('Error submitting form:', error.response ? error.response.data : error.message);

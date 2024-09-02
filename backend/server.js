@@ -1,4 +1,4 @@
-const https = require('https');
+const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -17,19 +17,24 @@ app.use(bodyParser.json());
 
 // Create a connection to the database
 const db = mysql.createConnection({
-  host: '127.0.0.1',
+  host: 'localhost',
   user: 'root',
-  password: 'Jashu$93',
+  password: 'Kishan@123',
   database: 'dev_elet_db'
 });
 
 // Connect to the database
-db.connect(err => {
+db.connect((err) => {
   if (err) {
-    throw err;
+    console.error('Error connecting to MySQL:', err);
+  } else {
+    console.log('Successfully connected to MySQL');
   }
-  console.log('MySQL connected...');
 });
+
+
+
+
 
 // Create a transporter for sending emails
 const transporter = nodemailer.createTransport({
@@ -477,6 +482,12 @@ function sendThankYouEmailDemoRequest(toEmail, firstName, lastName) {
 // Define a route to handle form submissions
 app.post('/api/registrations', (req, res) => {
   const { name, email, mobile, college, year_of_passout, domain, declaration } = req.body;
+
+  if (!name || !email || !mobile || !college || !year_of_passout || !domain || declaration === undefined) {
+    return res.status(400).send({ error: 'All fields are required' });
+  }
+
+  
   const sql = 'INSERT INTO registrations (name, email, mobile, college, year_of_passout, domain, declaration) VALUES (?, ?, ?, ?, ?, ?, ?)';
   db.query(sql, [name, email, mobile, college, year_of_passout, domain, declaration], (err, result) => {
     if (err) {
@@ -604,12 +615,12 @@ app.post('/api/submit-demo-request', (req, res) => {
   );
 });
 
-const options = {
-  key: fs.readFileSync('../../private/develet.key'),
-  cert: fs.readFileSync('../../private/c20c5dd8762eac9c.crt'),
-  ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
-};
+// const options = {
+//   key: fs.readFileSync('../../private/develet.key'),
+//   cert: fs.readFileSync('../../private/c20c5dd8762eac9c.crt'),
+//   ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
+// };
 
-https.createServer(options, app).listen(port, () => {
+http.createServer( app).listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
