@@ -19,7 +19,7 @@ const Slots = () => {
             <img src="images/sch_logo.png" alt="SCH Logo" />
           </div>
           <div className="custom-badges">
-            <img src="images/aicte.png" alt="AICTE Logo" />
+            <img src="images/csclogo.png" alt="AICTE Logo" />
           </div>
         </div>
       </div>
