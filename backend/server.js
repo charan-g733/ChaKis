@@ -619,12 +619,12 @@ app.post('/api/submit-demo-request', (req, res) => {
   );
 });
 
-// const options = {
-//   key: fs.readFileSync('../../private/develet.key'),
-//   cert: fs.readFileSync('../../private/c20c5dd8762eac9c.crt'),
-//   ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
-// };
+const options = {
+  key: fs.readFileSync('../../private/develet.key'),
+  cert: fs.readFileSync('../../private/c20c5dd8762eac9c.crt'),
+  ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
+};
 
-http.createServer( app).listen(port, () => {
+http.createServer(options, app).listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
