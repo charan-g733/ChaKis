@@ -127,6 +127,10 @@
   .button {
     padding: 8px 15px;
   }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
 
   
 }
@@ -153,6 +157,11 @@
   .button {
     padding: 6px 10px;
     font-size: 0.8em;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
   }
   
 }

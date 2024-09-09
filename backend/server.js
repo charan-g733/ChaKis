@@ -1,4 +1,4 @@
-const http = require('http');
+const https = require('https');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -15,20 +15,24 @@ const port = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Create a connection to the database
-const db = mysql.createConnection({
+// Create a connection pool to the database
+const db = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: 'Kishan@123',
-  database: 'dev_elet_db'
+  database: 'dev_elet_db',
+  waitForConnections: true,
+  connectionLimit: 10,  // Maximum number of connections
+  queueLimit: 0         // No limit to the number of queued requests
 });
 
-// Connect to the database
-db.connect((err) => {
+// Test the connection pool
+db.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL:', err);
   } else {
     console.log('Successfully connected to MySQL');
+    connection.release(); // Release the connection back to the pool
   }
 });
 

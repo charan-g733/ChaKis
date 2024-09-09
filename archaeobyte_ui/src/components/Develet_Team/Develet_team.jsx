@@ -9,7 +9,7 @@ const DeveletTeam = () => {
             name: 'Dr. Sesha Talpa Sai',
             role: 'Director & Founder',
             description: '34 years of expertise in Academia, Industry, and Research, Mentored 12 startups, secured 15 patents (including 3 International), published over 40 journals',
-            imageUrl: 'images/picture2.png',
+            imageUrl: 'images/saisir.jpg',
             socialLinks: {
                 facebook: '#',
                 twitter: '#',
