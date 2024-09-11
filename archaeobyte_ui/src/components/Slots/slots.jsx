@@ -34,8 +34,8 @@ const Slots = () => {
               <span>Get Real Time Skills through Internship</span>
             </div>
             <div className="custom-card-title">
-              Learn through Hands-on Experience on Real Time Projects & become
-              Industry Ready
+              Learn through Hands-on Experience on Real Time Projects
+               with AICTE Recognized Internship
             </div>
             <div className="custom-card-button-wrapper">
               <button className="custom-card-button">
@@ -55,8 +55,8 @@ const Slots = () => {
               <span>Learn from Scratch & Excel your Skills</span>
             </div>
             <div className="custom-card-title">
-              Master the Right skill you deserve and become Market Ready
-              Software Engineer
+              Master the Right skill to stand alone and become Market Ready
+              Software Engineer 
             </div>
             <div className="custom-card-button-wrapper">
               <button className="custom-card-button">
