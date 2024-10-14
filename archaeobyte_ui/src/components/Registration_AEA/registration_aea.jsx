@@ -27,7 +27,7 @@ const Registration_aea = () => {
     e.preventDefault();
     console.log('Form data being submitted:', formData);
     try {
-      const response = await axios.post('http://localhost:5000/api/registrations', formData);
+      const response = await axios.post('https://localhost:5000/api/registrations', formData);
       console.log(response.data);  // Log response for debugging
       setShowModal(true);
     } catch (error) {

@@ -7,7 +7,7 @@ const DeveletTeam = () => {
     const teamMembers = [
         {
             name: 'Dr. Sesha Talpa Sai',
-            role: 'Director & Founder',
+            role: 'Director',
             description: '34 years of expertise in Academia, Industry, and Research, Mentored 12 startups, secured 15 patents (including 3 International), published over 40 journals',
             imageUrl: 'images/saisir.jpg',
             socialLinks: {
@@ -27,7 +27,7 @@ const DeveletTeam = () => {
         },
         {
             name: 'Katakam Jaswanthi',
-            role: 'Chief Operational Officer',
+            role: 'Chief Operating Officer',
             description: 'Innovative Software Engineer skilled in turning visionary concepts into practical software solutions, enhancing business performance through technical excellence and creativity.',
             imageUrl: 'images/jaswanthi.jpeg',
             socialLinks: {

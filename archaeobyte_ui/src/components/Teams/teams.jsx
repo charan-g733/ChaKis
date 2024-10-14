@@ -29,7 +29,7 @@ const Bussiness = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/submit-demo-request", {
+      const response = await fetch("https://localhost:5000/api/submit-demo-request", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -25,7 +25,7 @@ const Hire_with_us_form = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:5000/api/hire_with_us', formData);
+      await axios.post('https://localhost:5000/api/hire_with_us', formData);
       setShowModal(true);
     } catch (error) {
       console.error('Error submitting form:', error.response ? error.response.data : error.message);
