@@ -17,9 +17,9 @@ app.use(bodyParser.json());
 
 // Create a connection pool to the database
 const db = mysql.createPool({
-  host: 'localhost',
+  host: '127.0.0.1',
   user: 'root',
-  password: 'Kishan@123',
+  password: 'Jashu$93',
   database: 'dev_elet_db',
   waitForConnections: true,
   connectionLimit: 10,  // Maximum number of connections
@@ -35,10 +35,6 @@ db.getConnection((err, connection) => {
     connection.release(); // Release the connection back to the pool
   }
 });
-
-
-
-
 
 // Create a transporter for sending emails
 const transporter = nodemailer.createTransport({
@@ -188,13 +184,13 @@ function createOfferLetter(name, college, domain, internId, callback) {
   doc.y = BannerimageHeight; // Move down by the height of the image plus additional padding
   doc.moveDown(2);
 
-  doc.font('Helvetica-Bold').fontSize(14);
+  doc.font('Helvetica-Bold').fontSize(16);
   doc.text(`Name: ${name}`, { align: 'left' });
   doc.moveDown(0.5);
   doc.text(`Intern Id: ${internId}`, { align: 'left' });
   doc.moveDown(0.5);
   doc.text(`College Name: ${college}`, { align: 'left' });
-  
+  doc.moveDown(0.5);
 
   doc.font('Helvetica').fontSize(14);
   doc.moveDown(1);
@@ -620,10 +616,10 @@ app.post('/api/submit-demo-request', (req, res) => {
 });
 
 const options = {
-   key: fs.readFileSync('../../private/develet.key'),
-   cert: fs.readFileSync('../../private/c20c5dd8762eac9c.crt'),
-   ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
- };
+  key: fs.readFileSync('../../private/develet.key'),
+  cert: fs.readFileSync('../../private/c20c5dd8762eac9c.crt'),
+  ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
+};
 
 https.createServer(options, app).listen(port, () => {
   console.log(`Server is running on port ${port}`);
