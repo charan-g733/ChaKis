@@ -99,6 +99,61 @@
   border: 2px solid #000;
 }
 
+/* New CSS for the Nominate button */
+
+/* New CSS for the Nominate button */
+.nominate-button-container {
+  position: absolute;
+  top: 320px; /* Adjust this value based on where you want the button to appear below the title */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.nominate-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #d4af37; /* Golden text color */
+  border: 2px solid #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nominate-button:hover {
+  background-color: #d4af37; /* Golden background on hover */
+  color: white; /* White text on hover */
+}
+
+@media (max-width: 768px) {
+  .nominate-button-container {
+    top: 65%; /* Adjust top position for mobile screens */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nominate-button {
+    padding: 6px 15px;  /* Reduce padding for smaller buttons */
+    font-size: 0.9em;   /* Reduce font size for mobile */
+  }
+}
+
+/* Ensure the banner image is fully displayed */
+.bannerimage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .banner-container {
@@ -127,12 +182,11 @@
   .button {
     padding: 8px 15px;
   }
+  
   .slick-prev,
   .slick-next {
     display: none !important;
   }
-
-  
 }
 
 @media (max-width: 480px) {
@@ -163,5 +217,4 @@
   .slick-next {
     display: none !important;
   }
-  
 }

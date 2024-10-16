@@ -20,6 +20,23 @@ const Banner = () => {
   return (
     <div className="banner-container">
       <Slider {...settings}>
+        {/* New banner slide with uploaded image */}
+        <div className="slide">
+  <img
+    src="images/banner7.png"
+    alt="DevElet Awards Banner"
+    className="bannerimage"
+  />
+  <div className="nominate-button-container">
+    <NavLink className="nominate-button" href="/nominate">
+      Nominate
+    </NavLink>
+  </div>
+</div>
+
+        
+
+        {/* Existing slides */}
         <div className="slide">
           <img src="images/banner6.jpg" alt="Slide 1" className="bannerimage"/>
           <div className="box1">
@@ -27,11 +44,11 @@ const Banner = () => {
               Invest in learning that grows with you
             </h1>
             <p className="box-text">
-              {" "}
               Preparing you for Today and Tomorrow's challenges.
             </p>
           </div>
         </div>
+
         <div className="slide">
           <img src="images/banner4.jpg" alt="Slide 2" />
           <div className="box2">
