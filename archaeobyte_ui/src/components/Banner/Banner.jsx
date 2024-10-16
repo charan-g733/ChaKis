@@ -22,23 +22,36 @@ const Banner = () => {
       <Slider {...settings}>
         {/* New banner slide with uploaded image */}
         <div className="slide">
-  <img
-    src="images/banner7.png"
-    alt="DevElet Awards Banner"
-    className="bannerimage"
-  />
-  <div className="nominate-button-container">
-    <NavLink className="nominate-button" href="/nominate">
-      Nominate
-    </NavLink>
-  </div>
-</div>
-
-        
+          <img
+            src="images/banner7.png"
+            alt="DevElet Awards Banner"
+            className="bannerimage"
+          />
+          <div className="box3">
+            <p className="box3-text">
+              Nominate yourself for the Best Educators Award of the Year-2024
+            </p>
+              <NavLink
+                className="nominate-button"
+                href="https://forms.gle/QqjtrAuAumBiLf7c6"
+              >
+                Nominate
+              </NavLink>
+            
+          </div>
+          <div className="nominate-button-container">
+            <NavLink
+              className="nominate3-button"
+              href="https://forms.gle/QqjtrAuAumBiLf7c6"
+            >
+              Nominate
+            </NavLink>
+          </div>
+        </div>
 
         {/* Existing slides */}
         <div className="slide">
-          <img src="images/banner6.jpg" alt="Slide 1" className="bannerimage"/>
+          <img src="images/banner6.jpg" alt="Slide 1" className="bannerimage" />
           <div className="box1">
             <h1 className="box-title">
               Invest in learning that grows with you
