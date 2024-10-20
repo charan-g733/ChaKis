@@ -305,7 +305,7 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
         <p style="font-size: 14px; color: blue;">
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/EwNDtrijHr278TBwfX45UR" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/EtEYjxpRrqgL1TPayymE9W" style="color: blue; text-decoration: none;">WhatsApp</a>
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
