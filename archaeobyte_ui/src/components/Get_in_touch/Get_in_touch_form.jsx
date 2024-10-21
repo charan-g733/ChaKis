@@ -25,7 +25,7 @@ const Get_in_touch_form = () => {
     e.preventDefault();
 
     try {
-      await axios.post('https://localhost:5000/api/it_services', formData);
+      await axios.post('https://develet.in/api/it_services', formData);
       setShowModal(true);
     } catch (error) {
       console.error('Error submitting form:', error.response ? error.response.data : error.message);
