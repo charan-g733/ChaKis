@@ -35,7 +35,7 @@ const Slots = () => {
             </div>
             <div className="custom-card-title">
               Learn through Hands-on Experience on Real Time Projects
-               with AICTE Recognized Internship
+               with Industry Recognized Internship
             </div>
             <div className="custom-card-button-wrapper">
               <button className="custom-card-button">

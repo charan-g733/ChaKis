@@ -207,7 +207,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   const alignmentPadding3 = ' '.repeat(17);
   const alignmentPadding4 = ' '.repeat(23);
 
-  doc.text(`Start Date :${alignmentPadding1}10th September 2024`, { align: 'left', lineGap: 1.5 });
+  doc.text(`Start Date :${alignmentPadding1}20th November 2024`, { align: 'left', lineGap: 1.5 });
   doc.text(`Duration :${alignmentPadding2}1 Month`, { align: 'left', lineGap: 1.5 });
   doc.text(`Designation :${alignmentPadding3}${domain}`, { align: 'left', lineGap: 1.5 });
   doc.text(`Location :${alignmentPadding4}Work-From Home (Remote)`, { align: 'left', lineGap: 1.5 });
@@ -220,7 +220,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   doc.font('Helvetica-Bold').fontSize(16).text('For DevElet Technologies LLP.', { align: 'left' });
   doc.moveDown(1);
 
-  const footerImages = ['sign1.jpeg', 'sign2.jpeg', 'AICTE_logo.jpg', 'SCH_logo.jpg'];
+  const footerImages = ['sign1.jpeg', 'sign2.jpeg', 'csclogo.jpg', 'SCH_logo.jpg'];
   const footerImageWidth = 100;
   const footerImageHeight = 100;
   const xStart = 50;
