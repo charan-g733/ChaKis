@@ -508,7 +508,7 @@ app.post('/api/registrations_innovate', (req, res) => {
     return res.status(400).send({ error: 'All fields are required' });
   }
 
-  // SQL query
+  // SQL query 
   const sql = `
       INSERT INTO registrations_innovate (name, email, mobile, college, year_of_passout, todays_date, domain, declaration) 
       VALUES (?, ?, ?, ?, ?, ?, ?, ?)
