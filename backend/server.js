@@ -220,7 +220,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   doc.font('Helvetica-Bold').fontSize(16).text('For DevElet Technologies LLP.', { align: 'left' });
   doc.moveDown(1);
 
-  const footerImages = ['sign1.jpeg', 'sign2.jpeg', 'csclogo.jpg', 'SCH_logo.jpg'];
+  const footerImages = ['sign1.jpeg', 'sign2.jpeg', 'csclogo.png', 'SCH_logo.jpg'];
   const footerImageWidth = 100;
   const footerImageHeight = 100;
   const xStart = 50;
