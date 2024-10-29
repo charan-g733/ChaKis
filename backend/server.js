@@ -483,6 +483,7 @@ function sendThankYouEmailDemoRequest(toEmail, firstName, lastName) {
 }
 
 // Define a route to handle form submissions
+// Define a route to handle form submissions
 app.post('/api/registrations', (req, res) => {
   const { name, email, mobile, college, year_of_passout, domain, declaration } = req.body;
 
@@ -490,18 +491,25 @@ app.post('/api/registrations', (req, res) => {
     return res.status(400).send({ error: 'All fields are required' });
   }
 
-  
   const sql = 'INSERT INTO registrations (name, email, mobile, college, year_of_passout, domain, declaration) VALUES (?, ?, ?, ?, ?, ?, ?)';
-  db.query(sql, [name, email, mobile, college, year_of_passout, domain, declaration], (err, result) => {
-    connection.release(); // Release the connection back to the pool
-
+  
+  db.getConnection((err, connection) => {
     if (err) {
-      console.error(err);
-      res.status(500).send({ error: 'Failed to register' });
-      return;
+      console.error('Error getting connection:', err);
+      return res.status(500).send({ error: 'Database connection failed' });
     }
-    sendThankYouEmailAEA(email, name, domain); // Send thank-you email
-    res.send({ message: 'Registration successful!' });
+  
+    connection.query(sql, [name, email, mobile, college, year_of_passout, domain, declaration], (err, result) => {
+      connection.release(); // Release the connection back to the pool
+
+      if (err) {
+        console.error(err);
+        res.status(500).send({ error: 'Failed to register' });
+        return;
+      }
+      sendThankYouEmailAEA(email, name, domain); // Send thank-you email
+      res.send({ message: 'Registration successful!' });
+    });
   });
 });
 
@@ -513,21 +521,28 @@ app.post('/api/registrations_innovate', (req, res) => {
     return res.status(400).send({ error: 'All fields are required' });
   }
 
-  // SQL query 
+  // SQL query
   const sql = `
       INSERT INTO registrations_innovate (name, email, mobile, college, year_of_passout, todays_date, domain, declaration) 
       VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     `;
 
-  // Execute query
-  db.query(sql, [name, email, mobile, college, year_of_passout, todays_date, domain, declaration], (err, result) => {
-    connection.release(); // Release the connection back to the pool
+  db.getConnection((err, connection) => {
     if (err) {
-      console.error(err);
-      return res.status(500).send({ error: 'Failed to register' });
+      console.error('Error getting connection:', err);
+      return res.status(500).send({ error: 'Database connection failed' });
     }
-    sendThankYouEmailInnovate(email, name, college, domain); // Send thank-you email
-    res.send({ message: 'Registration successful!' });
+
+    connection.query(sql, [name, email, mobile, college, year_of_passout, todays_date, domain, declaration], (err, result) => {
+      connection.release(); // Release the connection back to the pool
+
+      if (err) {
+        console.error(err);
+        return res.status(500).send({ error: 'Failed to register' });
+      }
+      sendThankYouEmailInnovate(email, name, college, domain); // Send thank-you email
+      res.send({ message: 'Registration successful!' });
+    });
   });
 });
 
@@ -545,15 +560,22 @@ app.post('/api/it_services', (req, res) => {
     VALUES (?, ?, ?, ?, ?)
   `;
 
-  // Execute query
-  db.query(sql, [name, email, mobile, role, domain], (err, result) => {
-    connection.release(); // Release the connection back to the pool
+  db.getConnection((err, connection) => {
     if (err) {
-      console.error('SQL Error:', err); // Log SQL errors
-      return res.status(500).send({ error: 'Failed to register' });
+      console.error('Error getting connection:', err);
+      return res.status(500).send({ error: 'Database connection failed' });
     }
-    sendThankYouEmailItServices(email, name); // Send thank-you email
-    res.send({ message: 'Registration successful!' });
+
+    connection.query(sql, [name, email, mobile, role, domain], (err, result) => {
+      connection.release(); // Release the connection back to the pool
+
+      if (err) {
+        console.error('SQL Error:', err); // Log SQL errors
+        return res.status(500).send({ error: 'Failed to register' });
+      }
+      sendThankYouEmailItServices(email, name); // Send thank-you email
+      res.send({ message: 'Registration successful!' });
+    });
   });
 });
 
@@ -572,15 +594,22 @@ app.post('/api/hire_with_us', (req, res) => {
     VALUES (?, ?, ?, ?, ?)
   `;
 
-  // Execute query
-  db.query(sql, [name, organization, email, contact, domain], (err, result) => {
-    connection.release(); // Release the connection back to the pool
+  db.getConnection((err, connection) => {
     if (err) {
-      console.error('Error inserting data:', err);
-      return res.status(500).send({ error: 'Failed to register' });
+      console.error('Error getting connection:', err);
+      return res.status(500).send({ error: 'Database connection failed' });
     }
-    sendThankYouEmailHireWithUs(email, name); // Send thank-you email
-    res.send({ message: 'Registration successful!' });
+
+    connection.query(sql, [name, organization, email, contact, domain], (err, result) => {
+      connection.release(); // Release the connection back to the pool
+
+      if (err) {
+        console.error('Error inserting data:', err);
+        return res.status(500).send({ error: 'Failed to register' });
+      }
+      sendThankYouEmailHireWithUs(email, name); // Send thank-you email
+      res.send({ message: 'Registration successful!' });
+    });
   });
 });
 
@@ -605,23 +634,30 @@ app.post('/api/submit-demo-request', (req, res) => {
     company_name, company_size, number_of_learners, job_title, job_level, training_needs)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
 
-  db.query(
-    query,
-    [firstName, lastName, workEmail, phoneNumber, companyLocation, companyName, companySize, numberOfLearners, jobTitle, jobLevel, trainingNeeds],
-    (err, result) => {
-      connection.release(); // Release the connection back to the pool
-      if (err) {
-        console.error('Error inserting data:', err);
-        res.status(500).json({ message: 'Failed to submit demo request.' });
-        return;
-      }
-
-      // Send thank you email
-      sendThankYouEmailDemoRequest(workEmail, firstName, lastName);
-
-      res.status(200).json({ message: 'Demo request submitted successfully.' });
+  db.getConnection((err, connection) => {
+    if (err) {
+      console.error('Error getting connection:', err);
+      return res.status(500).json({ message: 'Database connection failed' });
     }
-  );
+
+    connection.query(
+      query,
+      [firstName, lastName, workEmail, phoneNumber, companyLocation, companyName, companySize, numberOfLearners, jobTitle, jobLevel, trainingNeeds],
+      (err, result) => {
+        connection.release(); // Release the connection back to the pool
+
+        if (err) {
+          console.error('Error inserting data:', err);
+          return res.status(500).json({ message: 'Failed to submit demo request.' });
+        }
+
+        // Send thank you email
+        sendThankYouEmailDemoRequest(workEmail, firstName, lastName);
+
+        res.status(200).json({ message: 'Demo request submitted successfully.' });
+      }
+    );
+  });
 });
 
 const options = {
