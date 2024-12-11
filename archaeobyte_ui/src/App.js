@@ -19,6 +19,8 @@ import ComingSoon from './components/Coming Soon/cmg';
 import FeedbackLinks from './components/Feedback Cards/feedback';
 import Registration_AEA from './components/Registration_AEA/registration_aea'; // Import your new registration component
 import Registration_innovate from './components/Registration_innovate/registration_innovate';
+import Gallery from './components/Gallery/Gallery';
+
 import Get_in_touch from './components/Get_in_touch/Get_in_touch_form';
 import Hire_with_us from './components/Hire_with_us/Hire_with_us_form'; // Import your new form component
 import DeveletTeam from './components/Develet_Team/Develet_team';
@@ -41,6 +43,8 @@ function App() {
         <Route path="/register-innovate" element={<Registration_innovate />} />
         <Route path="/get_in_touch" element={<Get_in_touch />}/>
         <Route path="/hire-with-us" element={<Hire_with_us />} /> {/* Add this route */}
+        <Route path="/gallery" element={<Gallery />} />
+
         <Route path="/OurTeam" element={<DeveletTeam/>} />
         
         </Routes>

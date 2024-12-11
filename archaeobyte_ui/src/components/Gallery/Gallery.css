@@ -1,0 +1,220 @@
+/* Gallery Wrapper */
+.gallery-wrapper {
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+  }
+  
+  /* Gallery Heading */
+  .gallery-heading {
+    font-size: 4.5rem;
+    margin-bottom: 60px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* Event Card 1 */
+.event-card-1 {
+    background: linear-gradient(to right, #fff9c4, #e0b55f); /* Gradient for Event 1 */
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 1200px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  /* Event Card 2 */
+  .event-card-2 {
+    background: linear-gradient(to left, #fff9c4, #e0b55f); /* Gradient for Event 2 */
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 1200px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  
+  /* Event Date */
+  .event-date {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    z-index: 1;
+  }
+  
+  /* Event Card Title and Description */
+  .event-card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .event-card p {
+    font-size: 1.0rem;
+    color: black;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif; /* News-style font */
+  }
+  
+  /* Event Images */
+  .event-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.1s ease;
+  }
+  
+  /* Image Hover Effect */
+  .carousel-item img:hover {
+    transform: scale(1.2);
+  }
+  
+  .slide-content {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Add space after the content in the carousel item */
+  .carousel-item {
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item .slide-content {
+    margin-bottom: 20px;
+  }
+  
+  .gallery-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-name {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gallery-heading {
+      font-size: 2.5rem; /* Reduce the font size for mobile */
+      margin-bottom: 30px;
+      
+    }
+  
+    .event-card {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 20px auto;
+        max-width: 100%; /* Allow the card to take full width on smaller screens */
+      }
+    
+    .event-date {
+        
+      font-size: 18px; /* Adjust font size for the date */
+      padding: 5px 8px;
+    }
+  
+    .event-images {
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center the images */
+    }
+  
+    .gallery-item {
+      width: 80%; /* Make each image larger on mobile */
+      height: 200px; /* Adjust height for smaller screens */
+    }
+  
+    .carousel-item img {
+      height: 100%; /* Keep image aspect ratio intact */
+      object-fit: cover;
+    }
+  
+    .event-card h2 {
+      font-size: 1.5rem; /* Reduce title font size */
+      padding-top: 20px;
+    }
+  
+    .event-card p {
+      font-size: 1rem; /* Adjust description font size */
+    }
+  
+    /* Justify text for mobile */
+    
+    .event-card p,
+    .slide-content {
+      text-align: justify; /* Justify align headings and paragraphs */
+    }
+    .event-card h2{
+        text-align: left;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-heading {
+      font-size: 1.8rem; /* Smaller font size for very small screens */
+    }
+  
+    .event-card {
+      padding: 15px; /* Reduce padding for very small screens */
+    }
+  
+    .event-date {
+      font-size: 16px;
+      padding: 4px 6px;
+    }
+  
+    .gallery-item {
+      width: 90%; /* Make images nearly full-width */
+      height: 180px; /* Reduce height for very small screens */
+    }
+  
+    .event-card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .event-card p {
+      font-size: 0.9rem;
+    }
+  
+    /* Justify text for very small screens */
+    
+    .event-card p,
+    .slide-content {
+      text-align: justify; /* Justify align headings and paragraphs */
+    }
+    .event-card h2{
+        text-align: left;
+    }
+  }
+  

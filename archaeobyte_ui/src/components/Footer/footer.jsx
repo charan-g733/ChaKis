@@ -59,6 +59,9 @@ const Footer = () => {
             <li>
               <Link to="/ourteam"><b>Team DevElet</b></Link>
             </li>
+            <li>
+              <Link to="/gallery"><b>DevElet Gallery </b></Link>
+            </li>
           </ul>
         </div>
         <div className="social-media">

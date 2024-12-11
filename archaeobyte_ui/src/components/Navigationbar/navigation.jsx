@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 import { FaChevronDown } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./navigation.css";
 
 function Navigationbar() {
@@ -95,16 +95,29 @@ function Navigationbar() {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Nav.Link href="https://develet.in/#customer-reviews">Reviews</Nav.Link>
+
+            {/* Smooth scrolling for Reviews */}
             <Nav.Link
-            onClick={() => navigate("/hire-with-us")} // Use navigate to route to the form
+              onClick={() => {
+                const reviewsSection = document.getElementById("customer-reviews");
+                if (reviewsSection) {
+                  reviewsSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
-            Hire with Us
+              Reviews
             </Nav.Link>
 
-            <Nav.Link
-              onClick={() => navigate("/get_in_touch")} // Use navigate
-            >
+            {/* Navigate to Gallery */}
+            <Nav.Link onClick={() => navigate("/gallery")}>Gallery</Nav.Link>
+
+            {/* Navigate to Hire with Us */}
+            <Nav.Link onClick={() => navigate("/hire-with-us")}>
+              Hire with Us
+            </Nav.Link>
+
+            {/* Navigate to Get in Touch */}
+            <Nav.Link onClick={() => navigate("/get_in_touch")}>
               Get in Touch
             </Nav.Link>
           </Nav>

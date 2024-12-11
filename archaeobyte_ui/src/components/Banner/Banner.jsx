@@ -20,8 +20,69 @@ const Banner = () => {
   return (
     <div className="banner-container">
       <Slider {...settings}>
+        {/* New banner slide with uploaded image */}
+        {
+        <div className="slide">
+          <img
+            src="images/NTEA_Banner1.jpg"
+            alt="DevElet Awards Banner"
+            className="bannerimage"
+          />
+          <div className="box3">
+          <h1 className="box-title">National Teaching Excellence Awards 2024</h1>
+            <p className="box-text">
+              DevElet in Collaboration with CSC India honoured top educators from Pan-India level on auspicious occasion of National Education Day (11th Nov 2024)
+            </p>
+              <NavLink
+                className="nominate-button"
+                href="/gallery"
+              >
+                Learn more...
+              </NavLink>
+            
+          </div>
+          <div className="nominate-button-container">
+            <NavLink
+              className="nominate3-button"
+              href="/gallery"
+            >
+              Learn more...
+            </NavLink>
+          </div>
+        </div>
         
-
+        }
+        {
+        <div className="slide">
+          <img
+            src="images/NTEA_Banner2.jpg"
+            alt="DevElet Awards Banner"
+            className="bannerimage"
+          />
+          <div className="box3">
+          <h1 className="box-title">National Teaching Excellence Awards 2024</h1>
+            <p className="box-text">
+              DevElet in Collaboration with CSC India honoured top educators from Pan-India level on auspicious occasion of National Education Day (11th Nov 2024)
+            </p>
+              <NavLink
+                className="nominate-button"
+                href="/gallery"
+              >
+                Learn more...
+              </NavLink>
+            
+          </div>
+          <div className="nominate-button-container">
+            <NavLink
+              className="nominate3-button"
+              href="/gallery"
+            >
+              Learn more...
+            </NavLink>
+          </div>
+        </div>
+        
+        }
         {/* Existing slides */}
         <div className="slide">
           <img src="images/banner6.jpg" alt="Slide 1" className="bannerimage" />

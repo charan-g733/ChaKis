@@ -88,7 +88,7 @@
   height: 340px;
 }
 .box3-text {
-  font-size: 2.2em;
+  font-size: 1.3em;
   margin: 15px;
   text-align: left;
   font-weight: bold;
@@ -124,8 +124,8 @@
 /* New CSS for the Nominate button */
 .nominate-button-container {
   position: absolute;
-  top: 320px; /* Adjust this value based on where you want the button to appear below the title */
-  left: 50%;
+  top: 365px; /* Adjust this value based on where you want the button to appear below the title */
+  left: 48%;
   transform: translateX(-50%);
   text-align: center;
 }
@@ -134,8 +134,8 @@
   display: inline-block;
   padding: 10px 20px;
   background-color: white;
-  color: #d4af37; /* Golden text color */
-  border: 2px solid #d4af37;
+  color: rgb(255, 132, 0); /* Golden text color #d4af37*/
+  border: 2px solid rgb(255, 132, 0); /*#d4af37*/
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -146,19 +146,19 @@
   display: inline-block;
   padding: 10px 20px;
   background-color: white;
-  color: #d4af37; /* Golden text color */
-  border: 2px solid #d4af37;
+  color: rgb(255, 132, 0); /* Golden text color */
+  border: 2px solid rgb(255, 132, 0);
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 .nominate-button:hover {
-  background-color: #d4af37; /* Golden background on hover */
+  background-color: rgb(255, 132, 0); /* Golden background on hover #d4af37*/
   color: white; /* White text on hover */
 }
 .nominate3-button:hover {
-  background-color: #d4af37; /* Golden background on hover */
+  background-color: rgb(255, 132, 0); /* Golden background on hover #d4af37*/
   color: white; /* White text on hover */
 }
 @media (max-width: 768px) {
@@ -169,6 +169,19 @@
     text-align: center;
   }
 }
+
+/* Position Learn more button in bottom-left corner for desktop */
+@media (min-width: 769px) {
+  .nominate-button-container {
+    top: auto; /* Remove top positioning */
+    left: 20px; /* Adjust left offset for desired padding */
+    bottom: 60px; /* Position near the bottom */
+    transform: none; /* Remove horizontal centering */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .nominate-button {

@@ -210,7 +210,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   const alignmentPadding3 = ' '.repeat(17);
   const alignmentPadding4 = ' '.repeat(23);
 
-  doc.text(`Start Date :${alignmentPadding1}20th November 2024`, { align: 'left', lineGap: 1.5 });
+  doc.text(`Start Date :${alignmentPadding1}25th December 2024`, { align: 'left', lineGap: 1.5 });
   doc.text(`Duration :${alignmentPadding2}1 Month`, { align: 'left', lineGap: 1.5 });
   doc.text(`Designation :${alignmentPadding3}${domain}`, { align: 'left', lineGap: 1.5 });
   doc.text(`Location :${alignmentPadding4}Work-From Home (Remote)`, { align: 'left', lineGap: 1.5 });
