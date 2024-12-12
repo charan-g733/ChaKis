@@ -24,7 +24,7 @@ const Banner = () => {
         {
         <div className="slide">
           <img
-            src="images/NTEA_Banner1.jpg"
+            src="images/NTEA_Banner1.JPG"
             alt="DevElet Awards Banner"
             className="bannerimage"
           />
@@ -55,7 +55,7 @@ const Banner = () => {
         {
         <div className="slide">
           <img
-            src="images/NTEA_Banner2.jpg"
+            src="images/NTEA_Banner2.JPG"
             alt="DevElet Awards Banner"
             className="bannerimage"
           />
