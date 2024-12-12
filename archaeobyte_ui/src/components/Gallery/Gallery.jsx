@@ -24,7 +24,7 @@ const events =
         content: 'Dr. V. Madhusudhan, Dr. M. V. Kamal, and Dr. Naveen were also felicitated with distinguished awards at the National Teaching Excellence Awards 2024. Their exceptional dedication to education and impactful contributions to student development were acknowledged, highlighting their significant role in shaping the future of teaching.',
       },
       {
-        images: ['images/NTEA6.jpg', 'images/NTEA2.jpg', 'images/NTEA1.jpg'],
+        images: ['images/NTEA6.jpg', 'images/NTEA2.jpg', 'images/NTEA10.jpg'],
         content: 'Additionally, Dr. Kodali Anuradha, Dr. C. Jayachandraiah, and Dr. Sanjeeva Polepaka shared their expertise, offering valuable perspectives on how educators can drive positive change and inspire the next generation of leaders.',
       },
     ],
