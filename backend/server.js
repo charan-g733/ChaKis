@@ -149,7 +149,7 @@ function getNextInternId(callback) {
 
     // Increment the ID and format it
     lastInternId += 1;
-    const newInternId = `24K0J${currentMonth}${lastInternId.toString().padStart(3, '0')}`;
+    const newInternId = `25K0J${currentMonth}${lastInternId.toString().padStart(3, '0')}`;
 
     // Write the updated ID and month back to the file
     fs.writeFile(internIdFilePath, JSON.stringify({ lastInternId, month: currentMonth }), (err) => {
@@ -210,7 +210,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   const alignmentPadding3 = ' '.repeat(17);
   const alignmentPadding4 = ' '.repeat(23);
 
-  doc.text(`Start Date :${alignmentPadding1}25th December 2024`, { align: 'left', lineGap: 1.5 });
+  doc.text(`Start Date :${alignmentPadding1}9th February 2025`, { align: 'left', lineGap: 1.5 });
   doc.text(`Duration :${alignmentPadding2}1 Month`, { align: 'left', lineGap: 1.5 });
   doc.text(`Designation :${alignmentPadding3}${domain}`, { align: 'left', lineGap: 1.5 });
   doc.text(`Location :${alignmentPadding4}Work-From Home (Remote)`, { align: 'left', lineGap: 1.5 });
@@ -306,9 +306,10 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
         </p>
 
         <p style="font-size: 14px; color: blue;">
+        <a href="https://chat.whatsapp.com/Fa5KxQPLQgW3n9gBy1m5Tk" style="color: blue; text-decoration: none;">WhatsApp</a>
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/E9AhXtTbeEkJP8hGJMoeVe" style="color: blue; text-decoration: none;">WhatsApp</a>
+          
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
