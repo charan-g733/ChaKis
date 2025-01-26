@@ -111,6 +111,10 @@ function Navigationbar() {
             {/* Navigate to Gallery */}
             <Nav.Link onClick={() => navigate("/gallery")}>Gallery</Nav.Link>
 
+            {/* Navigate to Gallery */}
+            <Nav.Link onClick={() => navigate("/certificate-verification")}>Verify Certificate</Nav.Link>
+
+
             {/* Navigate to Hire with Us */}
             <Nav.Link onClick={() => navigate("/hire-with-us")}>
               Hire with Us

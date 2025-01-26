@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 // Create a connection pool to the database
 const db = mysql.createPool({
-  host: '127.0.0.1',
+  host: '127.0.0.1', //127.0.0.1
   user: 'root',
   password: 'Jashu$93',
   database: 'dev_elet_db',
@@ -667,6 +667,6 @@ const options = {
   ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
 };
 
-https.createServer(options, app).listen(port, () => {
+https.createServer(options,app).listen(port, () => { //https.createServer(options,app).listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

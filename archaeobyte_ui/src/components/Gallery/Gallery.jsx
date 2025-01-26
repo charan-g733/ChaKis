@@ -1,6 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap'; // Importing Carousel component from React Bootstrap
 import './Gallery.css';
+import Navigationbar from "../../components/Navigationbar/navigation";
+import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/footer";
 
 
 const events = 
@@ -45,6 +48,9 @@ const events =
 
 const Gallery = () => {
   return (
+    <>
+    <Navigationbar />
+    <Header />
     <div className="gallery-wrapper">
       <h1 className="gallery-heading">Highlights & Honors</h1>
       {events.map((event) => (
@@ -83,6 +89,8 @@ const Gallery = () => {
         </div>
       ))}
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -1,0 +1,160 @@
+.certificate-verification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f5f5f5; /* Light gray background */
+    padding-top: 60px; /* No padding above the box */
+    padding-bottom: 60px;
+  }
+  
+  .verification-box {
+    display: flex;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Larger shadow */
+    border-radius: 8px;
+    width: 95%; /* Width of the box */
+    max-width: 1300px; /* Maximum width */
+    overflow: hidden;
+    padding: 60px; /* Padding inside the box */
+  }
+  
+  .box-left {
+    text-align: center; /* Centers the content */
+    flex: 1;
+    padding-right: 60px;
+  }
+  
+  .box-left h2 {
+    font-size: 2.2rem; /* Slightly reduced font size */
+    color: #003366; /* Dark blue color */
+    margin-bottom: 20px;
+    font-weight: bold; /* Makes the text bold */
+  }
+  
+  .box-left p {
+    font-size: 1.1rem; /* Slightly reduced font size */
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .verify-text {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .box-left input,
+  .box-left button {
+    width: 60%; /* Smaller width */
+    padding: 12px; /* Reduced padding */
+    margin: 10px auto; /* Centered horizontally */
+    font-size: 1.3rem; /* Reduced font size */
+    display: block; /* Makes input and button block-level elements */
+  }
+  
+  .box-left input {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  .box-left button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .box-left button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 20px;
+  }
+  
+  .certificate-details p {
+    margin: 15px 0;
+    color: black; /* Set the color to black */
+    font-size: 1.2rem; /* Increased font size */
+    text-align: center; /* Left-align the text */
+  }
+  
+  .certificate-details p span {
+    font-weight: bold; /* Make the name and category bold */
+  }
+  
+  .box-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .box-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media screen and (max-width: 768px) {
+    .verification-box {
+      flex-direction: column; /* Stack the box elements vertically */
+      padding: 30px; /* Adjust padding for smaller screens */
+    }
+  
+    .box-left,
+    .box-right {
+      padding: 0;
+      flex: none; /* Allow content to stack */
+      width: 100%;
+    }
+  
+    .box-left h2 {
+      font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+  
+    .box-left p {
+      font-size: 1rem; /* Adjusted font size */
+    }
+  
+    .box-left input,
+    .box-left button {
+      width: 80%; /* Increased width for mobile */
+      font-size: 1.1rem; /* Slightly smaller font size */
+    }
+  
+    .certificate-details p {
+      font-size: 1rem; /* Adjusted font size for smaller screens */
+      text-align: center; /* Left-align text for mobile */
+    }
+  
+    .box-left button {
+      width: 80%; /* Adjust button width */
+    }
+  }
+  
+  /* Media Query for Very Small Screens (Mobile Phones) */
+  @media screen and (max-width: 480px) {
+    .box-left h2 {
+      font-size: 1.6rem; /* Smaller font size */
+    }
+  
+    .box-left p {
+      font-size: 0.9rem; /* Adjusted font size */
+    }
+  
+    .box-left input,
+    .box-left button {
+      width: 90%; /* Full-width on very small screens */
+    }
+  
+    .certificate-details p {
+      font-size: 0.9rem; /* Adjusted font size */
+    }
+  }
+  
