@@ -161,6 +161,65 @@ const AEACards = () => {
           </div>
         </div>
       </div>
+
+      <div className="unique-card-link">
+        <div className="unique-card">
+          <img src="images/full_stack_aea_domain.png" alt="AWS" />
+          <div className="unique-card-details">
+            <h4>Full Stack Web Development</h4>
+            <p>
+              Skills you'll gain: Frontend, Backend, Databases, APIs, Authentication, Deployment & More....
+            </p>
+            <div className="unique-rating">
+              <span className="unique-rating-value">5.0</span>
+              <span className="unique-rating-star">★</span>
+              <span className="unique-rating-text">(233K reviews)</span>
+            </div>
+            <p className="unique-rating-description">
+              Intermediate · Professional Certification Course 5 months
+            </p>
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1ifJnjfgchxPSS7mO6FWu-hAiqMpb-iGo/view?usp=sharing")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
+            </button>
+            <button className="unique-enroll-button" onClick={handleEnrollClick}>
+              <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="unique-card-link">
+        <div className="unique-card">
+          <img src="images/cyber_security_aea_domain.jpeg" alt="AWS" />
+          <div className="unique-card-details">
+            <h4>Cyber Security</h4>
+            <p>
+              Skills you'll gain: Network Security, Cryptography, Ethical hacking, Penetration testing, Malware analysis & More....
+            </p>
+            <div className="unique-rating">
+              <span className="unique-rating-value">4.7</span>
+              <span className="unique-rating-star">★</span>
+              <span className="unique-rating-text">(162K reviews)</span>
+            </div>
+            <p className="unique-rating-description">
+              Intermediate · Professional Certification Course 3 months
+            </p>
+            <button 
+              className="unique-brochure-button"
+              onClick={() => handleBrochureClick("https://drive.google.com/file/d/1C7JHoi24Q9YuMVLMrSDHp_rdukHXvJed/view?usp=sharing")}
+            >
+              <FontAwesomeIcon icon={faEye} /> View  Brochure
+            </button>
+            <button className="unique-enroll-button" onClick={handleEnrollClick}>
+              <FontAwesomeIcon icon={faUserPlus} /> Enroll For Course
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };

@@ -30,6 +30,15 @@ const Registration_aea = () => {
       const response = await axios.post('https://develet.in:5000/api/registrations', formData);
       console.log(response.data);  // Log response for debugging
       setShowModal(true);
+      setFormData({
+        name: '',
+        email: '',
+        mobile: '',
+        college: '',
+        year_of_passout: '',
+        domain: '',
+        declaration: false
+      });
     } catch (error) {
       console.error('Error submitting form:', error.response ? error.response.data : error.message);
     }
@@ -137,6 +146,26 @@ const Registration_aea = () => {
               onChange={handleChange}
             />
             Front-End Development
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="domain"
+              value="Full Stack Web Development"
+              checked={formData.domain === 'Full Stack Web Development'}
+              onChange={handleChange}
+            />
+            Full Stack Web Development
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="domain"
+              value="Cyber Security"
+              checked={formData.domain === 'Cyber Security'}
+              onChange={handleChange}
+            />
+            Cyber Security
           </label>
         </fieldset>
         <label>

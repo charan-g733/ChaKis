@@ -45,7 +45,7 @@ const DataAnalystCard = () => {
                 </div>
                 <div className="unique-testimonial">
                     <img src="images/umak.jpg" alt="Uma K" />
-                    <blockquote>"The AWS Cloud Computing Course in AEA Program opened new doors to my career." – Ravinder S</blockquote>
+                    <blockquote>"The Full Stack Web Development Course in AEA Program opened new doors to my career." – Ravinder S</blockquote>
                 </div>
             </div>
             <div className="unique-recommended-certificates">
@@ -53,19 +53,19 @@ const DataAnalystCard = () => {
                 <div className="unique-certificates">
                     <a href="/AEA" className="unique-card-link">
                         <div className="unique-card-fn">
-                            <img src="images/uxdesign1.png" alt="Front-End Development" />
+                            <img src="images/full_stack_aea_domain.png" alt="Full Stack Web Development" />
                             <div className="unique-card-details">
-                                <h4>Front-End Development</h4>
-                                <p>Skills you'll gain: HTML, CSS, React, JS, UX Design, SQL & More....</p>
+                                <h4>Full Stack Web Development</h4>
+                                <p>Skills you'll gain: Frontend, Backend, Databases, APIs, Authentication, Deployment & More....</p>
                                 <div className="unique-rating">
                                     <span className="unique-rating-value">5.0</span>
                                     <span className="unique-rating-star">★</span>
-                                    <span className="unique-rating-text">(202K reviews)</span>
+                                    <span className="unique-rating-text">(233K reviews)</span>
                                 </div>
-                                <p className="unique-rating-description">Beginner · Professional Certification Course 3 months</p>
+                                <p className="unique-rating-description">Beginner · Professional Certification Course 5 months</p>
                                 <button 
                                     className="unique-brochure-button"
-                                    onClick={() => handleBrochureClick("https://drive.google.com/file/d/1RRQrJQ4TMhoXXqGlTLs5p0n9Z56t837E/view?usp=sharing")}
+                                    onClick={() => handleBrochureClick("https://drive.google.com/file/d/1ifJnjfgchxPSS7mO6FWu-hAiqMpb-iGo/view?usp=sharing")}
                                 >
                                     <FontAwesomeIcon icon={faEye} /> View Brochure
                                 </button>
@@ -80,19 +80,19 @@ const DataAnalystCard = () => {
                     </a>
                     <a href="/AEA" className="unique-card-link">
                         <div className="unique-card-fn">
-                            <img src="images/aws.jpg" alt="AWS Cloud Computing" />
+                            <img src="images/cyber_security_aea_domain.jpeg" alt="Cyber Security" />
                             <div className="unique-card-details">
-                                <h4>Cloud Computing in AWS with DevOps</h4>
-                                <p>Skills you'll gain: Cloud computing, AWS all services, DevOps, Jenkins, Git & More....</p>
+                                <h4>Cyber Security</h4>
+                                <p>Skills you'll gain: Network Security, Cryptography, Ethical hacking, Penetration testing, Malware analysis & More....</p>
                                 <div className="unique-rating">
-                                    <span className="unique-rating-value">4.8</span>
+                                    <span className="unique-rating-value">4.7</span>
                                     <span className="unique-rating-star">★</span>
-                                    <span className="unique-rating-text">(155K reviews)</span>
+                                    <span className="unique-rating-text">(162K reviews)</span>
                                 </div>
                                 <p className="unique-rating-description">Intermediate · Professional Certification Course 3 months</p>
                                 <button 
                                     className="unique-brochure-button"
-                                    onClick={() => handleBrochureClick("https://drive.google.com/file/d/1Julc6wUZ6C8oAh-kR2-xREDB023coPgr/view?usp=sharing")}
+                                    onClick={() => handleBrochureClick("https://drive.google.com/file/d/1C7JHoi24Q9YuMVLMrSDHp_rdukHXvJed/view?usp=sharing")}
                                 >
                                     <FontAwesomeIcon icon={faEye} /> View Brochure
                                 </button>

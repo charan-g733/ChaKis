@@ -27,6 +27,13 @@ const Hire_with_us_form = () => {
     try {
       await axios.post('https://develet.in:5000/api/hire_with_us', formData);
       setShowModal(true);
+      setFormData({
+        name: '',
+        organization: '',
+        email: '',
+        contact: '',
+        domain: ''
+      });
     } catch (error) {
       console.error('Error submitting form:', error.response ? error.response.data : error.message);
     }

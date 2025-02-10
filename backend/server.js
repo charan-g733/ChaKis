@@ -161,6 +161,7 @@ function getNextInternId(callback) {
   });
 }
 
+
 // Function to create a PDF offer letter in memory
 function createOfferLetter(name, college, domain, internId, callback) {
   const doc = new PDFDocument({ size: 'A4' });
@@ -192,6 +193,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   doc.moveDown(0.5);
   doc.text(`Intern Id: ${internId}`, { align: 'left' });
   doc.moveDown(0.5);
+  doc.font('Helvetica-Bold').fontSize(14);
   doc.text(`College Name: ${college}`, { align: 'left' });
   doc.moveDown(0.5);
 
@@ -210,7 +212,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   const alignmentPadding3 = ' '.repeat(17);
   const alignmentPadding4 = ' '.repeat(23);
 
-  doc.text(`Start Date :${alignmentPadding1}9th February 2025`, { align: 'left', lineGap: 1.5 });
+  doc.text(`Start Date :${alignmentPadding1}16th March 2025`, { align: 'left', lineGap: 1.5 });
   doc.text(`Duration :${alignmentPadding2}1 Month`, { align: 'left', lineGap: 1.5 });
   doc.text(`Designation :${alignmentPadding3}${domain}`, { align: 'left', lineGap: 1.5 });
   doc.text(`Location :${alignmentPadding4}Work-From Home (Remote)`, { align: 'left', lineGap: 1.5 });
@@ -299,16 +301,17 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
         </div>
 
         <p style="font-size: 14px; color: black;">If you have any questions or need further assistance, please feel free to reach out to us. We look forward to welcoming you to the DevElet family.</p>
-
         <p style="font-size: 14px; color: black;">
           <span style="color: blue; text-decoration: underline; font-weight: bold;">Note:</span>
           Join our WhatsApp group to ensure you receive all communications and stay updated.
         </p>
-
+        
+        
         <p style="font-size: 14px; color: blue;">
-        <a href="https://chat.whatsapp.com/Fa5KxQPLQgW3n9gBy1m5Tk" style="color: blue; text-decoration: none;">WhatsApp</a>
+        
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
+          <a href="https://chat.whatsapp.com/GBgmUXAEf8JFxQL1a09Twy" style="color: blue; text-decoration: none;">WhatsApp</a>
           
         </p>
 
@@ -667,6 +670,6 @@ const options = {
   ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
 };
 
-https.createServer(options,app).listen(port, () => { //https.createServer(options,app).listen(port, () => {
+https.createServer(options, app).listen(port, () => { //https.createServer(options,app).listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

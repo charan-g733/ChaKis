@@ -27,8 +27,18 @@ const Registration_innovate = ({ domain }) => {
     e.preventDefault();
 
     try {
-      await axios.post('https://develet.in:5000/api/registrations_innovate', formData);
+      await axios.post('https://develet.in:5000/api/registrations_innovate', formData);  //await axios.post('https://develet.in:5000/api/registrations_innovate', formData);
       setShowModal(true);
+      setFormData({
+        name: '',
+        email: '',
+        mobile: '',
+        college: '',
+        year_of_passout: '',
+        todays_date: '',
+        domain: domain || '',
+        declaration: false
+      }); //code to earse the values after submit  
     } catch (error) {
       console.error('Error submitting form:', error.response ? error.response.data : error.message);
     }
