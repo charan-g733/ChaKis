@@ -23,33 +23,7 @@ const Banner = () => {
         {/* New banner slide with uploaded image */}
 
         {
-  <div className="slide">
-  <img
-    src="images/DevElet_Event_Banner1.png"
-    alt="DevElet Awards Banner"
-    className="bannerimage"
-  />
-  <div className="box3">
-    <h1 className="box-title">International Teaching Excellence Awards 2025</h1>
-    <p className="box-text">
-      DevElet is thrilled to accept nominations for the International Teaching Excellence Awards 2025 on Jan 24th 2025.
-    </p>
-    <NavLink className="centered-nominate-button-1" href="https://forms.gle/5Lhpke7xXj4BQsE6A" target="_blank" >
-      Nominate Now
-    </NavLink>
-  </div>
-  <div className="centered-nominate-button">
-            <NavLink
-              className="centered-nominate-button"
-              href="https://forms.gle/5Lhpke7xXj4BQsE6A" target="_blank"
-            >
-              Nominate Now
-            </NavLink>
-          </div>
-        </div>
-
-
-}
+  }
 
         {
         <div className="slide">
@@ -89,34 +63,8 @@ const Banner = () => {
 
 
         {
-        <div className="slide">
-          <img
-            src="images/NTEA_Banner2.JPG"
-            alt="DevElet Awards Banner"
-            className="bannerimage"
-          />
-          <div className="box3">
-          <h1 className="box-title">National Teaching Excellence Awards 2024</h1>
-            <p className="box-text">
-              DevElet in Collaboration with CSC India honoured top educators from Pan-India level on auspicious occasion of National Education Day (11th Nov 2024)
-            </p>
-              <NavLink
-                className="nominate-button"
-                href="/gallery"
-              >
-                Learn more...
-              </NavLink>
-            
-          </div>
-          <div className="nominate-button-container">
-            <NavLink
-              className="nominate3-button"
-              href="/gallery"
-            >
-              Learn more...
-            </NavLink>
-          </div>
-        </div>
+        
+          
         
         }
         {/* Existing slides */}
