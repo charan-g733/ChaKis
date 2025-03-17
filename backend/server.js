@@ -111,7 +111,7 @@ function sendThankYouEmailAEA(toEmail, name, domain) {
         <p style="font-size: 14px; color: blue;">
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/EENMvu2CllqFLSq3hPuFvI" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/L3KtcCJvvu6KkRpE588lhm" style="color: blue; text-decoration: none;">WhatsApp</a>
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
@@ -212,7 +212,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   const alignmentPadding3 = ' '.repeat(17);
   const alignmentPadding4 = ' '.repeat(23);
 
-  doc.text(`Start Date :${alignmentPadding1}16th March 2025`, { align: 'left', lineGap: 1.5 });
+  doc.text(`Start Date :${alignmentPadding1}27th April 2025`, { align: 'left', lineGap: 1.5 });
   doc.text(`Duration :${alignmentPadding2}1 Month`, { align: 'left', lineGap: 1.5 });
   doc.text(`Designation :${alignmentPadding3}${domain}`, { align: 'left', lineGap: 1.5 });
   doc.text(`Location :${alignmentPadding4}Work-From Home (Remote)`, { align: 'left', lineGap: 1.5 });
