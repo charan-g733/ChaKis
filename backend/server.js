@@ -111,7 +111,7 @@ function sendThankYouEmailAEA(toEmail, name, domain) {
         <p style="font-size: 14px; color: blue;">
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/L3KtcCJvvu6KkRpE588lhm" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/EENMvu2CllqFLSq3hPuFvI" style="color: blue; text-decoration: none;">WhatsApp</a>
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
@@ -311,7 +311,7 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
         
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/GBgmUXAEf8JFxQL1a09Twy" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/L3KtcCJvvu6KkRpE588lhm" style="color: blue; text-decoration: none;">WhatsApp</a>
           
         </p>
 
