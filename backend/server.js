@@ -49,10 +49,14 @@ const transporter = nodemailer.createTransport({
 });
 
 // Function to send a styled thank-you email
-function sendThankYouEmailAEA(toEmail, name, domain) {
+function sendThankYouEmailAEA(toEmail, name, domain, college, mobile) {
   console.log('To Email:', toEmail);
   console.log('Name:', name);
   console.log('Domain:', domain); // Debugging output
+
+
+
+
 
   const mailOptions = {
     from: '"DevElet" <tech.develet@gmail.com>', // Replace with your email
@@ -119,6 +123,25 @@ function sendThankYouEmailAEA(toEmail, name, domain) {
       </div>
     `
   };
+
+
+  const adminMailOptionsAEA = {
+    from: '"DevElet" <tech.develet@gmail.com>',  
+    to: 'newregs.develet@gmail.com',
+    subject: `New AEA Registration - ${name}`,
+    html: `<p>A new user has registered for the AEA Program.</p>
+           <p><strong>Name:</strong> ${name}</p>
+           <p><strong>Email:</strong> ${toEmail}</p>
+           <p><strong>College:</strong> ${college}</p>
+           <p><strong>Domain:</strong> ${domain}</p>
+           <p><strong>Mobile:</strong> ${mobile}</p>`
+  };
+
+transporter.sendMail(adminMailOptionsAEA, (error, info) => {
+    if (error) return console.error('Error sending admin email:', error);
+    console.log('Admin email sent:', info.response);
+  });
+
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -253,7 +276,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
 }
 
 // Function to send the offer letter email
-function sendThankYouEmailInnovate(toEmail, name, college, domain) {
+function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
   getNextInternId((internId) => {
     createOfferLetter(name, college, domain, internId, (pdfData) => {
       const mailOptions = {
@@ -328,6 +351,25 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain) {
           }
         ]
       };
+
+      const adminMailOptions = {
+        from: '"DevElet" <tech.develet@gmail.com>',  
+        to: 'newregs.develet@gmail.com',
+        subject: `New Innovate Registration - ${name}`,
+        html: `<p>A new user has registered for the Innovate Program.</p>
+               <p><strong>Name:</strong> ${name}</p>
+               <p><strong>Email:</strong> ${toEmail}</p>
+               <p><strong>College:</strong> ${college}</p>
+               <p><strong>Domain:</strong> ${domain}</p>
+               <p><strong>Intern ID:</strong> ${internId}</p>
+               <p><strong>Mobile:</strong> ${mobile}</p>`
+      };
+      
+transporter.sendMail(adminMailOptions, (error, info) => {
+        if (error) return console.error('Error sending admin email:', error);
+        console.log('Admin email sent:', info.response);
+      });
+
 
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
@@ -511,7 +553,7 @@ app.post('/api/registrations', (req, res) => {
         res.status(500).send({ error: 'Failed to register' });
         return;
       }
-      sendThankYouEmailAEA(email, name, domain); // Send thank-you email
+      sendThankYouEmailAEA(email, name, domain, mobile, college); // Send thank-you email
       res.send({ message: 'Registration successful!' });
     });
   });
@@ -544,7 +586,7 @@ app.post('/api/registrations_innovate', (req, res) => {
         console.error(err);
         return res.status(500).send({ error: 'Failed to register' });
       }
-      sendThankYouEmailInnovate(email, name, college, domain); // Send thank-you email
+      sendThankYouEmailInnovate(email, name, college, domain, mobile); // Send thank-you email
       res.send({ message: 'Registration successful!' });
     });
   });
