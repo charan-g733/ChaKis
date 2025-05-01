@@ -49,10 +49,14 @@ const transporter = nodemailer.createTransport({
 });
 
 // Function to send a styled thank-you email
-function sendThankYouEmailAEA(toEmail, name, domain,college,mobile) {
+function sendThankYouEmailAEA(toEmail, name, domain, college, mobile) {
   console.log('To Email:', toEmail);
   console.log('Name:', name);
   console.log('Domain:', domain); // Debugging output
+
+
+
+
 
   const mailOptions = {
     from: '"DevElet" <tech.develet@gmail.com>', // Replace with your email tech.develet@gmail.com
@@ -111,7 +115,7 @@ function sendThankYouEmailAEA(toEmail, name, domain,college,mobile) {
         <p style="font-size: 14px; color: blue;">
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/L3KtcCJvvu6KkRpE588lhm" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/EENMvu2CllqFLSq3hPuFvI" style="color: blue; text-decoration: none;">WhatsApp</a>
         </p>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
@@ -119,7 +123,8 @@ function sendThankYouEmailAEA(toEmail, name, domain,college,mobile) {
       </div>
     `
   };
-  //-----------------------------------------------------------------------s
+
+
   const adminMailOptionsAEA = {
     from: '"DevElet" <tech.develet@gmail.com>',  
     to: 'newregs.develet@gmail.com',
@@ -131,7 +136,12 @@ function sendThankYouEmailAEA(toEmail, name, domain,college,mobile) {
            <p><strong>Domain:</strong> ${domain}</p>
            <p><strong>Mobile:</strong> ${mobile}</p>`
   };
-  
+
+transporter.sendMail(adminMailOptionsAEA, (error, info) => {
+    if (error) return console.error('Error sending admin email:', error);
+    console.log('Admin email sent:', info.response);
+  });
+
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -141,10 +151,7 @@ function sendThankYouEmailAEA(toEmail, name, domain,college,mobile) {
     }
   });
   
-  transporter.sendMail(adminMailOptionsAEA, (error, info) => {
-    if (error) return console.error('Error sending admin email:', error);
-    console.log('Admin email sent:', info.response);
-  });
+ 
 }
 //--------------------------------------------------------
 
@@ -231,7 +238,7 @@ function createOfferLetter(name, college, domain, internId, callback) {
   const alignmentPadding3 = ' '.repeat(17);
   const alignmentPadding4 = ' '.repeat(23);
 
-  doc.text(`Start Date :${alignmentPadding1}27th April 2025`, { align: 'left', lineGap: 1.5 });
+  doc.text(`Start Date :${alignmentPadding1}10th May 2025`, { align: 'left', lineGap: 1.5 });
   doc.text(`Duration :${alignmentPadding2}1 Month`, { align: 'left', lineGap: 1.5 });
   doc.text(`Designation :${alignmentPadding3}${domain}`, { align: 'left', lineGap: 1.5 });
   doc.text(`Location :${alignmentPadding4}Work-From Home (Remote)`, { align: 'left', lineGap: 1.5 });
@@ -330,7 +337,7 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
         
           <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
           <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/GBgmUXAEf8JFxQL1a09Twy" style="color: blue; text-decoration: none;">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/KL71l1zifVHHT7uJvvWxJp" style="color: blue; text-decoration: none;">WhatsApp</a>
           
         </p>
 
@@ -347,6 +354,7 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
           }
         ]
       };
+
       const adminMailOptions = {
         from: '"DevElet" <tech.develet@gmail.com>',  
         to: 'newregs.develet@gmail.com',
@@ -359,16 +367,18 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
                <p><strong>Intern ID:</strong> ${internId}</p>
                <p><strong>Mobile:</strong> ${mobile}</p>`
       };
+      
+transporter.sendMail(adminMailOptions, (error, info) => {
+        if (error) return console.error('Error sending admin email:', error);
+        console.log('Admin email sent:', info.response);
+      });
+
 
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) return console.error('Error sending email:', error);
         console.log('Email sent:', info.response);
       });
-      
-      transporter.sendMail(adminMailOptions, (error, info) => {
-        if (error) return console.error('Error sending admin email:', error);
-        console.log('Admin email sent:', info.response);
-      });
+     
     });
   });
 }
@@ -544,7 +554,7 @@ app.post('/api/registrations', (req, res) => {
         res.status(500).send({ error: 'Failed to register' });
         return;
       }
-      sendThankYouEmailAEA(email, name, domain, college, mobile); // Send thank-you email
+      sendThankYouEmailAEA(email, name, domain, mobile, college); // Send thank-you email
       res.send({ message: 'Registration successful!' });
     });
   });

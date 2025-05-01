@@ -26,7 +26,7 @@ const Numbers = () => {
           <h3>
             {onScreen && <CountUp start={0} end={7285} suffix="" duration={2.5} />}
           </h3>
-          <p>Join over 3000 individuals who have earned an Internship</p>
+          <p>Join over 7000 individuals who have earned an Internship</p>
         </div>
         <div className="credentials-stat">
           <h3>
