@@ -17,6 +17,23 @@ const Banner = () => {
     slidesToScroll: 1,
   };
 
+    // The handleShare function
+    const handleShare = (e) => {
+      e.preventDefault(); // Prevent default link behavior
+  
+      if (navigator.share) {
+        navigator.share({
+          title: 'DevElet Summer Internship Program – 2025',
+          text: 'Experience. Learn. Grow with Us This Summer.',
+          url: window.location.href, // Share the current page URL
+        })
+        .then(() => console.log('Successfully shared!'))
+        .catch((error) => console.error('Error sharing:', error));
+      } else {
+        alert('Your browser does not support sharing functionality.');
+      }
+    };
+
   return (
     <div className="banner-container">
       <Slider {...settings}>
@@ -24,6 +41,28 @@ const Banner = () => {
 
         {
   }
+  <div className="slide">
+          <img src="images/new_banner1.webp" alt="Slide 2" className="banner-image" />
+
+          {/* Text Overlay */}
+          <div className="banner-content">
+            <h1 className="banner-heading">
+              DevElet Summer Internship<br />Program (May to August 2025)
+            </h1>
+            <p className="banner-caption">
+            Hyderabad | Job No. D00250510 | Internship
+            </p>
+            <div className="button-container">
+              <NavLink href="/Innovate" className="banner-button">
+                REGISTER NOW
+              </NavLink>
+              {/* Share Button with Icon */}
+          <NavLink to="/" className="banner-button" onClick={handleShare}>
+            <i className="fas fa-share-alt"></i> SHARE {/* FontAwesome Share Icon */}
+          </NavLink>
+            </div>
+          </div>
+        </div>
 
         {
         <div className="slide">
