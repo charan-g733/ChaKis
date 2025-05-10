@@ -44,7 +44,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'tech.develet@gmail.com', // Replace with your email 
-    pass: 'grqihiywsktgmjee'   // Replace with your email password  
+    pass: 'grqihiywsktgmjee'   // Replace with your email password   
   }
 });
 
@@ -154,7 +154,7 @@ transporter.sendMail(adminMailOptionsAEA, (error, info) => {
  
 }
 //--------------------------------------------------------
-
+/*
 const PDFDocument = require('pdfkit');
 const { PassThrough } = require('stream');
 const internIdFilePath = path.join(__dirname, 'internId.json');
@@ -277,11 +277,11 @@ function createOfferLetter(name, college, domain, internId, callback) {
 
   doc.end();
 }
-
+*/
 // Function to send the offer letter email
 function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
-  getNextInternId((internId) => {
-    createOfferLetter(name, college, domain, internId, (pdfData) => {
+  /*getNextInternId((internId) => {
+    createOfferLetter(name, college, domain, internId, (pdfData) => {*/
       const mailOptions = {
         from: '"DevElet" <tech.develet@gmail.com>', // Replace with your email 
         to: toEmail,
@@ -296,8 +296,21 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
               We appreciate your interest in joining our team. We are delighted to confirm your registration and offer you a 1-month internship opportunity.
             </p>
             <p style="font-size: 14px; color: black;">
-              Please find your official offer letter attached. We are excited about the prospect of having you on board and believe that your skills and enthusiasm will make valuable contributions to our projects.
+              We are excited about the prospect of having you on board and believe that your skills and enthusiasm will make valuable contributions to our projects.
             </p>
+            <p style="font-size: 14px; color: black; font-weight: bold;">
+              <span style="color: blue; text-decoration: underline;">Note:</span>
+              Joining the WhatsApp group is mandatory to ensure you receive all communications and stay updated.
+            </p>
+            <p style="font-size: 14px; color: black; font-weight: bold;">
+              WhatsApp Group Link: 
+              <a href="https://chat.whatsapp.com/C8S7srSDyDqAtbyRmlTvb6" style="color: blue; text-decoration: underline;">
+                https://chat.whatsapp.com/C8S7srSDyDqAtbyRmlTvb6
+              </a>
+          </p>
+
+            <p style="font-size: 14px; color: black;"><strong>Internship Start Date:</strong> June 1st, 2025</p>
+
             <h2 style="color: red; font-size: 20px; border-bottom: 2px solid black; padding-bottom: 10px; margin-bottom: 20px;">Here’s What You’ll Gain:</h2>
         
         
@@ -319,7 +332,7 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
         </div>
         <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
           <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Professional Resume & LinkedIn Building</h3>
-          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Stand out to recruiters with tailored resume and LinkedIn sessions.</p>
+          <p style="font-size: 12px; color: #333; margin-top: 5px; text-align: center;">Stand out to recruiters with tailored Resume and LinkedIn sessions.</p>
         </div>
         <div style="background-color: #e7f1ff; padding: 10px; border-radius: 5px; border: 2px solid blue;margin-bottom: 15px;">
           <h3 style="color: red; font-size: 16px; margin: 0; text-align: center;">Intensive Mock Interviews</h3>
@@ -327,32 +340,39 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
         </div>
 
         <p style="font-size: 14px; color: black;">If you have any questions or need further assistance, please feel free to reach out to us. We look forward to welcoming you to the DevElet family.</p>
-        <p style="font-size: 14px; color: black;">
-          <span style="color: blue; text-decoration: underline; font-weight: bold;">Note:</span>
-          Join our WhatsApp group to ensure you receive all communications and stay updated.
-        </p>
+        
+
         
         
-        <p style="font-size: 14px; color: blue;">
-        
-          <a href="https://www.linkedin.com/company/develetindia/" style="color: blue; text-decoration: none;">LinkedIn</a><br>
-          <a href="https://develet.in/" style="color: blue; text-decoration: none;">Website</a><br>
-          <a href="https://chat.whatsapp.com/KL71l1zifVHHT7uJvvWxJp" style="color: blue; text-decoration: none;">WhatsApp</a>
-          
-        </p>
+        <!-- Footer Section -->
+        <div style="text-align: center; margin-top: 30px; font-size: 13px; color: #555;">
+          <p style="margin: 0; font-weight: bold;">2025 © DevElet Technologies. All rights reserved</p>
+          <div style="margin-top: 10px;">
+            <a href="https://www.linkedin.com/company/develetindia/" target="_blank" style="margin: 0 10px; text-decoration: none;">
+              <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn" style="vertical-align: middle;">
+            </a>
+           <a href="https://develet.in/" target="_blank" style="margin: 0 10px; text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/24/546/546310.png" alt="Website" style="vertical-align: middle;">
+          </a>
+
+            <a href="https://www.instagram.com/develetindia?igsh=MWtuZ2drbmEyYWxwcA==" target="_blank" style="margin: 0 10px; text-decoration: none;">
+              <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="vertical-align: middle;">
+            </a>
+          </div>
+        </div>
 
         <p style="margin-top: 20px; font-size: 14px; color: black;">Best Regards,<br>
         <strong>Team DevElet</strong></p>
       </div>
        `,
-
+/*
         attachments: [
           {
             filename: `${internId}_Offer_Letter.pdf`,
             content: pdfData,
             contentType: 'application/pdf'
           }
-        ]
+        ] */   //<p><strong>Intern ID:</strong> ${internId}</p> add below later if needed
       };
 
       const adminMailOptions = {
@@ -363,8 +383,8 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
                <p><strong>Name:</strong> ${name}</p>
                <p><strong>Email:</strong> ${toEmail}</p>
                <p><strong>College:</strong> ${college}</p>
-               <p><strong>Domain:</strong> ${domain}</p>
-               <p><strong>Intern ID:</strong> ${internId}</p>
+               <p><strong>Domain:</strong> ${domain}</p> 
+               
                <p><strong>Mobile:</strong> ${mobile}</p>`
       };
       
@@ -379,8 +399,8 @@ transporter.sendMail(adminMailOptions, (error, info) => {
         console.log('Email sent:', info.response);
       });
      
-    });
-  });
+    //});
+//});
 }
 
 function sendThankYouEmailHireWithUs(toEmail, name) {
@@ -713,6 +733,6 @@ const options = {
   ca: fs.readFileSync('../../private/gd_bundle-g2-g1.crt')
 };
 
-https.createServer(options, app).listen(port, () => { //https.createServer(options,app).listen(port, () => {
+https.createServer(options,app).listen(port, () => { //https.createServer(options,app).listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
