@@ -304,12 +304,12 @@ function sendThankYouEmailInnovate(toEmail, name, college, domain, mobile) {
             </p>
             <p style="font-size: 14px; color: black; font-weight: bold;">
               WhatsApp Group Link: 
-              <a href="https://chat.whatsapp.com/JxljCmb61aKLWFwbe9OXiX" style="color: blue; text-decoration: underline;">
-                https://chat.whatsapp.com/JxljCmb61aKLWFwbe9OXiX
+              <a href="https://chat.whatsapp.com/LwONF9eG63V5mHqfFDD289?mode=ac_c" style="color: blue; text-decoration: underline;">
+                https://chat.whatsapp.com/LwONF9eG63V5mHqfFDD289?mode=ac_c
               </a>
           </p>
 
-            <p style="font-size: 14px; color: black;"><strong>Internship Start Date:</strong> June 28th, 2025</p>
+            <p style="font-size: 14px; color: black;"><strong>Internship Start Date:</strong> August 10th, 2025</p>
 
             <h2 style="color: red; font-size: 20px; border-bottom: 2px solid black; padding-bottom: 10px; margin-bottom: 20px;">Here’s What You’ll Gain:</h2>
         
